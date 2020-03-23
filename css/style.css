@@ -1,0 +1,245 @@
+/* ======================
+        Google Font
+   ====================== */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* ======================
+         Root CSS
+   ====================== */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #100E17;
+}
+
+
+/* ======================
+        Common CSS
+   ====================== */
+.row{
+    padding: 120px 0px;
+}
+
+.card{
+    margin-top: 0px;
+    background-color: #1E1E24;
+    color: #E7E7E8;
+    margin-bottom: 30px;
+}
+
+.card-title{
+    font-size: 30px;
+}
+
+.text-center{
+    color: #E7E7E8;
+    font-size: 38px;
+    font-weight: 600px;
+    line-height: 38px;
+}
+
+.card p{
+    text-align: justify;
+}
+
+
+/* ======================
+        Home(Navbar)
+   ====================== */
+.nav-item{
+    font-size: 20px;
+}
+
+.navbar-brand{
+    font-size: 24px;
+    font-weight: 550;
+    letter-spacing: 2.5px;
+}
+
+
+/* ======================
+        Home(Details)
+   ====================== */
+.header{
+    background-image: url(../img/bgOne.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.home{
+    color: white;
+    margin-bottom: 25px;
+}
+
+.me{
+    padding: 85px;
+}
+
+.me img{
+    border-radius: 50%;
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.me img:hover{
+    filter: grayscale(0);
+    transform: scale(1.01);
+    transition: all .8s ease-in-out;
+}
+
+.hello{
+    background-color: #0CBBA0;
+    border-radius: 20px 20px 20px 0px;
+    width: 130px;
+    margin-bottom: 20px;
+}
+
+.home h1{
+    font-size: 52px;
+    font-weight: 700;
+    color: white;
+    text-align: right;
+}
+
+.home h3{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 40px;
+    text-align: right;
+}
+
+.home ul{
+    margin: auto;
+}
+
+.home ul li{
+    list-style: none;
+    text-decoration: none;
+    float: left;
+    margin: 40px 10px 10px 10px;
+}
+
+.home ul li a{
+    font-size: 25px;
+    color: white;
+}
+
+.home ul li a:hover{
+    font-size: 25px;
+    color: #0CBBA0;
+}
+
+.homeleft .fas{
+    float: right;
+    margin-left: 15px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.homeleft p{
+    text-align: right;
+    margin-right: 10px;
+}
+
+.hello p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 7px 0px;
+}
+
+
+/* ======================
+           About
+   ====================== */
+.aboutrow{
+    color: white;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.aboutrow button{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #0CBBA0;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.aboutrow img{
+    width: 100%;
+}
+
+.card .fas{
+    font-size: 40px;
+    margin-bottom: 22px;
+    color: #D2664E;
+}
+
+.card img{
+    width: 60px;
+    margin: 0px 0px 25px 0px;
+}
+
+.hudai{
+    padding: 40px 0px;
+}
+
+
+/* ======================
+         Resume Sec
+   ====================== */
+.rcard{
+    height: 300px;
+}
+
+#resume{
+    background-image: url(../img/bgOne.jpg);
+    background-repeat: no-repeat;
+    color: #E7E7E8;
+}
+
+#resume h2{
+    padding-left: 15px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-weight: 600px;
+}
+
+#resume h5{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#resume h3{
+    font-size: 20px;
+    color: #0CBBA0;
+}
+
+.rrcard{
+    color: #0CBBA0;
+}
+
+.rrow{
+    padding: 100px 0px;
+}
+
+
+/* ======================
+          Blog Sec
+   ====================== */
+#blog{
+    background-image: url(../img/bgOne.jpg);
+    background-repeat: no-repeat;
+    color: #E7E7E8;
+}
+
+#contact{
+    background-image: url(../img/worldmap.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
