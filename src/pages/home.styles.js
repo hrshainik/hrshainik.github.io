@@ -24,6 +24,7 @@ export const Navbar = styled.nav`
   align-items: center;
   position: fixed;
   bottom: 0;
+  z-index: 1000;
 `;
 
 export const NavLink = styled.a`
