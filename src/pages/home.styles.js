@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   width: 100%;
-  height: calc(100vh - 8rem);
+  height: 100vh;
   position: relative;
 
   ::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    top: calc(100vh - 8.5rem);
     width: 100%;
     height: 0.5rem;
     background-color: var(--primary);
