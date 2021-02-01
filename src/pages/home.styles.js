@@ -23,7 +23,7 @@ export const Navbar = styled.nav`
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  top: calc(100vh - 8rem);
+  bottom: 0;
 `;
 
 export const NavLink = styled.a`

@@ -33,8 +33,7 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--bgOne);
-    min-height: 100vh;
-    color: white;
+    color: var(--white);
   }
 
   body::after {
@@ -44,7 +43,7 @@ export const GlobalStyle = createGlobalStyle`
     top: 0;
     right: 0;
     width: 50vw;
-    height: 100vh;
+    height: calc(100vh - 9rem);
     z-index: -1;
   }
 
