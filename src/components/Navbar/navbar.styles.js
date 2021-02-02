@@ -21,6 +21,9 @@ export const NavLink = styled(Link)`
   transition: color 300ms ease;
   text-decoration: none;
   color: var(--white);
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 
   :hover,
   :active,
@@ -48,10 +51,4 @@ export const NavLogo = styled.svg`
   ${NavLink}:focus & {
     fill: var(--primary);
   }
-`;
-
-export const NavText = styled.p`
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.2rem;
 `;

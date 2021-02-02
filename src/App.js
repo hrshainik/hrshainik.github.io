@@ -8,18 +8,16 @@ import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
-    <>
+    <Router>
       <GlobalStyle />
       <Navbar />
-      <Router>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/portfolio" exact component={Portfolio} />
-          <Route path="/blog" exact component={Blog} />
-          <Route path="/contact" exact component={Contact} />
-        </Switch>
-      </Router>
-    </>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/portfolio" exact component={Portfolio} />
+        <Route path="/blog" exact component={Blog} />
+        <Route path="/contact" exact component={Contact} />
+      </Switch>
+    </Router>
   );
 };
 
