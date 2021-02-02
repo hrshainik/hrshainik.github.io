@@ -19,8 +19,12 @@ export const NavLink = styled(Link)`
   align-items: center;
   justify-content: center;
   transition: color 300ms ease;
+  text-decoration: none;
+  color: var(--white);
 
-  :hover {
+  :hover,
+  :active,
+  :focus {
     color: var(--primary);
     cursor: pointer;
   }
@@ -34,6 +38,14 @@ export const NavLogo = styled.svg`
   transition: fill 300ms ease;
 
   ${NavLink}:hover & {
+    fill: var(--primary);
+  }
+
+  ${NavLink}:active & {
+    fill: var(--primary);
+  }
+
+  ${NavLink}:focus & {
     fill: var(--primary);
   }
 `;

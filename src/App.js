@@ -1,11 +1,24 @@
 import { GlobalStyle } from "./index.styles";
-import Home from "./pages/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Portfolio from "./pages/Portfolio/Portfolio";
+import Blog from "./pages/Blog/Blog";
+import Contact from "./pages/Contact/Contact";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Home />
+      <Navbar />
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/portfolio" exact component={Portfolio} />
+          <Route path="/blog" exact component={Blog} />
+          <Route path="/contact" exact component={Contact} />
+        </Switch>
+      </Router>
     </>
   );
 };

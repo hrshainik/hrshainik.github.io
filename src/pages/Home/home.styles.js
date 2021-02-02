@@ -1,9 +1,21 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HomeContainer = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
+
+  ::before {
+    content: "";
+    position: absolute;
+    background-color: var(--bgTwo);
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: calc(100vh - 9rem);
+    z-index: -1;
+  }
 
   ::after {
     content: "";
@@ -15,7 +27,7 @@ export const HomeContainer = styled.div`
   }
 `;
 
-export const LogoContainer = styled.a`
+export const LogoContainer = styled(Link)`
   cursor: pointer;
 `;
 
