@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HomeContainer = styled.div`
-  width: 100%;
-  height: 100vh;
+  width: 90vw;
+  min-height: calc(100vh - 8.5rem);
   position: relative;
 
   ::before {
@@ -11,7 +11,7 @@ export const HomeContainer = styled.div`
     position: absolute;
     background-color: var(--bgTwo);
     top: 0;
-    right: 0;
+    right: -2.5vw;
     width: 50vw;
     height: calc(100vh - 9rem);
     z-index: -1;
@@ -21,7 +21,9 @@ export const HomeContainer = styled.div`
     content: "";
     position: absolute;
     top: calc(100vh - 8.5rem);
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
     height: 0.5rem;
     background-color: var(--primary);
   }
@@ -32,8 +34,8 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const Logo = styled.img`
-  width: 7.5rem;
-  padding: 2rem;
+  width: 6rem;
+  padding: 2rem 1rem 1rem 1rem;
   display: block;
 `;
 

@@ -2,13 +2,14 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
-  width: 100%;
+  width: 100vw;
   height: 8rem;
   background-color: var(--bgOne);
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: fixed;
+  left: 0;
   bottom: 0;
   z-index: 1000;
 `;
@@ -30,25 +31,5 @@ export const NavLink = styled(Link)`
   :focus {
     color: var(--primary);
     cursor: pointer;
-  }
-`;
-
-export const NavLogo = styled.svg`
-  width: 3.2rem;
-  display: block;
-  margin-bottom: 0.8rem;
-  fill: var(--white);
-  transition: fill 300ms ease;
-
-  ${NavLink}:hover & {
-    fill: var(--primary);
-  }
-
-  ${NavLink}:active & {
-    fill: var(--primary);
-  }
-
-  ${NavLink}:focus & {
-    fill: var(--primary);
   }
 `;

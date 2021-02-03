@@ -34,17 +34,8 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--bgOne);
     color: var(--white);
-  }
-
-  body::after {
-    content: "";
-    position: absolute;
-    background-color: var(--bgTwo);
-    top: 0;
-    right: 0;
-    width: 50vw;
-    height: calc(100vh - 9rem);
-    z-index: -1;
+    display: flex;
+    justify-content: center;
   }
 
   code {

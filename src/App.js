@@ -5,6 +5,7 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/blog" exact component={Blog} />
         <Route path="/contact" exact component={Contact} />
       </Switch>
+      <Footer />
     </Router>
   );
 };
