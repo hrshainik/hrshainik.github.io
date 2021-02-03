@@ -1,12 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {
+  NotFoundContainer,
+  BackButton,
+  Heading,
+  SubHeading,
+  NotFound,
+} from "./404.styles";
 
 const Error = () => {
   return (
-    <div>
-      <h1>404, Page not found</h1>
-      <Link to="/">Go Back</Link>
-    </div>
+    <NotFoundContainer>
+      <NotFound>
+        <Heading>404</Heading>
+        <SubHeading>Page Not Found</SubHeading>
+        <BackButton to="/">Go Back</BackButton>
+      </NotFound>
+    </NotFoundContainer>
   );
 };
 

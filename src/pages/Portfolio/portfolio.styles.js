@@ -11,4 +11,5 @@ export const UpperSec = styled.div`
   display: flex;
   position: relative;
   align-items: center;
+  margin-bottom: 1rem;
 `;
