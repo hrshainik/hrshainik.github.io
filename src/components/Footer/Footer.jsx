@@ -12,8 +12,8 @@ import logo from "../../img/logo.png";
 const Footer = () => {
   return (
     <FooterContainer>
-      <LogoWrapper>
-        <Logo src={logo} to="/" />
+      <LogoWrapper to="/">
+        <Logo src={logo} />
       </LogoWrapper>
       <LinkWrapper>
         <LinkItem>
