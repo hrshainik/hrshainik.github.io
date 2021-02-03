@@ -11,9 +11,9 @@ export const HomeContainer = styled.div`
     position: absolute;
     background-color: var(--bgTwo);
     top: 0;
-    right: -2.5vw;
+    right: -5vw;
     width: 50vw;
-    height: calc(100vh - 9rem);
+    height: calc(100vh - 8.5rem);
     z-index: -1;
   }
 

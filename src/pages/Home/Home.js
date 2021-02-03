@@ -8,12 +8,20 @@ import {
   SubHeading,
 } from "./home.styles";
 import logo from "../../img/logo.png";
+import { motion } from "framer-motion";
+import { animationOne, transition } from "../../animation/index";
 
 const Home = () => {
   return (
-    <>
+    <motion.div
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={animationOne}
+      transition={transition}
+    >
       <HomeContainer>
-        <LogoContainer>
+        <LogoContainer to="/">
           <Logo src={logo}></Logo>
         </LogoContainer>
         <HeadingContainer>
@@ -21,7 +29,7 @@ const Home = () => {
           <SubHeading>Designer + Developer</SubHeading>
         </HeadingContainer>
       </HomeContainer>
-    </>
+    </motion.div>
   );
 };
 

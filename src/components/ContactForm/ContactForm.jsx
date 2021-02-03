@@ -12,16 +12,22 @@ const ContactForm = () => {
           labelName={"Your Name"}
           type={"text"}
           placeholder={"Enter your name"}
+          id={"name"}
+          inputName={"name"}
         />
         <Input
           labelName={"Your Email"}
           type={"email"}
           placeholder={"Enter your email"}
+          id={"email"}
+          inputName={"email"}
         />
         <TextArea
           labelName={"About Your Project"}
           type={"text"}
           placeholder={"Enter some text"}
+          id={"desc"}
+          inputName={"desc"}
         />
         <SendButton value={"Send"} />
       </Form>

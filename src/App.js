@@ -5,20 +5,23 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
+import { AnimatePresence } from "framer-motion";
+import Error from "./pages/404/404";
 
 const App = () => {
   return (
     <Router>
       <GlobalStyle />
-      <Navbar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/portfolio" exact component={Portfolio} />
-        <Route path="/blog" exact component={Blog} />
-        <Route path="/contact" exact component={Contact} />
-      </Switch>
-      <Footer />
+      <AnimatePresence>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/portfolio" exact component={Portfolio} />
+          <Route path="/blog" exact component={Blog} />
+          <Route path="/contact" exact component={Contact} />
+          <Route component={Error} />
+        </Switch>
+      </AnimatePresence>
     </Router>
   );
 };

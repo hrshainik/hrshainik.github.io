@@ -4,6 +4,6 @@ export const ContactContainer = styled.div`
   margin: 2rem 0;
   width: 90vw;
   justify-content: center;
-  min-height: calc(100vh - 18rem);
+  min-height: calc(100vh - 19rem);
   background-color: var(--bgOne);
 `;

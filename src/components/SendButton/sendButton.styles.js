@@ -5,7 +5,7 @@ export const Button = styled.input`
   background-color: var(--white);
   text-transform: uppercase;
   color: var(--bgOne);
-  padding: 1rem 0;
+  padding: 0.8rem 0;
   font-size: 2rem;
   font-weight: 500;
   border: none;
