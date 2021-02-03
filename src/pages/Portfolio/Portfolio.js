@@ -12,7 +12,6 @@ import projectImgThree from "../../img/projectThree.jpg";
 import projectImgFour from "../../img/projectFour.jpg";
 import projectImgFive from "../../img/projectFive.jpg";
 import Footer from "../../components/Footer/Footer";
-import { MdTranslate } from "react-icons/md";
 
 const Portfolio = () => {
   return (
