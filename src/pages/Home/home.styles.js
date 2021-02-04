@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import line from "../../img/wavy-line.svg";
 
 export const HomeContainer = styled.div`
   width: 90vw;
@@ -18,7 +19,6 @@ export const Logo = styled.img`
 export const Hero = styled.div`
   height: calc(100vh - 8.5rem);
   position: relative;
-  margin-bottom: 2rem;
 
   ::before {
     content: "";
@@ -78,4 +78,40 @@ export const SubHeading = styled.h2`
   font-weight: 500;
   margin-top: 0.8rem;
   letter-spacing: 1.2px;
+`;
+
+export const GetInTouch = styled.div`
+  width: 100%;
+  text-align: center;
+  background-color: var(--bgTwo);
+  padding: 3rem 1rem;
+  box-shadow: 10rem 0 var(--bgTwo), -10rem 0 var(--bgTwo);
+`;
+
+export const SpecialText = styled(Link)`
+  font-size: 4.8rem;
+  line-height: 70%;
+  font-weight: 700;
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  position: relative;
+
+  ::after {
+    content: "";
+    position: absolute;
+    background-image: url(${line});
+    background-repeat: no-repeat;
+    width: 100%;
+    bottom: -0.2rem;
+    height: 1rem;
+    left: 0;
+  }
+`;
+
+export const Line = styled.div`
+  width: 100%;
+  height: 1px;
+  background-color: #4d4d4d;
+  margin-top: 1rem;
 `;

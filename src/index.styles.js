@@ -36,6 +36,7 @@ export const GlobalStyle = createGlobalStyle`
     color: var(--white);
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
   }
 
   code {

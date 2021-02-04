@@ -11,9 +11,9 @@ import {
 } from "./footer.styles";
 import logo from "../../img/logo.png";
 
-const Footer = () => {
+const Footer = ({ style }) => {
   return (
-    <FooterContainer>
+    <FooterContainer style={style}>
       <UpperSec>
         <LogoWrapper to="/">
           <Logo src={logo} />

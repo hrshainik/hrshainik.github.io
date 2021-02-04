@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.div`
   width: 100%;
-  height: 7rem;
+  height: 9rem;
   display: flex;
   flex-direction: column;
   padding: 1rem 0;
@@ -41,7 +41,7 @@ export const LightText = styled.p`
   font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
-  margin-top: 0.5rem;
+  padding-top: 1.5rem;
 `;
 
 export const UpperSec = styled.div`

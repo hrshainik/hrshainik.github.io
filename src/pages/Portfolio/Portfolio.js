@@ -3,7 +3,6 @@ import { PortfolioContainer, UpperSec } from "./portfolio.styles";
 import { motion } from "framer-motion";
 import { animationTwo } from "../../animation/index";
 import BackButton from "../../components/BackButton/BackButton";
-import HeadingTwo from "../../components/Text/HeadingTwo";
 import Paragraph from "../../components/Text/Paragraph";
 import ProjectThumbnail from "../../components/ProjectThumbnail/ProjectThumbnail";
 import projectImgOne from "../../img/projectOne.jpg";
@@ -12,6 +11,7 @@ import projectImgThree from "../../img/projectThree.jpg";
 import projectImgFour from "../../img/projectFour.jpg";
 import projectImgFive from "../../img/projectFive.jpg";
 import Footer from "../../components/Footer/Footer";
+import HeadingOne from "../../components/Text/HeadingOne";
 
 const Portfolio = () => {
   return (
@@ -19,7 +19,7 @@ const Portfolio = () => {
       <PortfolioContainer>
         <UpperSec>
           <BackButton />
-          <HeadingTwo
+          <HeadingOne
             text="Portfolio"
             style={{
               color: "var(--primary)",
