@@ -5,13 +5,9 @@ import { animationTwo } from "../../animation/index";
 import BackButton from "../../components/BackButton/BackButton";
 import Paragraph from "../../components/Text/Paragraph";
 import ProjectThumbnail from "../../components/ProjectThumbnail/ProjectThumbnail";
-import projectImgOne from "../../img/projectOne.jpg";
-import projectImgTwo from "../../img/projectTwo.jpg";
-import projectImgThree from "../../img/projectThree.jpg";
-import projectImgFour from "../../img/projectFour.jpg";
-import projectImgFive from "../../img/projectFive.jpg";
 import Footer from "../../components/Footer/Footer";
 import HeadingOne from "../../components/Text/HeadingOne";
+import { projects } from "../../Data";
 
 const Portfolio = () => {
   return (
@@ -35,36 +31,9 @@ const Portfolio = () => {
             "I like to stay busy and always have a project in the works. Take a look at some of the applications, articles, and companies I've dedicated my time to."
           }
         />
-        <ProjectThumbnail
-          to="/project/:id"
-          thumbImg={projectImgOne}
-          text={"Project One"}
-          subText={"Title goes here..."}
-        />
-        <ProjectThumbnail
-          to="/project/:id"
-          thumbImg={projectImgTwo}
-          text={"Project Two"}
-          subText={"Title goes here..."}
-        />
-        <ProjectThumbnail
-          to="/project/:id"
-          thumbImg={projectImgThree}
-          text={"Project Three"}
-          subText={"Title goes here..."}
-        />
-        <ProjectThumbnail
-          to="/project/:id"
-          thumbImg={projectImgFour}
-          text={"Project Four"}
-          subText={"Title goes here..."}
-        />
-        <ProjectThumbnail
-          to="/project/:id"
-          thumbImg={projectImgFive}
-          text={"Project Five"}
-          subText={"Title goes here..."}
-        />
+        {projects.map((project) => (
+          <ProjectThumbnail to="/project" {...project} />
+        ))}
       </PortfolioContainer>
       <Footer />
     </motion.div>

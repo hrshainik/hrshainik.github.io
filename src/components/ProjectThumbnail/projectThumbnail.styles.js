@@ -13,7 +13,7 @@ export const Thumbnail = styled.div`
 
 export const ThumbImage = styled.img`
   width: 100%;
-  display: block;
+  display: inline-block;
   z-index: -3;
 `;
 

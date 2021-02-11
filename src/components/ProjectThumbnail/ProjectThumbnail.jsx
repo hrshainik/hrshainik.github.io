@@ -7,15 +7,15 @@ import {
 } from "./projectThumbnail.styles";
 import ProjectTitle from "../ProjectTitle/ProjectTitle";
 
-const ProjectThumbnail = ({ thumbImg, text, subText }) => {
+const ProjectThumbnail = ({ title, subTitle, img, url, alt }) => {
   return (
-    <ThumbnailContainer>
+    <ThumbnailContainer to={`/portfolio/${url}`}>
       <Thumbnail>
-        <ThumbImage src={thumbImg} />
+        <ThumbImage src={img} alt={alt} />
         <TitleBg>
           <ProjectTitle
-            handleText={text}
-            handleSubText={subText}
+            title={title}
+            subTitle={subTitle}
             style={{ zIndex: "10" }}
           />
         </TitleBg>

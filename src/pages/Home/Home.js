@@ -16,20 +16,16 @@ import { motion } from "framer-motion";
 import { animationOne, transition } from "../../animation/index";
 import Paragraph from "../../components/Text/Paragraph";
 import ProjectThumbnail from "../../components/ProjectThumbnail/ProjectThumbnail";
-import projectImgOne from "../../img/projectOne.jpg";
-import projectImgTwo from "../../img/projectTwo.jpg";
-import projectImgThree from "../../img/projectThree.jpg";
-import projectImgFour from "../../img/projectFour.jpg";
-import projectImgFive from "../../img/projectFive.jpg";
 import Footer from "../../components/Footer/Footer";
 import HeadingOne from "../../components/Text/HeadingOne";
 import HeadingTwo from "../../components/Text/HeadingTwo";
 import HeadingThree from "../../components/Text/HeadingThree";
 import ListItem from "../../components/ListItem/ListItem";
+import { projects } from "../../Data";
 
 const Home = () => {
   const listItems = ["UI & UX", "HTML & CSS", "JavaScript", "React"];
-
+  projects.map((project) => console.log(project));
   return (
     <motion.div
       initial="out"
@@ -55,36 +51,9 @@ const Home = () => {
           }
           style={{ marginBottom: "2rem" }}
         />
-        <ProjectThumbnail
-          to="/project/:id"
-          thumbImg={projectImgOne}
-          text={"Project One"}
-          subText={"Title goes here..."}
-        />
-        <ProjectThumbnail
-          to="/project/:id"
-          thumbImg={projectImgTwo}
-          text={"Project Two"}
-          subText={"Title goes here..."}
-        />
-        <ProjectThumbnail
-          to="/project/:id"
-          thumbImg={projectImgThree}
-          text={"Project Three"}
-          subText={"Title goes here..."}
-        />
-        <ProjectThumbnail
-          to="/project/:id"
-          thumbImg={projectImgFour}
-          text={"Project Four"}
-          subText={"Title goes here..."}
-        />
-        <ProjectThumbnail
-          to="/project/:id"
-          thumbImg={projectImgFive}
-          text={"Project Five"}
-          subText={"Title goes here..."}
-        />
+        {projects.map((project, i) => (
+          <ProjectThumbnail key={i} {...project} />
+        ))}
         <Line />
         <HeadingOne text={"About"} style={{ marginTop: "2rem" }} />
         <HeadingThree text={"Hi, I'm Habibur Rahman."} />

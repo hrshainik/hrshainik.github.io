@@ -1,11 +1,11 @@
 import React from "react";
 import { Title, SubTitle } from "./projectTitle.styles";
 
-const ProjectTitle = ({ handleText, handleSubText }) => {
+const ProjectTitle = ({ title, subTitle }) => {
   return (
     <>
-      <Title>{handleText}</Title>
-      <SubTitle>{handleSubText}</SubTitle>
+      <Title>{title}</Title>
+      <SubTitle>{subTitle}</SubTitle>
     </>
   );
 };
