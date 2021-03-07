@@ -12,6 +12,12 @@ export const projects = [
     subTitle: "SubTitle goes here...",
     paragraph:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam maiores et neque, iusto nulla non itaque totam sed laborum quod quisquam unde repellendus. Molestias praesentium, quis nam consequuntur explicabo illum perferendis earum odit at sequi! Earum, laborum? Saepe quo, temporibus quis iste repellendus libero harum, possimus placeat asperiores voluptas quasi.",
+    typeStack: {
+      titleOne: "Type",
+      titleTwo: "Stack",
+      type: "Internship",
+      stack: ["React", "NodeJS", "MongoDB"],
+    },
     img: projectOne,
     alt: "project-image",
   },
@@ -22,6 +28,12 @@ export const projects = [
     subTitle: "SubTitle goes here...",
     paragraph:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam maiores et neque, iusto nulla non itaque totam sed laborum quod quisquam unde repellendus. Molestias praesentium, quis nam consequuntur explicabo illum perferendis earum odit at sequi! Earum, laborum? Saepe quo, temporibus quis iste repellendus libero harum, possimus placeat asperiores voluptas quasi.",
+    typeStack: {
+      titleOne: "Type",
+      titleTwo: "Stack",
+      type: "Internship",
+      stack: ["React", "NodeJS", "MongoDB"],
+    },
     img: projectTwo,
     alt: "project-image",
   },
@@ -32,6 +44,12 @@ export const projects = [
     subTitle: "SubTitle goes here...",
     paragraph:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam maiores et neque, iusto nulla non itaque totam sed laborum quod quisquam unde repellendus. Molestias praesentium, quis nam consequuntur explicabo illum perferendis earum odit at sequi! Earum, laborum? Saepe quo, temporibus quis iste repellendus libero harum, possimus placeat asperiores voluptas quasi.",
+    typeStack: {
+      titleOne: "Type",
+      titleTwo: "Stack",
+      type: "Internship",
+      stack: ["React", "NodeJS", "MongoDB"],
+    },
     img: projectThree,
     alt: "project-image",
   },
@@ -42,6 +60,12 @@ export const projects = [
     subTitle: "SubTitle goes here...",
     paragraph:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam maiores et neque, iusto nulla non itaque totam sed laborum quod quisquam unde repellendus. Molestias praesentium, quis nam consequuntur explicabo illum perferendis earum odit at sequi! Earum, laborum? Saepe quo, temporibus quis iste repellendus libero harum, possimus placeat asperiores voluptas quasi.",
+    typeStack: {
+      titleOne: "Type",
+      titleTwo: "Stack",
+      type: "Internship",
+      stack: ["React", "NodeJS", "MongoDB"],
+    },
     img: projectFour,
     alt: "project-image",
   },
@@ -52,6 +76,12 @@ export const projects = [
     subTitle: "SubTitle goes here...",
     paragraph:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam maiores et neque, iusto nulla non itaque totam sed laborum quod quisquam unde repellendus. Molestias praesentium, quis nam consequuntur explicabo illum perferendis earum odit at sequi! Earum, laborum? Saepe quo, temporibus quis iste repellendus libero harum, possimus placeat asperiores voluptas quasi.",
+    typeStack: {
+      titleOne: "Type",
+      titleTwo: "Stack",
+      type: "Internship",
+      stack: ["React", "NodeJS", "MongoDB"],
+    },
     img: projectFive,
     alt: "project-image",
   },

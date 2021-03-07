@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Blog from "./pages/Blog/Blog";
+import BlogPost from "./pages/BlogPost/BlogPost";
 import Contact from "./pages/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
 import { AnimatePresence } from "framer-motion";
@@ -19,7 +20,8 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <Route path="/portfolio" exact component={Portfolio} />
           <Route path="/portfolio/:url" exact component={Project} />
-          <Route path="/blog/:url" exact component={Blog} />
+          <Route path="/blog" exact component={Blog} />
+          <Route path="/blog/:url" exact component={BlogPost} />
           <Route path="/contact" exact component={Contact} />
           <Route component={Error} />
         </Switch>

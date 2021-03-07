@@ -25,7 +25,7 @@ import { projects } from "../../Data";
 
 const Home = () => {
   const listItems = ["UI & UX", "HTML & CSS", "JavaScript", "React"];
-  projects.map((project) => console.log(project));
+
   return (
     <motion.div
       initial="out"

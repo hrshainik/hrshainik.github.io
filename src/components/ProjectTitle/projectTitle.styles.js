@@ -29,7 +29,7 @@ export const Title = styled.h2`
 
 export const SubTitle = styled.h4`
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #dadada;
   margin-top: 0.4rem;
 `;
