@@ -10,7 +10,7 @@ const TextArea = ({ labelName, type, placeholder, id, inputName }) => {
   return (
     <TextAreaContainer>
       <TextAreaGroup>
-        <Label>{labelName}</Label>
+        <Label htmlFor={id}>{labelName}</Label>
         <TextAreaField
           id={id}
           name={inputName}

@@ -14,7 +14,7 @@ const Portfolio = () => {
     <motion.div initial="out" animate="in" exit="out" variants={animationTwo}>
       <PortfolioContainer>
         <UpperSec>
-          <BackButton />
+          <BackButton url="/" />
           <HeadingOne
             text="Portfolio"
             style={{
@@ -31,8 +31,8 @@ const Portfolio = () => {
             "I like to stay busy and always have a project in the works. Take a look at some of the applications, articles, and companies I've dedicated my time to."
           }
         />
-        {projects.map((project) => (
-          <ProjectThumbnail to="/project" {...project} />
+        {projects.map((project, i) => (
+          <ProjectThumbnail key={i} to="/project" {...project} />
         ))}
       </PortfolioContainer>
       <Footer />

@@ -21,7 +21,7 @@ const Navbar = () => {
         <AiOutlineProfile style={navIconStyles} />
         Portfolio
       </NavLink>
-      <NavLink to="/blog">
+      <NavLink to={{ pathname: "https://dev.to/hrsshainik" }} target="_blank">
         <ImBlog style={navIconStyles} />
         Blog
       </NavLink>

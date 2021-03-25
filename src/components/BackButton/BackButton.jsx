@@ -2,9 +2,9 @@ import React from "react";
 import { Back } from "./backButton.styles";
 import { Link } from "react-router-dom";
 
-const BackButton = () => {
+const BackButton = ({ url }) => {
   return (
-    <Link to="/">
+    <Link to={url}>
       <Back />
     </Link>
   );

@@ -37,6 +37,18 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     justify-content: center;
     overflow-x: hidden;
+
+    ::-webkit-scrollbar {
+      width: 1em;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: #606060;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--primary);
+    }
   }
 
   code {

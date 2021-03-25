@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <motion.div initial="out" animate="in" exit="out" variants={animationTwo}>
       <ContactContainer>
-        <BackButton />
+        <BackButton url="/" />
         <HeadingTwo text={"Say 👋  Hi! "} />
         <Paragraph
           text={

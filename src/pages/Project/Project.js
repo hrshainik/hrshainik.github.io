@@ -18,7 +18,7 @@ const Project = ({ match }) => {
   return (
     <motion.div initial="out" animate="in" exit="out" variants={animationTwo}>
       <ProjectContainer>
-        <BackButton />
+        <BackButton url="/portfolio" />
         <ProjectTitle
           title={project.title}
           subTitle={project.subTitle}

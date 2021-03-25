@@ -15,7 +15,7 @@ const App = () => {
     <Router>
       <GlobalStyle />
       <AnimatePresence>
-        <Navbar />
+        <Navbar key="navbar" />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/portfolio" exact component={Portfolio} />

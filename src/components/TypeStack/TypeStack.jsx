@@ -20,7 +20,7 @@ const TypeStack = ({ titleOne, titleTwo, type, stack, style }) => {
         <Title>{titleTwo}</Title>
         <Stack>
           {stack.map((item) => (
-            <Item>{item}</Item>
+            <Item key={item}>{item}</Item>
           ))}
         </Stack>
       </StackContainer>

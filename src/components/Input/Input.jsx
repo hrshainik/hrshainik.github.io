@@ -5,7 +5,7 @@ const Input = ({ labelName, type, placeholder, id, inputName }) => {
   return (
     <InputContainer>
       <InputGroup>
-        <Label for={id}>{labelName}</Label>
+        <Label htmlFor={id}>{labelName}</Label>
         <InputField
           id={id}
           name={inputName}

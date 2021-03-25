@@ -3,7 +3,7 @@ import { Button, Icon } from "./visitSite.styles";
 
 const VisitSite = ({ style }) => {
   return (
-    <Button style={style}>
+    <Button to="/" style={style}>
       Visit Site <Icon />
     </Button>
   );
