@@ -37,7 +37,9 @@ export const GlobalStyle = createGlobalStyle`
     color: var(--white);
     display: flex;
     justify-content: center;
-    overflow-x: hidden;
+    align-items: center;
+    min-height: 100vh;
+    /* overflow-x: hidden; */
 
     ::-webkit-scrollbar {
       width: 1em;

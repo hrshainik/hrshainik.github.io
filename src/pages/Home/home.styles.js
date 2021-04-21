@@ -37,7 +37,7 @@ export const Hero = styled.div`
     top: calc(100vh - 8.5rem);
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw;
+    width: 100%;
     height: 0.5rem;
     background-color: var(--primary);
   }

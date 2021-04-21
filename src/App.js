@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { AnimatePresence } from "framer-motion";
 // import Error from "./pages/404/404";
 // import Project from "./pages/Project/Project";
+import Loader from "./components/Loader/Loader";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Portfolio = lazy(() => import("./pages/Portfolio/Portfolio"));
@@ -22,7 +23,7 @@ const Error = lazy(() => import("./pages/404/404"));
 const App = () => {
   return (
     <Router>
-      <Suspense fallback={<h1 style={{ fontSize: "5rem" }}>Loading...</h1>}>
+      <Suspense fallback={<Loader />}>
         <GlobalStyle />
         <AnimatePresence>
           <Navbar key="navbar" />
