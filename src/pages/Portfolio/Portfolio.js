@@ -1,7 +1,7 @@
 import React from "react";
 import { PortfolioContainer, UpperSec } from "./portfolio.styles";
 import { motion } from "framer-motion";
-import { animationTwo } from "../../animation/index";
+import { animationOne } from "../../animation/index";
 import BackButton from "../../components/BackButton/BackButton";
 import Paragraph from "../../components/Text/Paragraph";
 import ProjectThumbnail from "../../components/ProjectThumbnail/ProjectThumbnail";
@@ -11,7 +11,7 @@ import { projects } from "../../Data";
 
 const Portfolio = () => {
   return (
-    <motion.div initial="out" animate="in" exit="out" variants={animationTwo}>
+    <motion.div initial="out" animate="in" exit="out" variants={animationOne}>
       <PortfolioContainer>
         <UpperSec>
           <BackButton url="/" />

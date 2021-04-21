@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { animationTwo } from "../../animation/index";
+import { animationOne } from "../../animation/index";
 import { projects } from "../../Data";
 import { ProjectContainer, ImgContainer, ProjectImg } from "./project.styles";
 import BackButton from "../../components/BackButton/BackButton";
@@ -16,7 +16,7 @@ const Project = ({ match }) => {
   });
 
   return (
-    <motion.div initial="out" animate="in" exit="out" variants={animationTwo}>
+    <motion.div initial="out" animate="in" exit="out" variants={animationOne}>
       <ProjectContainer>
         <BackButton url="/portfolio" />
         <ProjectTitle

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export const NotFoundContainer = styled.div`
   width: 90vw;
+  max-width: var(--maxWidth);
   min-height: calc(100vh - 8.5rem);
   display: flex;
   justify-content: center;

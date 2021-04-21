@@ -91,7 +91,8 @@ const Home = () => {
       <Footer
         style={{
           background: "var(--bgTwo)",
-          boxShadow: "0 0 0 10rem var(--bgTwo)",
+          boxShadow:
+            "50vw 0 0 var(--bgTwo), -50vw 0 0 var(--bgTwo), 0 0 0 var(--bgTwo)",
         }}
       />
     </motion.div>

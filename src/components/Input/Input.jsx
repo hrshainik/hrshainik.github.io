@@ -1,7 +1,15 @@
 import React from "react";
 import { InputContainer, InputGroup, Label, InputField } from "./input.styles";
 
-const Input = ({ labelName, type, placeholder, id, inputName }) => {
+const Input = ({
+  labelName,
+  type,
+  placeholder,
+  id,
+  inputName,
+  value,
+  valueHandler,
+}) => {
   return (
     <InputContainer>
       <InputGroup>
@@ -11,6 +19,8 @@ const Input = ({ labelName, type, placeholder, id, inputName }) => {
           name={inputName}
           type={type}
           placeholder={placeholder}
+          value={value}
+          onChange={valueHandler}
           required
         />
       </InputGroup>

@@ -1,18 +1,26 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const Nav = styled.nav`
+export const NavContainer = styled.nav`
   width: 100vw;
   height: 8rem;
   background-color: var(--bgOne);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   left: 0;
   bottom: 0;
   z-index: 1000;
   border-top: 1px solid var(--primary);
+`;
+
+export const Nav = styled.div`
+  width: 90vw;
+  max-width: var(--maxWidth);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const NavLink = styled(Link)`

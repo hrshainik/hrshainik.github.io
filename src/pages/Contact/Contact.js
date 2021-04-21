@@ -6,12 +6,12 @@ import Paragraph from "../../components/Text/Paragraph";
 import LinkP from "../../components/Text/LinkP";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import { motion } from "framer-motion";
-import { animationTwo } from "../../animation/index";
+import { animationOne } from "../../animation/index";
 import Footer from "../../components/Footer/Footer";
 
 const Contact = () => {
   return (
-    <motion.div initial="out" animate="in" exit="out" variants={animationTwo}>
+    <motion.div initial="out" animate="in" exit="out" variants={animationOne}>
       <ContactContainer>
         <BackButton url="/" />
         <HeadingTwo text={"Say 👋  Hi! "} />

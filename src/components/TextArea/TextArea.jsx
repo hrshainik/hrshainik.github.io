@@ -6,7 +6,15 @@ import {
   TextAreaField,
 } from "./textArea.styles";
 
-const TextArea = ({ labelName, type, placeholder, id, inputName }) => {
+const TextArea = ({
+  labelName,
+  type,
+  placeholder,
+  id,
+  inputName,
+  value,
+  valueHandler,
+}) => {
   return (
     <TextAreaContainer>
       <TextAreaGroup>
@@ -16,6 +24,8 @@ const TextArea = ({ labelName, type, placeholder, id, inputName }) => {
           name={inputName}
           type={type}
           placeholder={placeholder}
+          value={value}
+          onChange={valueHandler}
           required
         />
       </TextAreaGroup>

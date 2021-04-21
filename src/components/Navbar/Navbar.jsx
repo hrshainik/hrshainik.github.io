@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, NavLink } from "./navbar.styles";
+import { NavContainer, Nav, NavLink } from "./navbar.styles";
 import { BiHomeHeart } from "react-icons/bi";
 import { MdPermContactCalendar } from "react-icons/md";
 import { AiOutlineProfile } from "react-icons/ai";
@@ -12,24 +12,26 @@ const Navbar = () => {
   };
 
   return (
-    <Nav>
-      <NavLink to="/">
-        <BiHomeHeart style={navIconStyles} />
-        Home
-      </NavLink>
-      <NavLink to="/portfolio">
-        <AiOutlineProfile style={navIconStyles} />
-        Portfolio
-      </NavLink>
-      <NavLink to={{ pathname: "https://dev.to/hrsshainik" }} target="_blank">
-        <ImBlog style={navIconStyles} />
-        Blog
-      </NavLink>
-      <NavLink to="/contact">
-        <MdPermContactCalendar style={navIconStyles} />
-        Contact
-      </NavLink>
-    </Nav>
+    <NavContainer>
+      <Nav>
+        <NavLink to="/">
+          <BiHomeHeart style={navIconStyles} />
+          Home
+        </NavLink>
+        <NavLink to="/portfolio">
+          <AiOutlineProfile style={navIconStyles} />
+          Portfolio
+        </NavLink>
+        <NavLink to={{ pathname: "https://dev.to/hrsshainik" }} target="_blank">
+          <ImBlog style={navIconStyles} />
+          Blog
+        </NavLink>
+        <NavLink to="/contact">
+          <MdPermContactCalendar style={navIconStyles} />
+          Contact
+        </NavLink>
+      </Nav>
+    </NavContainer>
   );
 };
 

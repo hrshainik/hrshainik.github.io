@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ProjectContainer = styled.div`
   margin: 2rem 0;
   width: 90vw;
+  max-width: var(--maxWidth);
   background-color: var(--bgOne);
 `;
 

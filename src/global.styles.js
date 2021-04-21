@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     --bgOne: #0F0F10;
     --bgTwo: #161717;
     --white: #fff;
+    --maxWidth: 120rem;
   }
 
   * {

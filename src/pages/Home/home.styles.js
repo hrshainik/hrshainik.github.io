@@ -4,6 +4,7 @@ import line from "../../img/wavy-line.svg";
 
 export const HomeContainer = styled.div`
   width: 90vw;
+  max-width: var(--maxWidth);
 `;
 
 export const LogoContainer = styled(Link)`
@@ -18,14 +19,13 @@ export const Logo = styled.img`
 
 export const Hero = styled.div`
   height: calc(100vh - 8.5rem);
-  position: relative;
 
   ::before {
     content: "";
     position: absolute;
     background-color: var(--bgTwo);
     top: 0;
-    right: -5vw;
+    right: 0;
     width: 50vw;
     height: calc(100vh - 8.5rem);
     z-index: -1;
@@ -85,7 +85,7 @@ export const GetInTouch = styled.div`
   text-align: center;
   background-color: var(--bgTwo);
   padding: 3rem 1rem;
-  box-shadow: 10rem 0 var(--bgTwo), -10rem 0 var(--bgTwo);
+  box-shadow: 50vw 0 0 var(--bgTwo), -50vw 0 0 var(--bgTwo), 0 0 0 var(--bgTwo);
 `;
 
 export const SpecialText = styled(Link)`
