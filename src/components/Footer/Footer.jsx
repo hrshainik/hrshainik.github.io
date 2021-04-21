@@ -16,7 +16,7 @@ const Footer = ({ style }) => {
     <FooterContainer style={style}>
       <UpperSec>
         <LogoWrapper to="/">
-          <Logo src={logo} />
+          <Logo src={logo} alt="logo" />
         </LogoWrapper>
         <LinkWrapper>
           <LinkItem>

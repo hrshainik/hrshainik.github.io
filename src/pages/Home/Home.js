@@ -37,7 +37,7 @@ const Home = () => {
       <HomeContainer>
         <Hero>
           <LogoContainer to="/">
-            <Logo src={logo}></Logo>
+            <Logo src={logo} alt="logo"></Logo>
           </LogoContainer>
           <HeadingContainer>
             <Heading>Habibur Rahman</Heading>
