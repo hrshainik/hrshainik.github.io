@@ -34,6 +34,16 @@ export const Anchor = styled.a`
   text-decoration: none;
   color: var(--white);
   font-size: 1.4rem;
+  transition: color 300ms ease, transform 300ms ease;
+
+  :hover,
+  :active {
+    color: var(--primary);
+  }
+
+  :active {
+    transform: scale(0.95);
+  }
 `;
 
 export const LightText = styled.p`

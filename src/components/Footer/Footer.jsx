@@ -25,7 +25,10 @@ const Footer = ({ style }) => {
             </Anchor>
           </LinkItem>
           <LinkItem>
-            <Anchor href="https://instagram.com/hrsshainik/" target="_blank">
+            <Anchor
+              href="https://instagram.com/traveloperhabib/"
+              target="_blank"
+            >
               instagram
             </Anchor>
           </LinkItem>

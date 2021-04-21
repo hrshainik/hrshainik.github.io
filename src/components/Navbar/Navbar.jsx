@@ -1,5 +1,5 @@
 import React from "react";
-import { NavContainer, Nav, NavLink } from "./navbar.styles";
+import { NavContainer, Nav, NavAnchor } from "./navbar.styles";
 import { BiHomeHeart } from "react-icons/bi";
 import { MdPermContactCalendar } from "react-icons/md";
 import { AiOutlineProfile } from "react-icons/ai";
@@ -14,22 +14,47 @@ const Navbar = () => {
   return (
     <NavContainer>
       <Nav>
-        <NavLink to="/">
+        <NavAnchor
+          exact
+          to="/"
+          activeStyle={{
+            color: "var(--primary)",
+          }}
+        >
           <BiHomeHeart style={navIconStyles} />
           Home
-        </NavLink>
-        <NavLink to="/portfolio">
+        </NavAnchor>
+        <NavAnchor
+          exact
+          to="/portfolio"
+          activeStyle={{
+            color: "var(--primary)",
+          }}
+        >
           <AiOutlineProfile style={navIconStyles} />
           Portfolio
-        </NavLink>
-        <NavLink to={{ pathname: "https://dev.to/hrsshainik" }} target="_blank">
+        </NavAnchor>
+        <NavAnchor
+          exact
+          to={{ pathname: "https://dev.to/hrsshainik" }}
+          target="_blank"
+          activeStyle={{
+            color: "var(--primary)",
+          }}
+        >
           <ImBlog style={navIconStyles} />
           Blog
-        </NavLink>
-        <NavLink to="/contact">
+        </NavAnchor>
+        <NavAnchor
+          exact
+          to="/contact"
+          activeStyle={{
+            color: "var(--primary)",
+          }}
+        >
           <MdPermContactCalendar style={navIconStyles} />
           Contact
-        </NavLink>
+        </NavAnchor>
       </Nav>
     </NavContainer>
   );

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const NavContainer = styled.nav`
   width: 100vw;
@@ -23,7 +23,7 @@ export const Nav = styled.div`
   align-items: center;
 `;
 
-export const NavLink = styled(Link)`
+export const NavAnchor = styled(NavLink)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,11 +34,14 @@ export const NavLink = styled(Link)`
   font-weight: 600;
   font-size: 1.2rem;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 200ms ease, color 200ms ease;
 
-  :hover,
-  :active,
-  :focus {
+  :hover {
     color: var(--primary);
-    cursor: pointer;
+  }
+
+  :active {
+    transform: scale(0.95);
   }
 `;

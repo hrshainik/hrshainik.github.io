@@ -11,4 +11,16 @@ export const Button = styled.input`
   border: none;
   margin-top: 2rem;
   cursor: pointer;
+  transition: background-color 300ms ease, color 300ms ease,
+    transform 300ms ease;
+
+  :hover,
+  :active {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+
+  :active {
+    transform: scale(0.99);
+  }
 `;

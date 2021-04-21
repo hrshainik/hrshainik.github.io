@@ -96,6 +96,11 @@ export const SpecialText = styled(Link)`
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
   text-decoration: none;
   position: relative;
+  transition: -webkit-text-stroke 300ms ease, transform 300ms ease;
+
+  :hover {
+    -webkit-text-stroke: 2px var(--primary);
+  }
 
   ::after {
     content: "";
