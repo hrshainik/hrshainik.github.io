@@ -1,4 +1,4 @@
-export const API_URL = "https://hrshainik.herokuapp.com/";
+export const API_URL = "https://hrshainik.herokuapp.com";
 
 /**
  * Given an image return the url
