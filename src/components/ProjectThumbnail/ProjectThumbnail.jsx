@@ -6,16 +6,17 @@ import {
   ThumbnailContainer,
 } from "./projectThumbnail.styles";
 import ProjectTitle from "../ProjectTitle/ProjectTitle";
+import { fromImgToUrl } from "../../utils/urls";
 
-const ProjectThumbnail = ({ title, subTitle, img, url, alt }) => {
+const ProjectThumbnail = ({ title, subtitle, image, slug, alt }) => {
   return (
-    <ThumbnailContainer to={`/portfolio/${url}`}>
+    <ThumbnailContainer to={`/portfolio/${slug}`}>
       <Thumbnail>
-        <ThumbImage src={img} alt={alt} />
+        <ThumbImage src={fromImgToUrl(image)} alt={alt} />
         <TitleBg>
           <ProjectTitle
             title={title}
-            subTitle={subTitle}
+            subTitle={subtitle}
             style={{ zIndex: "10" }}
           />
         </TitleBg>

@@ -21,9 +21,8 @@ import HeadingOne from "../../components/Text/HeadingOne";
 import HeadingTwo from "../../components/Text/HeadingTwo";
 import HeadingThree from "../../components/Text/HeadingThree";
 import ListItem from "../../components/ListItem/ListItem";
-import { projects } from "../../Data";
 
-const Home = ({ isMobile }) => {
+const Home = ({ isMobile, projects }) => {
   const listItems = ["UI & UX", "HTML & CSS", "JavaScript", "React"];
 
   return (

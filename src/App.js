@@ -27,6 +27,19 @@ const App = () => {
 
   const isMobile = width <= 600;
 
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:1337/portfolios", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => setProjects(data));
+  }, []);
+
   return (
     <Router>
       <GlobalStyle />
@@ -37,17 +50,25 @@ const App = () => {
             <Route
               path="/"
               exact
-              component={() => <Home isMobile={isMobile} />}
+              component={() => <Home isMobile={isMobile} projects={projects} />}
             />
             <Route
               path="/portfolio"
               exact
-              component={() => <Portfolio isMobile={isMobile} />}
+              component={() => (
+                <Portfolio isMobile={isMobile} projects={projects} />
+              )}
             />
             <Route
-              path="/portfolio/:url"
+              path="/portfolio/:slug"
               exact
-              component={() => <Project isMobile={isMobile} />}
+              component={({ match }) => (
+                <Project
+                  isMobile={isMobile}
+                  match={match}
+                  projects={projects}
+                />
+              )}
             />
             <Route
               path="/blog"

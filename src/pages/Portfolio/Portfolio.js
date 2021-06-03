@@ -7,9 +7,8 @@ import Paragraph from "../../components/Text/Paragraph";
 import ProjectThumbnail from "../../components/ProjectThumbnail/ProjectThumbnail";
 import Footer from "../../components/Footer/Footer";
 import HeadingOne from "../../components/Text/HeadingOne";
-import { projects } from "../../Data";
 
-const Portfolio = ({ isMobile }) => {
+const Portfolio = ({ isMobile, projects }) => {
   return (
     <motion.div initial="out" animate="in" exit="out" variants={animationOne}>
       <PortfolioContainer>
