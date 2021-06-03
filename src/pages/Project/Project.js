@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { animationOne } from "../../animation/index";
 import { ProjectContainer, ImgContainer, ProjectImg } from "./project.styles";
@@ -12,28 +12,24 @@ import { fromImgToUrl } from "../../utils/urls";
 
 const Project = ({ match, isMobile, projects }) => {
   const project = projects.find((project) => {
-    return match.params.url === project.slug;
+    return match.params.slug === project.slug;
   });
-
-  console.log(projects);
-
-  console.log(project);
 
   return (
     <motion.div initial="out" animate="in" exit="out" variants={animationOne}>
       <ProjectContainer>
-        {/* <BackButton url="/portfolio" />
+        <BackButton url="/portfolio" />
         <ProjectTitle
           title={project.title}
           subTitle={project.subtitle}
           style={{ marginBottom: "2rem" }}
         />
-        <Paragraph text={project.paragraph} style={{ marginBottom: "2rem" }} />
-        <TypeStack {...project.typeStack} style={{ marginBottom: "2rem" }} />
+        <Paragraph text={project.desc} style={{ marginBottom: "2rem" }} />
+        <TypeStack stack={project.stack} style={{ marginBottom: "2rem" }} />
         <VisitSite style={{ marginBottom: "2rem" }} />
         <ImgContainer>
           <ProjectImg src={fromImgToUrl(project.image)} />
-        </ImgContainer> */}
+        </ImgContainer>
       </ProjectContainer>
       <Footer isMobile={isMobile} />
     </motion.div>

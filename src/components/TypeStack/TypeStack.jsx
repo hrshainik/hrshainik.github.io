@@ -9,15 +9,15 @@ import {
   Item,
 } from "./typeStack.styles";
 
-const TypeStack = ({ titleOne, titleTwo, type, stack, style }) => {
+const TypeStack = ({ stack, style }) => {
   return (
     <TypeStackContainer style={style}>
       <TypeContainer>
-        <Title>{titleOne}</Title>
-        <Type>{type}</Type>
+        <Title>Type</Title>
+        <Type>Internship</Type>
       </TypeContainer>
       <StackContainer>
-        <Title>{titleTwo}</Title>
+        <Title>Stack</Title>
         <Stack>
           {stack.map((item) => (
             <Item key={item}>{item}</Item>

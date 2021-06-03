@@ -5,6 +5,7 @@ import NavbarM from "./components/NavbarM/NavbarM";
 import NavbarD from "./components/NavbarD/NavbarD";
 import { AnimatePresence } from "framer-motion";
 import Loader from "./components/Loader/Loader";
+import { API_URL } from "./utils/urls";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Portfolio = lazy(() => import("./pages/Portfolio/Portfolio"));
@@ -13,6 +14,24 @@ const Blog = lazy(() => import("./pages/Blog/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost/BlogPost"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
 const Error = lazy(() => import("./pages/404/404"));
+
+const getProjects = () => {
+  return fetch(`${API_URL}/portfolios`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }).then((res) => res.json());
+};
+
+const getAbout = () => {
+  return fetch(`${API_URL}/about`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }).then((res) => res.json());
+};
 
 const App = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -23,21 +42,16 @@ const App = () => {
     };
 
     window.addEventListener("resize", handleResize);
-  });
+  }, []);
 
   const isMobile = width <= 600;
 
   const [projects, setProjects] = useState([]);
+  const [about, setAbout] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:1337/portfolios", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => setProjects(data));
+    getProjects().then((data) => setProjects(data));
+    getAbout().then((data) => setAbout(data));
   }, []);
 
   return (
@@ -50,7 +64,9 @@ const App = () => {
             <Route
               path="/"
               exact
-              component={() => <Home isMobile={isMobile} projects={projects} />}
+              component={() => (
+                <Home isMobile={isMobile} projects={projects} about={about} />
+              )}
             />
             <Route
               path="/portfolio"

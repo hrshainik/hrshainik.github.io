@@ -1,4 +1,3 @@
-import React from "react";
 import {
   HomeContainer,
   LogoContainer,
@@ -10,6 +9,8 @@ import {
   GetInTouch,
   SpecialText,
   Line,
+  List,
+  Item,
 } from "./home.styles";
 import logo from "../../img/logo.png";
 import { motion } from "framer-motion";
@@ -20,10 +21,9 @@ import Footer from "../../components/Footer/Footer";
 import HeadingOne from "../../components/Text/HeadingOne";
 import HeadingTwo from "../../components/Text/HeadingTwo";
 import HeadingThree from "../../components/Text/HeadingThree";
-import ListItem from "../../components/ListItem/ListItem";
 
-const Home = ({ isMobile, projects }) => {
-  const listItems = ["UI & UX", "HTML & CSS", "JavaScript", "React"];
+const Home = ({ isMobile, projects, about }) => {
+  const { intro, desc, skills } = about;
 
   return (
     <motion.div
@@ -57,27 +57,17 @@ const Home = ({ isMobile, projects }) => {
         ))}
         <Line />
         <HeadingOne text={"About"} style={{ marginTop: "2rem" }} />
-        <HeadingThree text={"Hi, I'm Habibur Rahman."} />
-        <Paragraph
-          text={
-            "I design websites. That's the long and short of it. UI and UX, Sketch, Illustrator, Potatoshop and pretty decent HTML and CSS — with Sass and that nice Susy grid stuff."
-          }
-          style={{ marginBottom: "1.5rem" }}
-        />
-        <Paragraph
-          text={
-            "I've been going at it for a while now, so yea, it's coming along... Still putting users first, still making shit POP!"
-          }
-          style={{ marginBottom: "1.5rem" }}
-        />
-        <Paragraph
-          text={
-            "Feel free to drop me a few lines of garbled text in the contact form below to see if it does anything interesting. "
-          }
-          style={{ marginBottom: "1.5rem" }}
-        />
+        <HeadingThree text={intro} />
+        <Paragraph text={desc} style={{ marginBottom: "1.5rem" }} />
         <HeadingThree text={"Skill"} />
-        <ListItem listItems={listItems} style={{ marginBottom: "3rem" }} />
+        {/* <ListItem listItems={skills} style={} /> */}
+        {skills && (
+          <List style={{ marginBottom: "3rem" }}>
+            {skills.map((skill, i) => (
+              <Item key={i}>{skill}</Item>
+            ))}
+          </List>
+        )}
       </HomeContainer>
       <GetInTouch>
         <HeadingTwo
