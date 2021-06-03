@@ -1,5 +1,9 @@
 import React from "react";
-import { PortfolioContainer, UpperSec } from "./portfolio.styles";
+import {
+  PortfolioContainer,
+  UpperSec,
+  ProjectWrapper,
+} from "./portfolio.styles";
 import { motion } from "framer-motion";
 import { animationOne } from "../../animation/index";
 import BackButton from "../../components/BackButton/BackButton";
@@ -30,9 +34,11 @@ const Portfolio = ({ isMobile, projects }) => {
             "I like to stay busy and always have a project in the works. Take a look at some of the applications, articles, and companies I've dedicated my time to."
           }
         />
-        {projects.map((project, i) => (
-          <ProjectThumbnail key={i} to="/project" {...project} />
-        ))}
+        <ProjectWrapper>
+          {projects.map((project, i) => (
+            <ProjectThumbnail key={i} to="/project" {...project} />
+          ))}
+        </ProjectWrapper>
       </PortfolioContainer>
       <Footer isMobile={isMobile} />
     </motion.div>

@@ -1,12 +1,14 @@
 import React from "react";
-import { LoaderContainer, Loading } from "./loader.styles";
+import { LoaderWrapper, LoaderContainer, Loading } from "./loader.styles";
 
 const Loader = () => {
   return (
-    <LoaderContainer>
-      <Loading></Loading>
-      <Loading></Loading>
-    </LoaderContainer>
+    <LoaderWrapper>
+      <LoaderContainer>
+        <Loading></Loading>
+        <Loading></Loading>
+      </LoaderContainer>
+    </LoaderWrapper>
   );
 };
 

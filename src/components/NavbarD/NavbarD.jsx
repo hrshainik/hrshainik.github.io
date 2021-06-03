@@ -14,7 +14,7 @@ const NavbarD = () => {
   return (
     <NavbarContainer>
       <Navbar>
-        <LogoContainer>
+        <LogoContainer to="/">
           <Logo src={logo} />
         </LogoContainer>
         <ListItems>

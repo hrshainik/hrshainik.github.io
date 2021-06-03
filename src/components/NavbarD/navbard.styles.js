@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
@@ -19,7 +19,7 @@ export const Navbar = styled.nav`
   margin: 0 auto;
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled(Link)`
   height: 100%;
   padding: 2.2rem 0;
 `;

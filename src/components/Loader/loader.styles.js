@@ -1,6 +1,18 @@
 import styled, { keyframes } from "styled-components";
 
+export const LoaderWrapper = styled.div`
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+`;
+
 export const LoaderContainer = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
 `;
