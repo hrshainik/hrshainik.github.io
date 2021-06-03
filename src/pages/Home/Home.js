@@ -60,7 +60,6 @@ const Home = ({ isMobile, projects, about }) => {
         <HeadingThree text={intro} />
         <Paragraph text={desc} style={{ marginBottom: "1.5rem" }} />
         <HeadingThree text={"Skill"} />
-        {/* <ListItem listItems={skills} style={} /> */}
         {skills && (
           <List style={{ marginBottom: "3rem" }}>
             {skills.map((skill, i) => (
