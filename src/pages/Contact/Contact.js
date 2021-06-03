@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { animationOne } from "../../animation/index";
 import Footer from "../../components/Footer/Footer";
 
-const Contact = () => {
+const Contact = ({ isMobile }) => {
   return (
     <motion.div initial="out" animate="in" exit="out" variants={animationOne}>
       <ContactContainer>
@@ -23,7 +23,7 @@ const Contact = () => {
         <LinkP text={"hrsshainik@gmail.com"} />
         <ContactForm />
       </ContactContainer>
-      <Footer />
+      <Footer isMobile={isMobile} />
     </motion.div>
   );
 };

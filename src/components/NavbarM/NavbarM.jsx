@@ -1,11 +1,11 @@
 import React from "react";
-import { NavContainer, Nav, NavAnchor } from "./navbar.styles";
+import { NavContainer, Nav, NavAnchor } from "./navbarm.styles";
 import { BiHomeHeart } from "react-icons/bi";
 import { MdPermContactCalendar } from "react-icons/md";
 import { AiOutlineProfile } from "react-icons/ai";
 import { ImBlog } from "react-icons/im";
 
-const Navbar = () => {
+const NavbarM = () => {
   const navIconStyles = {
     fontSize: "3rem",
     marginBottom: "0.5rem",
@@ -38,6 +38,7 @@ const Navbar = () => {
           exact
           to={{ pathname: "https://dev.to/hrsshainik" }}
           target="_blank"
+          rel="external nofollow"
           activeStyle={{
             color: "var(--primary)",
           }}
@@ -60,4 +61,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarM;

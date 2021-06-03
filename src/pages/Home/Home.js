@@ -23,7 +23,7 @@ import HeadingThree from "../../components/Text/HeadingThree";
 import ListItem from "../../components/ListItem/ListItem";
 import { projects } from "../../Data";
 
-const Home = () => {
+const Home = ({ isMobile }) => {
   const listItems = ["UI & UX", "HTML & CSS", "JavaScript", "React"];
 
   return (
@@ -35,10 +35,12 @@ const Home = () => {
       transition={transition}
     >
       <HomeContainer>
-        <Hero>
-          <LogoContainer to="/">
-            <Logo src={logo} alt="logo"></Logo>
-          </LogoContainer>
+        <Hero isMobile={isMobile}>
+          {isMobile ? (
+            <LogoContainer to="/">
+              <Logo src={logo} alt="logo"></Logo>
+            </LogoContainer>
+          ) : null}
           <HeadingContainer>
             <Heading>Habibur Rahman</Heading>
             <SubHeading>Designer + Developer</SubHeading>
@@ -94,6 +96,7 @@ const Home = () => {
           boxShadow:
             "50vw 0 0 var(--bgTwo), -50vw 0 0 var(--bgTwo), 0 0 0 var(--bgTwo)",
         }}
+        isMobile={isMobile}
       />
     </motion.div>
   );

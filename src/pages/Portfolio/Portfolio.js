@@ -9,7 +9,7 @@ import Footer from "../../components/Footer/Footer";
 import HeadingOne from "../../components/Text/HeadingOne";
 import { projects } from "../../Data";
 
-const Portfolio = () => {
+const Portfolio = ({ isMobile }) => {
   return (
     <motion.div initial="out" animate="in" exit="out" variants={animationOne}>
       <PortfolioContainer>
@@ -35,7 +35,7 @@ const Portfolio = () => {
           <ProjectThumbnail key={i} to="/project" {...project} />
         ))}
       </PortfolioContainer>
-      <Footer />
+      <Footer isMobile={isMobile} />
     </motion.div>
   );
 };

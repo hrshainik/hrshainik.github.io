@@ -1,15 +1,9 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useState, useEffect } from "react";
 import { GlobalStyle } from "./global.styles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import Home from "./pages/Home/Home";
-// import Portfolio from "./pages/Portfolio/Portfolio";
-// import Blog from "./pages/Blog/Blog";
-// import BlogPost from "./pages/BlogPost/BlogPost";
-// import Contact from "./pages/Contact/Contact";
-import Navbar from "./components/Navbar/Navbar";
+import NavbarM from "./components/NavbarM/NavbarM";
+import NavbarD from "./components/NavbarD/NavbarD";
 import { AnimatePresence } from "framer-motion";
-// import Error from "./pages/404/404";
-// import Project from "./pages/Project/Project";
 import Loader from "./components/Loader/Loader";
 
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -21,25 +15,59 @@ const Contact = lazy(() => import("./pages/Contact/Contact"));
 const Error = lazy(() => import("./pages/404/404"));
 
 const App = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+  });
+
+  const isMobile = width <= 600;
+
   return (
     <Router>
-      {/* <Suspense fallback={<Loader text={"Skill"} />}> */}
       <GlobalStyle />
       <AnimatePresence>
-        <Navbar key="navbar" />
-        <Suspense fallback={<Loader text={"Skill"} />}>
+        {isMobile ? <NavbarM key="navbar" /> : <NavbarD key="navbar" />}
+        <Suspense fallback={<Loader />}>
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/portfolio" exact component={Portfolio} />
-            <Route path="/portfolio/:url" exact component={Project} />
-            <Route path="/blog" exact component={Blog} />
-            <Route path="/blog/:url" exact component={BlogPost} />
-            <Route path="/contact" exact component={Contact} />
+            <Route
+              path="/"
+              exact
+              component={() => <Home isMobile={isMobile} />}
+            />
+            <Route
+              path="/portfolio"
+              exact
+              component={() => <Portfolio isMobile={isMobile} />}
+            />
+            <Route
+              path="/portfolio/:url"
+              exact
+              component={() => <Project isMobile={isMobile} />}
+            />
+            <Route
+              path="/blog"
+              exact
+              component={() => <Blog isMobile={isMobile} />}
+            />
+            <Route
+              path="/blog/:url"
+              exact
+              component={() => <BlogPost isMobile={isMobile} />}
+            />
+            <Route
+              path="/contact"
+              exact
+              component={() => <Contact isMobile={isMobile} />}
+            />
             <Route component={Error} />
           </Switch>
         </Suspense>
       </AnimatePresence>
-      {/* </Suspense> */}
     </Router>
   );
 };

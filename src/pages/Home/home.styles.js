@@ -18,7 +18,8 @@ export const Logo = styled.img`
 `;
 
 export const Hero = styled.div`
-  height: calc(100vh - 8.5rem);
+  height: ${(props) =>
+    props.isMobile ? "calc(100vh - 8.5rem)" : "calc(100vh - 8.5rem)"};
 
   ::before {
     content: "";
@@ -27,14 +28,15 @@ export const Hero = styled.div`
     top: 0;
     right: 0;
     width: 50vw;
-    height: calc(100vh - 8.5rem);
+    height: ${(props) => (props.isMobile ? "calc(100vh - 8.5rem)" : "100vh")};
     z-index: -1;
   }
 
   ::after {
     content: "";
     position: absolute;
-    top: calc(100vh - 8.5rem);
+    top: ${(props) =>
+      props.isMobile ? "calc(100vh - 8.5rem)" : "calc(100vh - 0.5rem)"};
     left: 50%;
     transform: translateX(-50%);
     width: 100%;

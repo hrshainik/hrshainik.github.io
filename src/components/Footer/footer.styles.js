@@ -7,7 +7,7 @@ export const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1rem 0;
-  margin-bottom: 8rem;
+  margin-bottom: ${(props) => (props.isMobile ? "8rem" : "0")};
 `;
 
 export const LogoWrapper = styled(Link)`

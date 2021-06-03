@@ -10,7 +10,7 @@ import TypeStack from "../../components/TypeStack/TypeStack";
 import Footer from "../../components/Footer/Footer";
 import VisitSite from "../../components/VisitSite/VisitSite";
 
-const Project = ({ match }) => {
+const Project = ({ match, isMobile }) => {
   const project = projects.find((project) => {
     return match.params.url === project.url;
   });
@@ -31,7 +31,7 @@ const Project = ({ match }) => {
           <ProjectImg src={project.img} />
         </ImgContainer>
       </ProjectContainer>
-      <Footer />
+      <Footer isMobile={isMobile} />
     </motion.div>
   );
 };
