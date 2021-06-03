@@ -1,5 +1,4 @@
-export const API_URL =
-  process.env.REACT_PUBLIC_API_URL || "http://localhost:1337";
+export const API_URL = "https://hrshainik.herokuapp.com/";
 
 /**
  * Given an image return the url
