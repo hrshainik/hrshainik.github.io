@@ -5,6 +5,7 @@ import line from "../../img/wavy-line.svg";
 export const HomeContainer = styled.div`
   width: 90vw;
   max-width: var(--maxWidth);
+  margin: 0 auto;
 `;
 
 export const LogoContainer = styled(Link)`
@@ -28,7 +29,7 @@ export const Hero = styled.div`
     top: 0;
     right: 0;
     width: 50vw;
-    height: ${(props) => (props.isMobile ? "calc(100vh - 8.5rem)" : "100vh")};
+    height: ${(props) => (props.isMobile ? "calc(100vh - 8.2rem)" : "100vh")};
     z-index: -1;
   }
 
@@ -36,11 +37,11 @@ export const Hero = styled.div`
     content: "";
     position: absolute;
     top: ${(props) =>
-      props.isMobile ? "calc(100vh - 8.5rem)" : "calc(100vh - 0.5rem)"};
+      props.isMobile ? "calc(100vh - 8.2rem)" : "calc(100vh - 0.2rem)"};
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 0.5rem;
+    height: 0.2rem;
     background-color: var(--primary);
   }
 `;
@@ -80,6 +81,11 @@ export const SubHeading = styled.h2`
   font-weight: 500;
   margin-top: 0.8rem;
   letter-spacing: 1.2px;
+`;
+
+export const ProjectWrapper = styled.div`
+  display: flex;
+  flex-flow: column wrap;
 `;
 
 export const GetInTouch = styled.div`

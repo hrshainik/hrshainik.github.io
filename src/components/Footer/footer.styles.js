@@ -2,7 +2,9 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.div`
-  width: 100%;
+  width: 90vw;
+  max-width: var(--maxWidth);
+  margin: 0 auto;
   height: 9rem;
   display: flex;
   flex-direction: column;

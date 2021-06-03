@@ -11,6 +11,7 @@ import {
   Line,
   List,
   Item,
+  ProjectWrapper,
 } from "./home.styles";
 import logo from "../../img/logo.png";
 import { motion } from "framer-motion";
@@ -52,9 +53,11 @@ const Home = ({ isMobile, projects, about }) => {
           }
           style={{ marginBottom: "2rem" }}
         />
-        {projects.map((project, i) => (
-          <ProjectThumbnail key={i} {...project} />
-        ))}
+        <ProjectWrapper>
+          {projects.map((project, i) => (
+            <ProjectThumbnail key={i} {...project} />
+          ))}
+        </ProjectWrapper>
         <Line />
         <HeadingOne text={"About"} style={{ marginTop: "2rem" }} />
         <HeadingThree text={intro} />

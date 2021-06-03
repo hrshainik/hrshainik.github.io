@@ -35,11 +35,7 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--bgOne);
     color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    /* overflow-x: hidden; */
 
     ::-webkit-scrollbar {
       width: 1em;

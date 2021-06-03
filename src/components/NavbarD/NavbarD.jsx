@@ -6,13 +6,17 @@ import {
   Logo,
   Navbar,
   NavbarContainer,
+  LogoContainer,
 } from "./navbard.styles";
+import logo from "../../img/logo.png";
 
 const NavbarD = () => {
   return (
     <NavbarContainer>
       <Navbar>
-        <Logo />
+        <LogoContainer>
+          <Logo src={logo} />
+        </LogoContainer>
         <ListItems>
           <Item>
             <Anchor
