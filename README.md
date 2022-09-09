@@ -73,10 +73,10 @@ Don't forget to give the project a star! Thanks again!
 
 Habibur Rahman - [@portfoilo](https://hrshainik.me) - hrsshainik@gmail.com
 
-Project Link: [https://github.com/hrshainik/hoobank](https://github.com/hrshainik/hoobank)
+Project Link: [https://github.com/hrshainik/hoobank](https://github.com/hrshainik/hrshainik.github.io)
 
 <p align="right"><a href="#top">⇧Back To Top</a></p>
 
-[product-screenshot]: src/assets/product-showcase.jpg
+[product-screenshot]: src/images/product-showcase.jpg
 
 
