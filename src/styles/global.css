@@ -13,8 +13,13 @@ body {
   color: #fff;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .container {
-  width: 100%;
+  width: 92%;
   margin: 0 auto;
 }
 
@@ -48,6 +53,38 @@ body {
   }
 }
 
+.whitespace {
+  width: 100%;
+  height: 100px;
+}
+
+@media(max-width: 768px) {
+  .whitespace {
+        display: none;
+  }
+}
+
+.hero-content {
+  margin-left: 0%;
+}
+
+.hero-content p {
+  font-weight: 300;
+  line-height: 36px;
+  color: grey;
+}
+
+.hero-content h6 {
+  text-align: left;
+}
+
+@media(max-width: 768px) {
+  .hero-content {
+        width: 96%;
+        margin: 0 auto;
+  }
+}
+
 /* Navigation */
 nav {
   width: 100%;
@@ -55,6 +92,7 @@ nav {
   height: 80px;
   position: fixed;
   z-index: 1;
+  top: 0;
 }
 
 nav #brand {
@@ -68,9 +106,6 @@ nav #brand {
 nav #brand a {
   color: #fff;
   transition: all 0.3s ease-out;
-}
-
-nav #brand a:hover {
   text-decoration: none;
 }
 
@@ -96,9 +131,6 @@ nav #menu li span {
 
 nav #menu li a {
   color: #fff;
-}
-
-nav #menu li a:hover {
   text-decoration: none;
 }
 
@@ -210,6 +242,10 @@ nav #menu li a:hover {
 }
 
 /* Footer */
+footer {
+  margin-bottom: 3rem;
+}
+
 .collab {
   text-align: right;
 }
@@ -222,11 +258,20 @@ nav #menu li a:hover {
 .hr {
   background: rgba(255, 255, 255, 0.2);
   height: 1px;
+  margin-bottom: 2rem;
 }
 
 .info .row {
   display: flex;
   flex-direction: row wrap;
+}
+
+@media only screen and (max-width: 992px) {
+  .info .row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 .info .row .col {

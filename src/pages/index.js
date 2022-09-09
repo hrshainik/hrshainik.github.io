@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
@@ -15,49 +16,57 @@ export default function Home() {
 
       <div className={styles.scrollDown}></div>
 
-      <div class="container-fluid">
+      <div className={styles.projects}>
         <h6>Selected projects</h6>
 
-        <div class="vertical"></div>
+        <div className={styles.vertical}></div>
 
-        <div class="whitespace"></div>
-        <div class="whitespace"></div>
+        <div className="whitespace"></div>
+        <div className="whitespace"></div>
 
-        <div class="row">
-          <div class="col-lg-8"></div>
+        <div className={styles.projectThumb}>
+          <div className={styles.colL}></div>
 
-          <div class="col-lg-4 project project1 wow fadeInUp"></div>
+          <Link className={`${styles.colR} ${styles.project}`} to="/projects">
+            <h5>travel tale.</h5>
+            <img src="/1.jpg" alt="product" />
+          </Link>
         </div>
 
-        <div class="whitespace"></div>
+        <div className="whitespace"></div>
 
-        <div class="row">
-          <div class="col-lg-6 project project2 wow fadeInUp"></div>
+        <div className={styles.projectThumb}>
+          <Link className={`${styles.colL} ${styles.project}`} to="/projects">
+            <h5>turk kavaci.</h5>
+            <img src="/2.jpg" alt="product" />
+          </Link>
 
-          <div class="col-lg-6"></div>
+          <div className={styles.colR}></div>
         </div>
 
-        <div class="whitespace"></div>
+        <div className="whitespace"></div>
 
-        <div class="row">
-          <div class="col-lg-7"></div>
+        <div className={styles.projectThumb}>
+          <div className={styles.colL}></div>
 
-          <div class="col-lg-4 project project3 wow fadeInUp"></div>
-
-          <div class="col-lg-1"></div>
+          <Link className={`${styles.colR} ${styles.project}`} to="/projects">
+            <h5>hoo bank.</h5>
+            <img src="/3.jpg" alt="product" />
+          </Link>
         </div>
 
-        <div class="whitespace"></div>
+        <div className="whitespace"></div>
 
-        <div class="row">
-          <div class="col-lg-1"></div>
+        <div className={styles.projectThumb}>
+          <Link className={`${styles.colL} ${styles.project}`} to="/projects">
+            <h5>cozy cafe.</h5>
+            <img src="/4.jpg" alt="product" />
+          </Link>
 
-          <div class="col-lg-5 project project4 wow fadeInUp"></div>
-
-          <div class="col-lg-6"></div>
+          <div className={styles.colR}></div>
         </div>
 
-        <div class="whitespace"></div>
+        <div className="whitespace"></div>
       </div>
     </Layout>
   )

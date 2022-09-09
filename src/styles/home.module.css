@@ -101,10 +101,6 @@
 }
 
 /* Projects */
-h6 {
-  text-align: center;
-}
-
 .vertical {
   margin-top: 40px;
   border-left: 1px solid #fff;
@@ -113,80 +109,55 @@ h6 {
   left: 50%;
 }
 
-.project {
-  height: 500px;
+.projects {
+  width: 100%;
 }
 
-.project1 {
-  background: url(https://images.unsplash.com/photo-1540349220179-09d3866f2e74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80) no-repeat 50% 50%;
-  background-size: cover;
+.projects h6 {
+  text-align: center;
+  font-size: 18px;
 }
 
-.project1::after {
-  content: "timeless flow.";
+.projectThumb {
+  display: flex;
+}
+
+.projectThumb > * {
+  flex: 1;
+}
+
+.projectThumb .colL, .projectThumb .colR {
+  position: relative;
+}
+
+.projectThumb .colL h5, .projectThumb .colR h5 {
   font-family: "Roboto Mono";
   font-size: 36px;
-  position: relative;
   color: #fff;
-  display: block;
-  top: 8%;
-  left: -60%;
+  position: absolute;
+  top: 15%;
+}
+
+.projectThumb .colL h5 {
   right: 0;
-  bottom: 0;
 }
 
-.project2 {
-  background: url(https://images.unsplash.com/photo-1468870045442-e7d799d8c98a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2448&q=80) no-repeat 50% 50%;
-  background-size: cover;
+.projectThumb .colR h5 {
+  left: 0;
 }
 
-.project2::after {
-  content: "foretime.";
-  font-family: "Roboto Mono";
-  font-size: 36px;
-  position: relative;
-  color: #fff;
-  display: block;
-  top: 80%;
-  left: 90%;
-  right: 0;
-  bottom: 0;
+.projectThumb .colL {
+  display: flex;
+  justify-content: left;
 }
 
-.project3 {
-  background: url(https://images.unsplash.com/photo-1482501157762-56897a411e05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80) no-repeat 50% 50%;
-  background-size: cover;
+.projectThumb .colR {
+  display: flex;
+  justify-content: right;
 }
 
-.project3::after {
-  content: "never again.";
-  font-family: "Roboto Mono";
-  font-size: 36px;
-  position: relative;
-  color: #fff;
-  display: block;
-  top: 80%;
-  left: -50%;
-  right: 0;
-  bottom: 0;
-}
-
-.project4 {
-  background: url(https://images.unsplash.com/photo-1435685813800-51ba4ceb9c4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80) no-repeat 50% 50%;
-  background-size: cover;
-}
-
-.project4::after {
-  content: "departure.";
-  font-family: "Roboto Mono";
-  font-size: 36px;
-  position: relative;
-  color: #fff;
-  display: block;
-  top: 10%;
-  left: 90%;
-  right: 0;
-  bottom: 0;
+.projectThumb .colL img, .projectThumb .colR img {
+  width: 85%;
 }
 
 @media(max-width: 768px) {
@@ -199,7 +170,7 @@ h6 {
         display: none;
   }
 
-  .project1::after, .project2::after, .project3::after, .project4::after {
+  .projectThumb div:empty {
         display: none;
   }
 }

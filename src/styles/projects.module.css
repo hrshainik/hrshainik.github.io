@@ -1,0 +1,85 @@
+/* Projects */
+.whitespace {
+  width: 100%;
+  height: 100px;
+}
+
+@media(max-width: 768px) {
+  .whitespace {
+        display: none;
+  }
+}
+
+.vertical {
+  margin-top: 40px;
+  border-left: 1px solid #fff;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+}
+
+.projects {
+  width: 100%;
+}
+
+.projects h6 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.projectThumb {
+  display: flex;
+}
+
+.projectThumb > * {
+  flex: 1;
+}
+
+.projectThumb .colL, .projectThumb .colR {
+  position: relative;
+}
+
+.projectThumb .colL h5, .projectThumb .colR h5 {
+  font-family: "Roboto Mono";
+  font-size: 36px;
+  color: #fff;
+  position: absolute;
+  top: 15%;
+}
+
+.projectThumb .colL h5 {
+  right: 0;
+}
+
+.projectThumb .colR h5 {
+  left: 0;
+}
+
+.projectThumb .colL {
+  display: flex;
+  justify-content: left;
+}
+
+.projectThumb .colR {
+  display: flex;
+  justify-content: right;
+}
+
+.projectThumb .colL img, .projectThumb .colR img {
+  width: 85%;
+}
+
+@media(max-width: 768px) {
+  .project {
+        width: 90% !important;
+        margin: 14px auto;
+  }
+
+  .vertical {
+        display: none;
+  }
+
+  .projectThumb div:empty {
+        display: none;
+  }
+}
