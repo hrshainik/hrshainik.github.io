@@ -1,13 +1,31 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../../components/Layout"
-import * as styles from "../../styles/home.module.css"
+import * as styles from "../../styles/projects.module.css"
 
 const Projects = () => {
   return (
     <Layout>
       <div className={styles.projects}>
-        <h6>Selected projects</h6>
+        <div class="container">
+          <div class="hero-content">
+            <div class="row">
+              <div class="col-lg-8">
+                <h3 class="wow fadeInUp" data-wow-delay="1s">
+                  work.
+                </h3>
+                <p class="wow fadeInUp" data-wow-delay="1.2s">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Neque, accusantium sint quod voluptatem dolorum, quaerat, ut
+                  iusto cumque magni ab repudiandae, quasi minus unde temporibus
+                  nulla eum eaque! Placeat praesentium sunt suscipit laboriosam
+                  deserunt commodi atque corporis, iure maiores dicta, fugit
+                  similique.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className={styles.vertical}></div>
 
