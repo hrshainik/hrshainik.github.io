@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Here you find all my projects and contact information.",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "gatsby": "^4.22.1",
+    "gatsby-source-filesystem": "^4.22.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
