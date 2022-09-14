@@ -1,5 +1,5 @@
 /* Typewriter effect */
-.line {
+/* .line {
   width: 24em;
   top: 50%;
   margin: auto;
@@ -44,27 +44,18 @@
   to {
     border-right-color: transparent;
   }
-}
+} */
 
 /* Hero */
 .hero {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .hero h1 {
   font-weight: lighter;
-  text-align: center;
   letter-spacing: -2px;
-  line-height: 58px;
-}
-
-@media(max-width: 768px) {
-  .header h1 {
-        font-size: 26px;
-  }
 }
 
 /* Scroll down */
@@ -82,7 +73,7 @@
   height: 13px;
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
-  -webkit-transform: translate(-50%, 0) rotate(45deg);
+  transform: translate(-50%, 0) rotate(45deg);
   animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
 
@@ -113,6 +104,13 @@
   width: 100%;
 }
 
+@media(max-width: 768px) {
+  .project {
+        width: 90% !important;
+        margin: 14px auto;
+  }
+}
+
 .projects h6 {
   text-align: center;
   font-size: 18px;
@@ -120,52 +118,46 @@
 
 .projectThumb {
   display: flex;
+  margin-bottom: 80px;
 }
 
-.projectThumb > * {
+.colL, .colR {
   flex: 1;
-}
-
-.projectThumb .colL, .projectThumb .colR {
   position: relative;
 }
 
-.projectThumb .colL h5, .projectThumb .colR h5 {
+.colL h5, .colR h5 {
   font-family: "Roboto Mono";
   font-size: 36px;
   color: #fff;
   position: absolute;
   top: 15%;
+  z-index: 10;
 }
 
-.projectThumb .colL h5 {
+.colL h5 {
   right: 0;
 }
 
-.projectThumb .colR h5 {
+.colR h5 {
   left: 0;
 }
 
-.projectThumb .colL {
+.colL {
   display: flex;
   justify-content: left;
 }
 
-.projectThumb .colR {
+.colR {
   display: flex;
   justify-content: right;
 }
 
-.projectThumb .colL img, .projectThumb .colR img {
+.colL > div, .colR > div {
   width: 85%;
 }
 
 @media(max-width: 768px) {
-  .project {
-        width: 90% !important;
-        margin: 14px auto;
-  }
-
   .vertical {
         display: none;
   }

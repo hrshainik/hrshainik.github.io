@@ -1,15 +1,58 @@
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
+import Img from "gatsby-image"
+import { gsap } from "gsap"
+import { TextPlugin } from "gsap/TextPlugin"
 
-export default function Home() {
+gsap.registerPlugin(TextPlugin)
+
+let tl = gsap.timeline()
+
+export default function Home({ data }) {
+  const projects = data.allMarkdownRemark.nodes
+
+  const words = ["Habibur Rahman.", "A Developer.", "A Biochemist."]
+
+  tl.to(".cursor", {
+    opacity: 0,
+    ease: "power2.inOut",
+    repeat: -1,
+  })
+    .to(".box", {
+      duration: 1,
+      width: "20.5vw",
+      delay: 0.5,
+      ease: "power4.inOut",
+    })
+    .from(".hi", {
+      duration: 1,
+      y: "7vw",
+      ease: "power3.out",
+      onComplete: () => masterTl.play(),
+    })
+    .to(".box", { height: "2.5vw", duration: 1, ease: "elastic.out" })
+    .to(".box", { duration: 2, autoAlpha: 0.7, yoyo: true, repeat: -1 })
+
+  let masterTl = gsap.timeline({ repeat: -1 }).pause()
+
+  words.forEach(word => {
+    let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1 })
+    tl.to(".text", { duration: 1, text: word })
+
+    masterTl.add(tl)
+  })
+
   return (
     <Layout>
       <div className={styles.hero}>
-        <div className={styles.header}>
-          <h1 className={`${styles.line} ${styles.animTypewriter}`}>
-            I make brands matter in culture.
+        <div>
+          <h1 className="typewriter">
+            <span className="box"></span>
+            <span className="hi">Hi, I'm&nbsp;</span>
+            <span className="text"></span>
+            <span className="cursor">_</span>
           </h1>
         </div>
       </div>
@@ -24,50 +67,66 @@ export default function Home() {
         <div className="whitespace"></div>
         <div className="whitespace"></div>
 
-        <div className={styles.projectThumb}>
-          <div className={styles.colL}></div>
+        {projects.map(project => {
+          if (project.frontmatter.id % 2 === 0) {
+            return (
+              <div className={styles.projectThumb} key={project.id}>
+                <div className={styles.colL}></div>
 
-          <Link className={`${styles.colR} ${styles.project}`} to="/projects">
-            <h5>travel tale.</h5>
-            <img src="/1.jpg" alt="product" />
-          </Link>
-        </div>
+                <Link
+                  className={`${styles.colR} ${styles.project}`}
+                  to={`/project/${project.frontmatter.slug}`}
+                >
+                  <h5>{project.frontmatter.title}</h5>
+                  <Img
+                    fluid={project.frontmatter.thumb.childImageSharp.fluid}
+                  />
+                </Link>
+              </div>
+            )
+          } else if (project.frontmatter.id % 2 === 1) {
+            return (
+              <div className={styles.projectThumb} key={project.id}>
+                <Link
+                  className={`${styles.colL} ${styles.project}`}
+                  to={`/project/${project.frontmatter.slug}`}
+                >
+                  <h5>{project.frontmatter.title}</h5>
+                  <Img
+                    fluid={project.frontmatter.thumb.childImageSharp.fluid}
+                  />
+                </Link>
 
-        <div className="whitespace"></div>
-
-        <div className={styles.projectThumb}>
-          <Link className={`${styles.colL} ${styles.project}`} to="/projects">
-            <h5>turk kavaci.</h5>
-            <img src="/2.jpg" alt="product" />
-          </Link>
-
-          <div className={styles.colR}></div>
-        </div>
-
-        <div className="whitespace"></div>
-
-        <div className={styles.projectThumb}>
-          <div className={styles.colL}></div>
-
-          <Link className={`${styles.colR} ${styles.project}`} to="/projects">
-            <h5>hoo bank.</h5>
-            <img src="/3.jpg" alt="product" />
-          </Link>
-        </div>
-
-        <div className="whitespace"></div>
-
-        <div className={styles.projectThumb}>
-          <Link className={`${styles.colL} ${styles.project}`} to="/projects">
-            <h5>cozy cafe.</h5>
-            <img src="/4.jpg" alt="product" />
-          </Link>
-
-          <div className={styles.colR}></div>
-        </div>
-
-        <div className="whitespace"></div>
+                <div className={styles.colR}></div>
+              </div>
+            )
+          }
+        })}
       </div>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query HomePage {
+    allMarkdownRemark {
+      nodes {
+        frontmatter {
+          title
+          stack
+          slug
+          date
+          thumb {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          id
+        }
+        id
+      }
+    }
+  }
+`

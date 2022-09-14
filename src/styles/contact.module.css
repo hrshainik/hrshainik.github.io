@@ -27,19 +27,21 @@
 
 .contactForm label {
   display: block;
-  font-size: .8em;
+  font-size: 14px;
   color: #999;
-  padding-left: 5px;
+  margin-bottom: 8px;
 }
 
 .contactForm input, .contactForm textarea {
   width: 100%;
-  padding: 5px;
+  padding: 0;
   border: none;
   resize: vertical;
   background: transparent;
   color: #fff;
-  font-weight: bolder;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'Roboto Mono';
 }
 
 input:focus {
@@ -54,6 +56,7 @@ textarea:focus {
 
 .textarea {
   border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 20px;
 }
 
 .send {

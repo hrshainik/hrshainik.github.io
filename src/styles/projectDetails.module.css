@@ -1,0 +1,48 @@
+.projectDetails {
+  margin-top: 100px;
+}
+
+.projectInfo {
+  display: flex;
+}
+
+.projectInfo .col {
+  flex: 1;
+}
+
+.projectInfo .col p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.projectInfo .col h6 {
+  font-size: 18px;
+  margin-bottom: 26px;
+}
+
+.html {
+  margin-bottom: 50px;
+}
+
+.html > * {
+  margin-bottom: 16px;
+}
+
+.projectNav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.prev, .next {
+  color: #808080;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.prev svg, .next svg {
+  height: 15px;
+}

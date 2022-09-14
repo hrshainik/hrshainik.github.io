@@ -6,21 +6,17 @@ const Contact = () => {
   return (
     <Layout>
       <div className={`container ${styles.contact}`}>
-        <div className="hero-content">
-          <div className="row">
-            <div className={styles.form}>
-              <h3 className="wow fadeInUp" data-wow-delay="1s">
-                say hello 👋
-              </h3>
-              <p className="wow fadeInUp" data-wow-delay="1.2s">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
-                accusantium sint quod voluptatem dolorum, quaerat, ut iusto
-                cumque magni ab repudiandae, quasi minus unde temporibus nulla
-                eum eaque! Placeat praesentium sunt suscipit laboriosam deserunt
-                commodi atque corporis, iure maiores dicta, fugit similique.
-              </p>
-            </div>
-          </div>
+        <div className={`${styles.form} hero-content`}>
+          <h3 className="wow fadeInUp pageTitle" data-wow-delay="1s">
+            say hello 👋
+          </h3>
+          <p className="wow fadeInUp" data-wow-delay="1.2s">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
+            accusantium sint quod voluptatem dolorum, quaerat, ut iusto cumque
+            magni ab repudiandae, quasi minus unde temporibus nulla eum eaque!
+            Placeat praesentium sunt suscipit laboriosam deserunt commodi atque
+            corporis, iure maiores dicta, fugit similique.
+          </p>
         </div>
       </div>
 
@@ -43,7 +39,7 @@ const Contact = () => {
                     type="text"
                     name="contact-name"
                     id="contact-name"
-                    value=""
+                    // value=""
                     required
                   />
                 </div>
@@ -56,7 +52,7 @@ const Contact = () => {
                     type="email"
                     name="contact-email"
                     id="contact-email"
-                    value=""
+                    // value=""
                     required
                   />
                 </div>
@@ -70,7 +66,7 @@ const Contact = () => {
                     name="contact-project"
                     id="contact-project"
                     rows="6"
-                    value=""
+                    // value=""
                     required
                   ></textarea>
                 </div>

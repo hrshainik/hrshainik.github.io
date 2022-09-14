@@ -7,13 +7,13 @@ const About = () => {
     <Layout>
       <div className={`container ${styles.about}`}>
         <div data-wow-delay="1s">
-          <img src="/1.jpg" alt="about" />
+          <img src="/about.jpg" alt="about" className={styles.aboutImg} />
         </div>
       </div>
 
       <div className="container">
         <div className="hero-content">
-          <h3 className="wow fadeInUp" data-wow-delay="1.2s">
+          <h3 className="wow fadeInUp pageTitle" data-wow-delay="1.2s">
             about me.
           </h3>
 
