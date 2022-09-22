@@ -14,7 +14,6 @@
   </p>
 </div>
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -30,8 +29,8 @@
   </ol>
 </details>
 
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://www.hrshainik.me/)
@@ -42,15 +41,13 @@ Here you find my projects and contact information.
 
 ### Built With
 
-* [React](https://reactjs.org/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [Framer Motion](https://www.framer.com/motion/)
-* [Figma](https://figma.com)
+- [Gatsby](https://www.gatsbyjs.com/)
+- [GSAP](https://greensock.com/gsap/)
 
 <p align="right"><a href="#top">⇧Back To Top</a></p>
 
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -66,9 +63,8 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right"><a href="#top">⇧Back To Top</a></p>
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
 Habibur Rahman - [@portfoilo](https://hrshainik.me) - hrsshainik@gmail.com
@@ -78,5 +74,3 @@ Project Link: [https://github.com/hrshainik/hoobank](https://github.com/hrshaini
 <p align="right"><a href="#top">⇧Back To Top</a></p>
 
 [product-screenshot]: src/images/product-showcase.jpg
-
-
