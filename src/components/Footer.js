@@ -68,7 +68,7 @@ const Footer = () => {
               <p>say hello</p>
               <h4>
                 <Link to="mailto:hrsshainik@gmail.com" target="_blank">
-                  hrsshainik@gmail
+                  hrsshainik@gmail.com
                 </Link>
               </h4>
             </div>

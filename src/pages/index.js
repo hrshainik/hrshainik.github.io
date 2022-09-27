@@ -5,6 +5,7 @@ import * as styles from "../styles/home.module.css"
 import Img from "gatsby-image"
 import { gsap } from "gsap"
 import { TextPlugin } from "gsap/TextPlugin"
+import ProjectList from "../components/ProjectList"
 
 gsap.registerPlugin(TextPlugin)
 
@@ -13,7 +14,12 @@ let tl = gsap.timeline()
 export default function Home({ data }) {
   const projects = data.allMarkdownRemark.nodes
 
-  const words = ["Habibur Rahman.", "A Developer.", "A Biochemist."]
+  const words = [
+    "Habibur Rahman.",
+    "A Developer.",
+    "A Biochemist.",
+    "A Traveler.",
+  ]
 
   tl.to(".cursor", {
     opacity: 0,
@@ -67,41 +73,7 @@ export default function Home({ data }) {
         <div className="whitespace"></div>
         <div className="whitespace"></div>
 
-        {projects.map(project => {
-          if (project.frontmatter.id % 2 === 0) {
-            return (
-              <div className={styles.projectThumb} key={project.id}>
-                <div className={styles.colL}></div>
-
-                <Link
-                  className={`${styles.colR} ${styles.project}`}
-                  to={`/project/${project.frontmatter.slug}`}
-                >
-                  <h5>{project.frontmatter.title}</h5>
-                  <Img
-                    fluid={project.frontmatter.thumb.childImageSharp.fluid}
-                  />
-                </Link>
-              </div>
-            )
-          } else if (project.frontmatter.id % 2 === 1) {
-            return (
-              <div className={styles.projectThumb} key={project.id}>
-                <Link
-                  className={`${styles.colL} ${styles.project}`}
-                  to={`/project/${project.frontmatter.slug}`}
-                >
-                  <h5>{project.frontmatter.title}</h5>
-                  <Img
-                    fluid={project.frontmatter.thumb.childImageSharp.fluid}
-                  />
-                </Link>
-
-                <div className={styles.colR}></div>
-              </div>
-            )
-          }
-        })}
+        {projects && <ProjectList projects={projects} />}
       </div>
     </Layout>
   )

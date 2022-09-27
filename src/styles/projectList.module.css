@@ -1,0 +1,57 @@
+.projectThumb {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.colL, .colR {
+  flex: 1;
+  position: relative;
+}
+
+.colL h5, .colR h5 {
+  font-family: "Roboto Mono";
+  font-weight: 600;
+  font-size: clamp(1.6rem, 3.5vw + 2px, 2.8rem);
+  color: #fff;
+  position: absolute;
+  top: 15%;
+  z-index: 10;
+}
+
+.colL h5 {
+  right: 0;
+}
+
+.colR h5 {
+  left: 0;
+}
+
+.colL {
+  display: flex;
+  justify-content: left;
+}
+
+.colR {
+  display: flex;
+  justify-content: right;
+}
+
+.colL > div, .colR > div {
+  width: 85%;
+}
+
+@media(max-width: 768px) {
+  .project {
+    width: 90% !important;
+    margin: 14px auto;
+  }
+
+  .projectThumb {
+    height: 50vw;
+    margin-bottom: 26px;
+  }
+
+  .projectThumb div:empty {
+        display: none;
+  }
+}
