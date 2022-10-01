@@ -3,12 +3,31 @@
   margin-bottom: 80px;
 }
 
-.colL, .colR {
+.col {
   flex: 1;
   position: relative;
 }
 
-.colL h5, .colR h5 {
+.projectThumb:nth-child(even) .col:nth-child(2) {
+  display: flex;
+  justify-content: left;
+  order: -1;
+}
+
+.projectThumb:nth-child(even) .col:nth-child(2) > h5 {
+  right: 0;
+}
+
+.projectThumb:nth-child(odd) .col:nth-child(2) {
+  display: flex;
+  justify-content: right;
+}
+
+.projectThumb:nth-child(odd) .col:nth-child(2) > h5 {
+  left: 0;
+}
+
+.col h5 {
   font-family: "Roboto Mono";
   font-weight: 600;
   font-size: clamp(1.6rem, 3.5vw + 2px, 2.8rem);
@@ -18,25 +37,7 @@
   z-index: 10;
 }
 
-.colL h5 {
-  right: 0;
-}
-
-.colR h5 {
-  left: 0;
-}
-
-.colL {
-  display: flex;
-  justify-content: left;
-}
-
-.colR {
-  display: flex;
-  justify-content: right;
-}
-
-.colL > div, .colR > div {
+.col > div {
   width: 85%;
 }
 
