@@ -14,6 +14,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@barba/core": "^2.9.7",
     "gatsby": "^4.22.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-sharp": "^4.23.0",
