@@ -33,42 +33,57 @@ const Contact = () => {
           >
             <ul>
               <li className="wow fadeInUp" data-wow-delay="1.4s">
-                <label htmlFor="contact-name">Name :</label>
                 <div className={styles.textarea}>
                   <input
                     type="text"
+                    className={styles.input}
                     name="contact-name"
                     id="contact-name"
                     // value=""
                     required
+                    placeholder="Name"
                   />
+                  <label className={styles.label} htmlFor="contact-name">
+                    Name
+                  </label>
+                  <div className={styles.inputShadow}></div>
                 </div>
               </li>
 
               <li className="wow fadeInUp" data-wow-delay="1.6s">
-                <label htmlFor="contact-email">Email :</label>
                 <div className={styles.textarea}>
                   <input
                     type="email"
+                    className={styles.input}
                     name="contact-email"
                     id="contact-email"
                     // value=""
                     required
+                    placeholder="Email"
                   />
+                  <label className={styles.label} htmlFor="contact-email">
+                    Email
+                  </label>
+                  <div className={styles.inputShadow}></div>
                 </div>
               </li>
 
               <li className="wow fadeInUp" data-wow-delay="1.6s">
-                <label htmlFor="contact-project">Message :</label>
                 <div className={styles.textarea}>
                   <textarea
                     type="email"
+                    className={styles.input}
                     name="contact-project"
                     id="contact-project"
                     rows="6"
                     // value=""
                     required
+                    placeholder="Messsage"
                   ></textarea>
+                  <label className={styles.label} htmlFor="contact-project">
+                    Message
+                  </label>
+                  <div className={styles.inputShadow}></div>
                 </div>
               </li>
             </ul>

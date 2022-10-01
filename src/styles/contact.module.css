@@ -8,7 +8,7 @@
 }
 
 .contactForm {
-  margin: 5% 0;
+  margin: 0 0 5% 0;
 }
 
 .contactForm ul {
@@ -18,45 +18,83 @@
 }
 
 .contactForm li {
-  padding: 10px 0;
+  margin-bottom: 30px;
 }
 
 .contactForm li:last-of-type {
   border-bottom: none;
 }
 
-.contactForm label {
-  display: block;
-  font-size: 14px;
-  color: #999;
-  margin-bottom: 8px;
+.textarea {
+  margin-bottom: 20px;
+  position: relative;
+  height: 60px;
 }
 
-.contactForm input, .contactForm textarea {
+.inputShadow {
   width: 100%;
-  padding: 0;
-  border: none;
-  resize: vertical;
-  background: transparent;
-  color: #fff;
-  font-weight: 500;
-  font-size: 16px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+}
+
+.input, .label {
+  font-size: 14px;
+  font-weight: 600;
   font-family: 'Roboto Mono';
 }
 
-input:focus {
-  outline: none;
-  border: none;
+.input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  background-color: #101010;
+  padding: 18px;
+  resize: vertical;
+  transition: 0.3s;
+  z-index: 10;
+  color: white;
 }
 
-textarea:focus {
-  outline: none;
-  border: none;
+.input:focus {
+  outline: 0;
 }
 
-.textarea {
-  border-bottom: 1px solid #dfdfdf;
-  margin-bottom: 20px;
+.input::placeholder {
+  transition: opacity 0.5;
+}
+
+.input:focus::placeholder {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.input:focus,
+.input:not(:placeholder-shown).input:not(:focus) {
+  transform: translate(-8px, -8px);
+  padding: 28px 18px 18px;
+  border: 1px solid white;
+}
+
+.label {
+  z-index: 15;
+  opacity: 0;
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  transition: 0.2s;
+  pointer-events: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown).input:not(:focus) + .label {
+  opacity: 1;
+  top: 0;
+  left: 12px;
+  transition: 0.3s;
 }
 
 .send {
@@ -67,6 +105,8 @@ textarea:focus {
   font-size: 14px;
   letter-spacing: 2px;
   cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid white;
 }
 
 .send:hover {
