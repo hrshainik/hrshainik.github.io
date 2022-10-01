@@ -23,16 +23,18 @@ export default function Home({ data }) {
   ]
 
   useEffect(() => {
-    tl.to(".cursor", {
-      opacity: 0,
-      ease: "power2.inOut",
-      repeat: -1,
+    tl.to(".box", {
+      duration: 1,
+      width: "20.5vw",
+      delay: 0.5,
+      ease: "power4.inOut",
+      visibility: "visible",
     })
-      .to(".box", {
-        duration: 1,
-        width: "20.5vw",
-        delay: 0.5,
-        ease: "power4.inOut",
+      .to(".cursor", {
+        opacity: 0,
+        ease: "power2.inOut",
+        repeat: -1,
+        visibility: "visible",
       })
       .from(".hi", {
         duration: 1,
