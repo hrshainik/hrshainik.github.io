@@ -2,53 +2,56 @@ import { graphql } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
-// import Img from "gatsby-image"
-// import { gsap } from "gsap"
-// import { TextPlugin } from "gsap/TextPlugin"
+import Img from "gatsby-image"
+import { gsap } from "gsap"
+import { TextPlugin } from "gsap/TextPlugin"
 import ProjectList from "../components/ProjectList"
+import { useEffect } from "react"
 
-// gsap.registerPlugin(TextPlugin)
+gsap.registerPlugin(TextPlugin)
 
-// let tl = gsap.timeline()
+let tl = gsap.timeline()
 
 export default function Home({ data }) {
   const projects = data.allMarkdownRemark.nodes
 
-  // const words = [
-  //   "Habibur Rahman.",
-  //   "A Developer.",
-  //   "A Biochemist.",
-  //   "A Traveler.",
-  // ]
+  const words = [
+    "Habibur Rahman.",
+    "A Developer.",
+    "A Biochemist.",
+    "A Traveler.",
+  ]
 
-  // tl.to(".cursor", {
-  //   opacity: 0,
-  //   ease: "power2.inOut",
-  //   repeat: -1,
-  // })
-  //   .to(".box", {
-  //     duration: 1,
-  //     width: "20.5vw",
-  //     delay: 0.5,
-  //     ease: "power4.inOut",
-  //   })
-  //   .from(".hi", {
-  //     duration: 1,
-  //     y: "7vw",
-  //     ease: "power3.out",
-  //     onComplete: () => masterTl.play(),
-  //   })
-  //   .to(".box", { height: "2.5vw", duration: 1, ease: "elastic.out" })
-  //   .to(".box", { duration: 2, autoAlpha: 0.7, yoyo: true, repeat: -1 })
+  useEffect(() => {
+    tl.to(".cursor", {
+      opacity: 0,
+      ease: "power2.inOut",
+      repeat: -1,
+    })
+      .to(".box", {
+        duration: 1,
+        width: "20.5vw",
+        delay: 0.5,
+        ease: "power4.inOut",
+      })
+      .from(".hi", {
+        duration: 1,
+        y: "7vw",
+        ease: "power3.out",
+        onComplete: () => masterTl.play(),
+      })
+      .to(".box", { height: "2.5vw", duration: 1, ease: "elastic.out" })
+      .to(".box", { duration: 2, autoAlpha: 0.7, yoyo: true, repeat: -1 })
 
-  // let masterTl = gsap.timeline({ repeat: -1 }).pause()
+    let masterTl = gsap.timeline({ repeat: -1 }).pause()
 
-  // words.forEach(word => {
-  //   let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1 })
-  //   tl.to(".text", { duration: 1, text: word })
+    words.forEach(word => {
+      let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1 })
+      tl.to(".text", { duration: 1, text: word })
 
-  //   masterTl.add(tl)
-  // })
+      masterTl.add(tl)
+    })
+  }, [])
 
   return (
     <Layout>
