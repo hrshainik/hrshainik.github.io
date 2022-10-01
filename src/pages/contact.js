@@ -69,13 +69,11 @@ const Contact = () => {
               </li>
 
               <li className="wow fadeInUp" data-wow-delay="1.6s">
-                <div className={styles.textarea}>
+                <div className={`${styles.textarea} ${styles.specialH}`}>
                   <textarea
-                    type="email"
                     className={styles.input}
                     name="contact-project"
                     id="contact-project"
-                    rows="6"
                     // value=""
                     required
                     placeholder="Messsage"
@@ -87,15 +85,16 @@ const Contact = () => {
                 </div>
               </li>
             </ul>
-
-            <button
-              type="submit"
-              name="contact-submit"
-              id="contact-submit"
-              className={styles.send}
-            >
-              Send Message
-            </button>
+            <div className={styles.sendWrapper}>
+              <button
+                type="submit"
+                name="contact-submit"
+                id="contact-submit"
+                className={styles.send}
+              >
+                Send Message
+              </button>
+            </div>
           </form>
         </div>
       </div>
