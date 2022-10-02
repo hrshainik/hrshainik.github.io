@@ -9138,6 +9138,11 @@ split-on-first@^1.0.0:
   resolved "https://registry.yarnpkg.com/split-on-first/-/split-on-first-1.1.0.tgz#f610afeee3b12bce1d0c30425e76398b78249a5f"
   integrity sha512-43ZssAJaMusuKWL8sKUBQXHWOpq8d6CfN/u1p4gUzfJkM05C8rxTmYrkIPTXapZpORA6LkkzcUulJ8FqA7Uudw==
 
+split-type@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/split-type/-/split-type-0.3.2.tgz#b33eb8a62b9d7797bed680b21cc178fd297e44e1"
+  integrity sha512-lriNiO/Z9Uwnn/PL3PEfbRqkESQ5BlPqt0RjiRPQGY/tsfmmpIyITqw312Y5IoxW0l7etA1iHSAVrWUM2GeRhg==
+
 sponge-case@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/sponge-case/-/sponge-case-1.0.1.tgz#260833b86453883d974f84854cdb63aecc5aef4c"

@@ -410,28 +410,36 @@ footer {
   visibility: hidden;
 }
 
-.cardImg {
-  object-fit: cover;
-}
-
 .cardImgCon {
+  visibility: hidden;
   position: relative;
   overflow: hidden;
 }
 
-.cardImgCon::after {
-  content: "";
-  position: absolute;
-  /* width: 100%; */
-  /* height: 100%; */
-  top: 0;
-  background-color: #0f0f0f;
+.cardImg {
+  height: 100%;
 }
 
-.projectThumbTwo:nth-child(even) .cardImgCon::after {
-  right: 0;
+.cardImg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.projectThumbTwo:nth-child(odd) .cardImgCon::after {
-  left: 0;
+.cardImgConEven .cardImg img {
+  transform-origin: left;
+}
+
+.cardImgConOdd .cardImg img {
+  transform-origin: right;
+}
+
+.cardTitle {
+  overflow: hidden;
+  height: 60px;
+}
+
+.char {
+  transform: translateY(115px);
+  transition: transform .5s;
 }

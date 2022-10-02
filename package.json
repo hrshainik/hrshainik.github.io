@@ -23,7 +23,8 @@
     "gatsby-transformer-sharp": "^4.23.0",
     "gsap": "^3.11.1",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "split-type": "^0.3.2"
   },
   "devDependencies": {
     "prettier": "^2.7.1"
