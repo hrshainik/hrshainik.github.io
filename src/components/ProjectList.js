@@ -19,11 +19,7 @@ const ProjectList = ({ projects }) => {
       let image = mask.querySelector(".cardImg")
       let text = mask.previousSibling
 
-      console.log(text)
-
       let char = text.querySelectorAll(".char")
-
-      console.log(char)
 
       let tl = gsap.timeline({
         scrollTrigger: {

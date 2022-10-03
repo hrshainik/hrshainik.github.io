@@ -1,4 +1,4 @@
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import Img from "gatsby-image"
@@ -7,7 +7,10 @@ import { SEO } from "../components/Seo"
 
 const ProjectDetails = ({ data }) => {
   const { html } = data.markdownRemark
-  const { title, featuredImg } = data.markdownRemark.frontmatter
+  const { title, featuredImg, stack, prevProject, nextProject } =
+    data.markdownRemark.frontmatter
+
+  console.log(data.markdownRemark.frontmatter)
 
   return (
     <Layout>
@@ -23,7 +26,7 @@ const ProjectDetails = ({ data }) => {
                 service :
               </p>
               <h6 className="wow fadeInUp" data-wow-delay="1.3s">
-                Web Development
+                {stack}
               </h6>
             </div>
 
@@ -55,7 +58,10 @@ const ProjectDetails = ({ data }) => {
         <Img fluid={featuredImg.childImageSharp.fluid} />
       </div>
       <div className={`${styles.projectNav} container`}>
-        <div className={styles.prev}>
+        <Link
+          to={`/project/${prevProject}`}
+          className={`${styles.prev} ${!prevProject && "disabled"}`}
+        >
           <svg
             viewBox="0 0 40 39"
             fill="none"
@@ -67,8 +73,11 @@ const ProjectDetails = ({ data }) => {
             />
           </svg>
           <span>previous</span>
-        </div>
-        <div className={styles.next}>
+        </Link>
+        <Link
+          to={`/project/${nextProject}`}
+          className={`${styles.next} ${!nextProject && "disabled"}`}
+        >
           <span>next</span>
           <svg
             viewBox="0 0 40 39"
@@ -80,7 +89,7 @@ const ProjectDetails = ({ data }) => {
               fill="#808080"
             />
           </svg>
-        </div>
+        </Link>
       </div>
     </Layout>
   )
@@ -100,6 +109,8 @@ export const query = graphql`
       frontmatter {
         stack
         title
+        nextProject
+        prevProject
         featuredImg {
           childImageSharp {
             fluid {

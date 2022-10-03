@@ -443,3 +443,8 @@ footer {
   transform: translateY(115px);
   transition: transform .5s;
 }
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}

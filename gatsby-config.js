@@ -28,7 +28,7 @@ module.exports = {
   siteMetadata: {
     title: "Habibur Rahman",
     description: "Here you find my all works and contact information.",
-    siteUrl: "",
+    siteUrl: "https://golden-cocada-0122ca.netlify.app/",
     image: "",
     twitterUsername: "@traveloperhabib",
     author: "Habibur Rahman",

@@ -46,3 +46,9 @@
 .prev svg, .next svg {
   height: 15px;
 }
+
+@media only screen and (max-width: 768px) {
+  .projectInfo {
+    flex-direction: column;
+  }
+}
