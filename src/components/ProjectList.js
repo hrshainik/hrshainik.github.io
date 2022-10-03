@@ -4,11 +4,70 @@ import { Link } from "gatsby"
 import * as styles from "../styles/projectList.module.css"
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
+import { useEffect } from "react"
+import SplitType from "split-type"
 
 gsap.registerPlugin(ScrollTrigger)
 
 const ProjectList = ({ projects }) => {
-  console.log(projects)
+  useEffect(() => {
+    const myText = new SplitType(".cardTitle")
+
+    let masks = document.querySelectorAll(".cardImgCon")
+
+    masks.forEach(mask => {
+      let image = mask.querySelector(".cardImg")
+      let text = mask.previousSibling
+
+      console.log(text)
+
+      let char = text.querySelectorAll(".char")
+
+      console.log(char)
+
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: mask,
+          toggleActions: "restart none none reset",
+        },
+      })
+
+      tl.set(mask, { autoAlpha: 1 })
+
+      if (mask.classList.contains("cardImgConEven")) {
+        tl.from(mask, 1.5, {
+          xPercent: -100,
+        })
+        tl.from(image, 1.5, {
+          xPercent: 100,
+          scale: 1.3,
+          delay: -1.5,
+        })
+        tl.to(char, 1, {
+          ease: "power4.out",
+          y: 0,
+          stagger: 0.05,
+          delay: -2,
+        })
+      } else if (mask.classList.contains("cardImgConOdd")) {
+        tl.from(mask, 1.5, {
+          xPercent: -100,
+        })
+        tl.from(image, 1.5, {
+          xPercent: 100,
+          scale: 1.3,
+          delay: -1.5,
+        })
+        tl.to(char, 1, {
+          ease: "power4.out",
+          y: 0,
+          stagger: 0.05,
+          delay: -2,
+        })
+      }
+    })
+  }, [])
+
   return (
     <>
       {projects.map(project => (
