@@ -1,5 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  /* Change favorite color to match images */
+  /*Green dark 190 - Green 171 - Grren Blue 200*/
+  --hue-color: 190;
+
+  /* HSL color mode */
+  --first-color: hsl(var(--hue-color), 64%, 22%);
+  --first-color-second: hsl(var(--hue-color), 64%, 22%);
+  --first-color-alt: hsl(var(--hue-color), 64%, 15%);
+  --title-color: hsl(var(--hue-color), 64%, 18%);
+  --text-color: hsl(var(--hue-color), 24%, 35%);
+  --text-color-light: hsl(var(--hue-color), 8%, 60%);
+  --input-color: hsl(var(--hue-color), 24%, 97%);
+  --body-color: hsl(var(--hue-color), 100%, 99%);
+  --white-color: #FFF;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Open Sans', sans-serif;
+  --title-font: 'Raleway', sans-serif;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== Margenes Bottom ==========*/
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-25: 1.25rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  /*========== Hover overlay ==========*/
+  --img-transition: .3s;
+  --img-hidden: hidden;
+  --img-scale: scale(1.1);
+}
+
 /* Basic styling */
 *, *::before, *::after {
   margin: 0;
@@ -8,31 +65,31 @@
 }
 
 ::selection {
-  color: #303030;
-  background-color: #fff;
+  color: hsl(0, 0%, 19%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 ::-webkit-scrollbar {
   width: .60rem;
-  background-color: #e2e8e9;
+  background-color: hsl(189, 14%, 90%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #919ea1;
+  background-color: hsl(191, 8%, 60%);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #868c8d;
+  background-color: hsl(189, 3%, 54%);
 }
 
 body {
   font-family: 'Roboto Mono';
-  background-color: #0f0f0f;
-  color: #fff;
+  background-color: hsl(0, 0%, 6%);
+  color: hsl(0, 0%, 100%);
 }
 
 a {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
 
@@ -97,7 +154,7 @@ a {
 .hero-content p {
   font-weight: 300;
   line-height: 36px;
-  color: grey;
+  color: hsl(0, 0%, 50%);
 }
 
 .hero-content h6 {
@@ -114,7 +171,7 @@ a {
 /* Navigation */
 nav {
   width: 100%;
-  background: #0f0f0f;
+  background: hsl(0, 0%, 6%);
   height: 80px;
   z-index: 30;
   top: 0;
@@ -134,7 +191,7 @@ nav #brand {
 }
 
 nav #brand a {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   transition: all 0.3s ease-out;
   text-decoration: none;
 }
@@ -154,7 +211,7 @@ nav #menu li span {
 }
 
 nav #menu li a {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
 
@@ -187,7 +244,7 @@ nav #menu li a {
   z-index: 30;
   top: 0px;
   position: fixed;
-  background: #0f0f0f;
+  background: hsl(0, 0%, 6%);
   width: 100%;
   height: 100%;
   visibility: hidden;
@@ -221,7 +278,7 @@ nav #menu li a {
 }
 
 #resize #menu li a {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 
 #resize #menu li a:hover {
@@ -272,7 +329,7 @@ nav #menu li a {
   position: absolute;
   display: inline-block;
   bottom: 0;
-  background-color: #aa3232;
+  background-color: hsl(0, 55%, 43%);
   height: 1vw;
   z-index: -1;
   /* width: 20.5vw; */
@@ -335,7 +392,7 @@ footer {
 
 .info li {
   font-weight: lighter;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   font-size: 18px;
   padding-left: 20px;
 }
@@ -347,7 +404,7 @@ footer {
   height: 4px;
   width: 4px;
   margin-right: 6px;
-  background: #3b5998;
+  background: hsl(221, 44%, 41%);
 }
 
 
@@ -358,7 +415,7 @@ footer {
   height: 4px;
   width: 4px;
   margin-right: 6px;
-  background: #fcaf45;
+  background: hsl(35, 97%, 63%);
 }
 
 
@@ -369,7 +426,7 @@ footer {
   height: 4px;
   width: 4px;
   margin-right: 6px;
-  background: #55acee;
+  background: hsl(206, 82%, 63%);
 }
 
 
@@ -380,7 +437,7 @@ footer {
   height: 4px;
   width: 4px;
   margin-right: 6px;
-  background: #c4302b;
+  background: hsl(2, 64%, 47%);
 }
 
 #media, #address {
