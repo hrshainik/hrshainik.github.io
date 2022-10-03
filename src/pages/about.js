@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
+import { SEO } from "../components/Seo"
 import * as styles from "../styles/about.module.css"
 
 const About = () => {
@@ -43,3 +44,5 @@ const About = () => {
 }
 
 export default About
+
+export const Head = () => <SEO title="About - Habibur Rahman" />

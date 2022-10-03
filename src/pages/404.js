@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
+import { SEO } from "../components/Seo"
 
 const NotFound = () => {
   return (
@@ -10,3 +11,5 @@ const NotFound = () => {
 }
 
 export default NotFound
+
+export const Head = () => <SEO title="Not Found - Habibur Rahman" />

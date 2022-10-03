@@ -7,6 +7,7 @@ import { TextPlugin } from "gsap/TextPlugin"
 import ProjectList from "../components/ProjectList"
 import { useEffect } from "react"
 import SplitType from "split-type"
+import { SEO } from "../components/Seo"
 
 gsap.registerPlugin(TextPlugin)
 
@@ -109,7 +110,7 @@ export default function Home({ data }) {
         })
       }
     })
-  }, [])
+  }, [words])
 
   return (
     <Layout>
@@ -139,6 +140,8 @@ export default function Home({ data }) {
     </Layout>
   )
 }
+
+export const Head = () => <SEO />
 
 export const query = graphql`
   query HomePage {

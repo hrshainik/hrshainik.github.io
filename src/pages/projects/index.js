@@ -1,9 +1,9 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import * as styles from "../../styles/projects.module.css"
-import Img from "gatsby-image"
 import ProjectList from "../../components/ProjectList"
+import { SEO } from "../../components/Seo"
 
 const Projects = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes
@@ -38,6 +38,8 @@ const Projects = ({ data }) => {
 }
 
 export default Projects
+
+export const Head = () => <SEO title="Projects - Habibur Rahman" />
 
 export const query = graphql`
   query ProjectsPage {

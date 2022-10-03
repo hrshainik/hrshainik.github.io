@@ -28,5 +28,9 @@ module.exports = {
   siteMetadata: {
     title: "Habibur Rahman",
     description: "Here you find my all works and contact information.",
+    siteUrl: "",
+    image: "",
+    twitterUsername: "@traveloperhabib",
+    author: "Habibur Rahman",
   },
 }

@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
+import { SEO } from "../components/Seo"
 import * as styles from "../styles/contact.module.css"
 
 const Contact = () => {
@@ -105,3 +106,5 @@ const Contact = () => {
 }
 
 export default Contact
+
+export const Head = () => <SEO title="Contact - Habibur Rahman" />

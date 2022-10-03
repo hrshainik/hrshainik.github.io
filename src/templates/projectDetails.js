@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import Img from "gatsby-image"
 import * as styles from "../styles/projectDetails.module.css"
+import { SEO } from "../components/Seo"
 
 const ProjectDetails = ({ data }) => {
   const { html } = data.markdownRemark
@@ -86,6 +87,11 @@ const ProjectDetails = ({ data }) => {
 }
 
 export default ProjectDetails
+
+export const Head = ({ data }) => {
+  const { title } = data.markdownRemark.frontmatter
+  return <SEO title={`${title} - Habibur Rahman`} />
+}
 
 export const query = graphql`
   query Details($slug: String) {
