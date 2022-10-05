@@ -43,6 +43,7 @@ Here you find my projects and contact information.
 
 - [Gatsby](https://www.gatsbyjs.com/)
 - [GSAP](https://greensock.com/gsap/)
+- [Barba.js](https://barba.js.org/)
 
 <p align="right"><a href="#top">⇧Back To Top</a></p>
 
