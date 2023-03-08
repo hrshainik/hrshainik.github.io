@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import hero from "./hero.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -32,6 +33,7 @@ import quiz from "./biofidelicx-quizzard.jpg";
 
 export {
   logo,
+  hero,
   backend,
   creator,
   mobile,
