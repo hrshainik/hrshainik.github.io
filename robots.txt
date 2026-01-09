@@ -1,0 +1,41 @@
+# Robots.txt for Habibur Rahman Portfolio
+# https://hrshainik-github-io.vercel.app
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://hrshainik-github-io.vercel.app/sitemap.xml
+
+# Crawl delay (optional, in seconds)
+# Crawl-delay: 1
+
+# Common search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Block common bad bots (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

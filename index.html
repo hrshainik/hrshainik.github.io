@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
     <!-- Primary Meta Tags -->
     <title>Habibur Rahman — Full-Stack Developer | Next.js, React & TypeScript Expert</title>
     <meta name="title" content="Habibur Rahman — Full-Stack Developer | Next.js, React & TypeScript Expert">
@@ -13,9 +19,11 @@
     <meta name="keywords"
         content="Full-Stack Developer, Frontend Developer, Next.js Developer, React Developer, TypeScript, Web Development, SaaS Development, Dhaka Bangladesh, Freelance Developer, Upwork Developer">
     <meta name="author" content="Habibur Rahman">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
+    <meta name="geo.region" content="BD-13">
+    <meta name="geo.placename" content="Dhaka">
+    <meta name="language" content="English">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://hrshainik-github-io.vercel.app">
@@ -29,6 +37,7 @@
     <meta property="og:image" content="https://hrshainik-github-io.vercel.app/images/showcase.png">
     <meta property="og:image:width" content="2848">
     <meta property="og:image:height" content="1798">
+    <meta property="og:image:alt" content="Habibur Rahman Portfolio Showcase">
     <meta property="og:site_name" content="Habibur Rahman Portfolio">
     <meta property="og:locale" content="en_US">
 
@@ -39,18 +48,16 @@
     <meta property="twitter:description"
         content="Product-driven full-stack developer specializing in Next.js, React, and TypeScript. Building scalable web applications for international clients.">
     <meta property="twitter:image" content="https://hrshainik-github-io.vercel.app/images/showcase.png">
-    <meta property="twitter:creator" content="@yourtwitterhandle">
+    <meta property="twitter:creator" content="@traveloperhabib">
 
     <!-- Theme Color -->
-    <meta name="theme-color" content="#0A0E13">
-    <meta name="msapplication-TileColor" content="#0A0E13">
+    <meta name="theme-color" content="#5eb8b8" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#5eb8b8" media="(prefers-color-scheme: light)">
+    <meta name="msapplication-TileColor" content="#5eb8b8">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
@@ -122,6 +129,7 @@
     }
     </script>
 
+    <!-- Structured Data (JSON-LD) - ProfessionalService -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -137,12 +145,59 @@
         "Website Design & Development",
         "Web App & Dashboard Development",
         "UI/UX Improvement & Optimization"
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD) - ItemList for Projects -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Portfolio Projects",
+      "description": "Featured projects by Habibur Rahman",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "biofideX — Bioscience Education",
+            "description": "A modern bioscience learning platform",
+            "url": "https://biofidex.com"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Secret Elite",
+            "description": "A private membership platform",
+            "url": "https://secretelite.date"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Social-Earn.AI",
+            "description": "AI-powered brand and creator collaboration platform",
+            "url": "https://social-earn.ai/"
+          }
+        }
       ]
     }
     </script>
 </head>
 
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Decorative Background Elements -->
     <div class="gradient-bg"></div>
     <div class="glass-orb orb-1"></div>
     <div class="glass-orb orb-2"></div>
@@ -151,42 +206,49 @@
     <div class="container">
 
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar" role="complementary" aria-label="Profile and navigation">
             <div class="sidebar-inner">
                 <div class="sidebar-content">
                     <div class="intro">
                         <div class="title-number">Hello, I'm</div>
                         <h1>Habibur Rahman</h1>
-                        <h2>Full-Stack Developer</h2>
+                        <h2 role="doc-subtitle">Full-Stack Developer</h2>
                         <p>Product-driven developer with a strong focus on frontend engineering and user experience.</p>
                     </div>
 
-                    <nav>
-                        <ul>
-                            <li><a href="#about" class="nav-link active">About</a></li>
-                            <li><a href="#experience" class="nav-link">Experience</a></li>
-                            <li><a href="#education" class="nav-link">Education</a></li>
-                            <li><a href="#projects" class="nav-link">Projects</a></li>
-                            <li><a href="#services" class="nav-link">Services</a></li>
-                            <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+                    <nav aria-label="Main navigation">
+                        <ul role="list">
+                            <li><a href="#about" class="nav-link active"
+                                    aria-label="Navigate to About section">About</a></li>
+                            <li><a href="#experience" class="nav-link"
+                                    aria-label="Navigate to Experience section">Experience</a></li>
+                            <li><a href="#education" class="nav-link"
+                                    aria-label="Navigate to Education section">Education</a></li>
+                            <li><a href="#projects" class="nav-link"
+                                    aria-label="Navigate to Projects section">Projects</a></li>
+                            <li><a href="#services" class="nav-link"
+                                    aria-label="Navigate to Services section">Services</a></li>
+                            <li><a href="#tech" class="nav-link" aria-label="Navigate to Tech Stack section">Tech
+                                    Stack</a></li>
                         </ul>
                     </nav>
                 </div>
 
-                <div class="social-links">
-                    <a href="https://github.com/hrshainik" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-                        class="social-icon">
+                <div class="social-links" role="navigation" aria-label="Social media links">
+                    <a href="https://github.com/hrshainik" target="_blank" rel="noopener noreferrer"
+                        aria-label="Visit Habibur Rahman's GitHub profile (opens in new tab)" class="social-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
                             <path opacity="0.4" d="M10 20.5675C6.57143 21.7248 3.71429 20.5675 2 17" />
                             <path
                                 d="M10 22V18.7579C10 18.1596 10.1839 17.6396 10.4804 17.1699C10.6838 16.8476 10.5445 16.3904 10.1771 16.2894C7.13394 15.4528 5 14.1077 5 9.64606C5 8.48611 5.38005 7.39556 6.04811 6.4464C6.21437 6.21018 6.29749 6.09208 6.31748 5.9851C6.33746 5.87813 6.30272 5.73852 6.23322 5.45932C5.95038 4.32292 5.96871 3.11619 6.39322 2.02823C6.39322 2.02823 7.27042 1.74242 9.26698 2.98969C9.72282 3.27447 9.95075 3.41686 10.1515 3.44871C10.3522 3.48056 10.6206 3.41384 11.1573 3.28041C11.8913 3.09795 12.6476 3 13.5 3C14.3524 3 15.1087 3.09795 15.8427 3.28041C16.3794 3.41384 16.6478 3.48056 16.8485 3.44871C17.0493 3.41686 17.2772 3.27447 17.733 2.98969C19.7296 1.74242 20.6068 2.02823 20.6068 2.02823C21.0313 3.11619 21.0496 4.32292 20.7668 5.45932C20.6973 5.73852 20.6625 5.87813 20.6825 5.9851C20.7025 6.09207 20.7856 6.21019 20.9519 6.4464C21.6199 7.39556 22 8.48611 22 9.64606C22 14.1077 19.8661 15.4528 16.8229 16.2894C16.4555 16.3904 16.3162 16.8476 16.5196 17.1699C16.8161 17.6396 17 18.1596 17 18.7579V22" />
                         </svg>
                     </a>
                     <a href="https://www.linkedin.com/in/hrshainik" target="_blank" rel="noopener noreferrer"
-                        aria-label="LinkedIn" class="social-icon">
+                        aria-label="Visit Habibur Rahman's LinkedIn profile (opens in new tab)" class="social-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none"
-                            stroke="currentColor" stroke-width="1.5">
+                            stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                             <path
                                 d="M4.5 9.5H4C3.05719 9.5 2.58579 9.5 2.29289 9.79289C2 10.0858 2 10.5572 2 11.5V20C2 20.9428 2 21.4142 2.29289 21.7071C2.58579 22 3.05719 22 4 22H4.5C5.44281 22 5.91421 22 6.20711 21.7071C6.5 21.4142 6.5 20.9428 6.5 20V11.5C6.5 10.5572 6.5 10.0858 6.20711 9.79289C5.91421 9.5 5.44281 9.5 4.5 9.5Z" />
                             <path opacity="0.4"
@@ -195,10 +257,10 @@
                                 d="M12.326 9.5H11.5C10.5572 9.5 10.0858 9.5 9.79289 9.79289C9.5 10.0858 9.5 10.5572 9.5 11.5V20C9.5 20.9428 9.5 21.4142 9.79289 21.7071C10.0858 22 10.5572 22 11.5 22H12C12.9428 22 13.4142 22 13.7071 21.7071C14 21.4142 14 20.9428 14 20L14.0001 16.5001C14.0001 14.8433 14.5281 13.5001 16.0879 13.5001C16.8677 13.5001 17.5 14.1717 17.5 15.0001V19.5001C17.5 20.4429 17.5 20.9143 17.7929 21.2072C18.0857 21.5001 18.5572 21.5001 19.5 21.5001H19.9987C20.9413 21.5001 21.4126 21.5001 21.7055 21.2073C21.9984 20.9145 21.9985 20.4432 21.9987 19.5006L22.0001 14.0002C22.0001 11.515 19.6364 9.50024 17.2968 9.50024C15.9649 9.50024 14.7767 10.1531 14.0001 11.174C14 10.5439 14 10.2289 13.8632 9.995C13.7765 9.84686 13.6531 9.72353 13.505 9.63687C13.2711 9.5 12.9561 9.5 12.326 9.5Z" />
                         </svg>
                     </a>
-                    <a href="/cdn-cgi/l/email-protection#3e564c4d4d565f575057557e59535f5752105d5153" aria-label="Email"
+                    <a href="mailto:hrsshainik@gmail.com" aria-label="Send an email to Habibur Rahman"
                         class="social-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none"
-                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true">
                             <path opacity="0.4"
                                 d="M2 6L8.91302 9.91697C11.4616 11.361 12.5384 11.361 15.087 9.91697L22 6" />
                             <path
@@ -210,16 +272,16 @@
         </aside>
 
         <!-- Main Content -->
-        <main class="main-content">
-            <div class="">
+        <main class="main-content" id="main-content" role="main">
+            <div>
 
                 <!-- About -->
-                <section id="about">
-                    <div class="section-header header-reveal">
-                        <div class="glass-filter"></div>
-                        <div class="glass-overlay"></div>
-                        <h2>About</h2>
-                    </div>
+                <section id="about" aria-labelledby="about-heading">
+                    <header class="section-header header-reveal">
+                        <div class="glass-filter" aria-hidden="true"></div>
+                        <div class="glass-overlay" aria-hidden="true"></div>
+                        <h2 id="about-heading">About</h2>
+                    </header>
                     <div class="about-content reveal-item content-wrapper">
                         <p>I am a product-driven full-stack developer based in Dhaka, Bangladesh, with a strong focus on
                             frontend engineering and user experience. I transitioned from Biochemistry to software
@@ -228,7 +290,8 @@
 
                         <p>I build production-ready web applications, bridging design and engineering to transform ideas
                             into dependable, user-focused products. I work with international clients both on <a
-                                href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank">Upwork</a>
+                                href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank"
+                                rel="noopener noreferrer">Upwork</a>
                             and through my personal portfolio, delivering software that is trusted and used in
                             real-world environments.</p>
 
@@ -239,306 +302,328 @@
                 </section>
 
                 <!-- Experience -->
-                <section id="experience">
-                    <div class="section-header header-reveal">
-                        <div class="glass-filter"></div>
-                        <div class="glass-overlay"></div>
-                        <h2>Experience</h2>
-                    </div>
+                <section id="experience" aria-labelledby="experience-heading">
+                    <header class="section-header header-reveal">
+                        <div class="glass-filter" aria-hidden="true"></div>
+                        <div class="glass-overlay" aria-hidden="true"></div>
+                        <h2 id="experience-heading">Experience</h2>
+                    </header>
                     <div class="experience-list content-wrapper">
-                        <div class="experience-item reveal-item">
-                            <div class="experience-period">2023 — Present</div>
+                        <article class="experience-item reveal-item">
+                            <div class="experience-period">
+                                <time datetime="2023">2023</time> — <time datetime="2026">Present</time>
+                            </div>
                             <div class="experience-content">
                                 <h3><a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank"
-                                        class="experience-title">Full-Stack Developer · Upwork</a></h3>
+                                        rel="noopener noreferrer" class="experience-title">Full-Stack Developer ·
+                                        Upwork</a></h3>
                                 <p class="experience-description">Building scalable web applications for international
                                     clients. Projects range from SaaS platforms to e-commerce solutions, focusing on
                                     clean architecture, performance optimization, and exceptional user experiences.</p>
-                                <div class="experience-tags">
-                                    <span class="tag">SaaS Development</span>
-                                    <span class="tag">E-Commerce</span>
-                                    <span class="tag">Frontend Engineering</span>
-                                    <span class="tag">API Integration</span>
-                                </div>
+                                <ul class="experience-tags" role="list" aria-label="Technologies used">
+                                    <li><span class="tag">SaaS Development</span></li>
+                                    <li><span class="tag">E-Commerce</span></li>
+                                    <li><span class="tag">Frontend Engineering</span></li>
+                                    <li><span class="tag">API Integration</span></li>
+                                </ul>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="experience-item reveal-item">
-                            <div class="experience-period">2019 — Present</div>
+                        <article class="experience-item reveal-item">
+                            <div class="experience-period">
+                                <time datetime="2019">2019</time> — <time datetime="2026">Present</time>
+                            </div>
                             <div class="experience-content">
-                                <h3><a href="https://biofidex.com" target="_blank" class="experience-title">Founder &
+                                <h3><a href="https://biofidex.com" target="_blank" rel="noopener noreferrer"
+                                        class="experience-title">Founder &
                                         CEO · biofideX</a>
                                 </h3>
                                 <p class="experience-description">Building an educational platform focused on
                                     bioscience education. Leading product development, technical architecture, and user
                                     experience design for a comprehensive learning ecosystem.</p>
-                                <div class="experience-tags">
-                                    <span class="tag">EdTech Platform</span>
-                                    <span class="tag">Product Strategy</span>
-                                    <span class="tag">Team Leadership</span>
-                                    <span class="tag">Content Development</span>
-                                </div>
+                                <ul class="experience-tags">
+                                    <li><span class="tag">EdTech Platform</span></li>
+                                    <li><span class="tag">Product Strategy</span></li>
+                                    <li><span class="tag">Team Leadership</span></li>
+                                    <li><span class="tag">Content Development</span></li>
+                                </ul>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </section>
 
                 <!-- Education -->
-                <section id="education">
-                    <div class="section-header header-reveal">
-                        <div class="glass-filter"></div>
-                        <div class="glass-overlay"></div>
-                        <h2>Education</h2>
-                    </div>
+                <section id="education" aria-labelledby="education-heading">
+                    <header class="section-header header-reveal">
+                        <div class="glass-filter" aria-hidden="true"></div>
+                        <div class="glass-overlay" aria-hidden="true"></div>
+                        <h2 id="education-heading">Education</h2>
+                    </header>
                     <div class=" reveal-item content-wrapper">
-                        <div class="education-card">
+                        <article class="education-card">
                             <div class="education-header">
                                 <div>
                                     <h3>Jagannath University</h3>
                                     <p class="education-field">Biochemistry & Molecular Biology</p>
                                 </div>
-                                <span class="education-badge">BSc</span>
+                                <span class="education-badge" aria-label="Bachelor of Science degree">BSc</span>
                             </div>
                             <p class="education-description">Built a strong foundation in analytical thinking, research
                                 methodology, and scientific problem-solving that now informs my systematic approach to
                                 software engineering and product development.</p>
-                        </div>
+                        </article>
                     </div>
                 </section>
 
                 <!-- Projects -->
-                <section id="projects">
-                    <div class="section-header header-reveal">
-                        <div class="glass-filter"></div>
-                        <div class="glass-overlay"></div>
-                        <h2>Projects</h2>
-                    </div>
+                <section id="projects" aria-labelledby="projects-heading">
+                    <header class="section-header header-reveal">
+                        <div class="glass-filter" aria-hidden="true"></div>
+                        <div class="glass-overlay" aria-hidden="true"></div>
+                        <h2 id="projects-heading">Projects</h2>
+                    </header>
                     <div class="projects-grid content-wrapper">
-                        <a href="https://biofidex.com" target="_blank" class="project-card reveal-item">
-                            <span class="project-icon">🧬</span>
-                            <h3 class="project-title">biofideX — Bioscience Education</h3>
-                            <p class="project-description">
-                                A modern bioscience learning platform where students and professionals can
-                                explore quizzes, articles, and courses across life science disciplines.
-                                Designed for clarity and accessibility, with interactive assessments and
-                                structured content that support effective, evidence-based learning.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">Next.js</span>
-                                <span class="tag">TypeScript</span>
-                                <span class="tag">Supabase</span>
-                                <span class="tag">Education Platform</span>
-                            </div>
-                        </a>
+                        <article class="project-card reveal-item">
+                            <a href="https://biofidex.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Visit biofideX Bioscience Education project (opens in new tab)">
+                                <span class="project-icon" aria-hidden="true">🧬</span>
+                                <h3 class="project-title">biofideX — Bioscience Education</h3>
+                                <p class="project-description">
+                                    A modern bioscience learning platform where students and professionals can
+                                    explore quizzes, articles, and courses across life science disciplines.
+                                    Designed for clarity and accessibility, with interactive assessments and
+                                    structured content that support effective, evidence-based learning.
+                                </p>
+                                <ul class="project-tags" role="list" aria-label="Technologies used">
+                                    <li><span class="tag">Next.js</span></li>
+                                    <li><span class="tag">TypeScript</span></li>
+                                    <li><span class="tag">Supabase</span></li>
+                                    <li><span class="tag">Education Platform</span></li>
+                                </ul>
+                            </a>
+                        </article>
 
-                        <a href="https://secretelite.date" target="_blank" class="project-card reveal-item">
-                            <span class="project-icon">💼</span>
-                            <h3 class="project-title">Secret Elite</h3>
-                            <p class="project-description">
-                                A private membership platform featuring tier-based access, subscription
-                                management, and a flexible affiliate commission system built for scalability
-                                and growth.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">Next.js</span>
-                                <span class="tag">Stripe</span>
-                                <span class="tag">PostgreSQL</span>
-                            </div>
-                        </a>
-
-
-                        <a href="https://social-earn.ai/" target="_blank" class="project-card reveal-item">
-                            <span class="project-icon">🤖</span>
-                            <h3 class="project-title">Social-Earn.AI</h3>
-                            <p class="project-description">
-                                A platform that helps brands and content creators collaborate efficiently
-                                through automated workflows, performance tracking, and data-driven insights.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">Next.js</span>
-                                <span class="tag">AI Integration</span>
-                                <span class="tag">Analytics</span>
-                            </div>
-                        </a>
+                        <article class="project-card reveal-item">
+                            <a href="https://secretelite.date" target="_blank" rel="noopener noreferrer"
+                                aria-label="Visit Secret Elite project (opens in new tab)">
+                                <span class="project-icon" aria-hidden="true">💼</span>
+                                <h3 class="project-title">Secret Elite</h3>
+                                <p class="project-description">
+                                    A private membership platform featuring tier-based access, subscription
+                                    management, and a flexible affiliate commission system built for scalability
+                                    and growth.
+                                </p>
+                                <ul class="project-tags" role="list" aria-label="Technologies used">
+                                    <li><span class="tag">Next.js</span></li>
+                                    <li><span class="tag">Stripe</span></li>
+                                    <li><span class="tag">PostgreSQL</span></li>
+                                </ul>
+                            </a>
+                        </article>
 
 
+                        <article class="project-card reveal-item">
+                            <a href="https://social-earn.ai/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Visit Social-Earn.AI project (opens in new tab)">
+                                <span class="project-icon" aria-hidden="true">🤖</span>
+                                <h3 class="project-title">Social-Earn.AI</h3>
+                                <p class="project-description">
+                                    A platform that helps brands and content creators collaborate efficiently
+                                    through automated workflows, performance tracking, and data-driven insights.
+                                </p>
+                                <ul class="project-tags" role="list" aria-label="Technologies used">
+                                    <li><span class="tag">Next.js</span></li>
+                                    <li><span class="tag">AI Integration</span></li>
+                                    <li><span class="tag">Analytics</span></li>
+                                </ul>
+                            </a>
+                        </article>
 
-                        <a href="https://www.thealbayt.com" target="_blank" class="project-card reveal-item">
-                            <span class="project-icon">🛍️</span>
-                            <h3 class="project-title">Al-Bayt Elegance</h3>
-                            <p class="project-description">
-                                An e-commerce platform for Islamic fashion, built with a clean shopping
-                                experience, secure payments, and real-time inventory management.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Firebase</span>
-                                <span class="tag">Stripe</span>
-                            </div>
-                        </a>
 
-                        <a href="https://noorjabalcleaning.com/" target="_blank" class="project-card reveal-item">
-                            <span class="project-icon">🧼</span>
-                            <h3 class="project-title">Noor Jabal Cleaning</h3>
-                            <p class="project-description">
-                                A professional service website for a Dubai-based cleaning company, showcasing
-                                residential and commercial services with a clear structure and user-friendly
-                                experience.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">Next.js</span>
-                                <span class="tag">Service Website</span>
-                                <span class="tag">Dubai Business</span>
-                            </div>
-                        </a>
+
+                        <article class="project-card reveal-item">
+                            <a href="https://www.thealbayt.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Visit Al-Bayt Elegance project (opens in new tab)">
+                                <span class="project-icon" aria-hidden="true">🛍️</span>
+                                <h3 class="project-title">Al-Bayt Elegance</h3>
+                                <p class="project-description">
+                                    An e-commerce platform for Islamic fashion, built with a clean shopping
+                                    experience, secure payments, and real-time inventory management.
+                                </p>
+                                <ul class="project-tags" role="list" aria-label="Technologies used">
+                                    <li><span class="tag">React</span></li>
+                                    <li><span class="tag">Firebase</span></li>
+                                    <li><span class="tag">Stripe</span></li>
+                                </ul>
+                            </a>
+                        </article>
+
+                        <article class="project-card reveal-item">
+                            <a href="https://noorjabalcleaning.com/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Visit Noor Jabal Cleaning project (opens in new tab)">
+                                <span class="project-icon" aria-hidden="true">🧼</span>
+                                <h3 class="project-title">Noor Jabal Cleaning</h3>
+                                <p class="project-description">
+                                    A professional service website for a Dubai-based cleaning company, showcasing
+                                    residential and commercial services with a clear structure and user-friendly
+                                    experience.
+                                </p>
+                                <ul class="project-tags" role="list" aria-label="Technologies used">
+                                    <li><span class="tag">Next.js</span></li>
+                                    <li><span class="tag">Service Website</span></li>
+                                    <li><span class="tag">Dubai Business</span></li>
+                                </ul>
+                            </a>
+                        </article>
 
                     </div>
                 </section>
 
                 <!-- Services -->
-                <section id="services">
-                    <div class="section-header header-reveal">
-                        <div class="glass-filter"></div>
-                        <div class="glass-overlay"></div>
-                        <h2>Services</h2>
-                    </div>
+                <section id="services" aria-labelledby="services-heading">
+                    <header class="section-header header-reveal">
+                        <div class="glass-filter" aria-hidden="true"></div>
+                        <div class="glass-overlay" aria-hidden="true"></div>
+                        <h2 id="services-heading">Services</h2>
+                    </header>
 
                     <div class="services-grid content-wrapper">
                         <!-- Service 1 -->
-                        <div class="service-card reveal-item">
-                            <div class="service-icon">🌐</div>
+                        <article class="service-card reveal-item">
+                            <div class="service-icon" aria-hidden="true">🌐</div>
                             <h3>Website Design & Development</h3>
                             <p>
                                 Modern, fast, and responsive websites built with clean UI and
                                 thoughtful user experience.
                             </p>
-                            <ul>
+                            <ul role="list">
                                 <li>Business & personal websites</li>
                                 <li>Landing pages & portfolios</li>
                                 <li>Responsive & SEO-ready layouts</li>
                                 <li>Performance-focused frontend</li>
                             </ul>
-                        </div>
+                        </article>
 
                         <!-- Service 2 -->
-                        <div class="service-card reveal-item">
-                            <div class="service-icon">🧩</div>
+                        <article class="service-card reveal-item">
+                            <div class="service-icon" aria-hidden="true">🧩</div>
                             <h3>Web App & Dashboard Development</h3>
                             <p>
                                 User-friendly web applications and dashboards that turn complex ideas
                                 into simple experiences.
                             </p>
-                            <ul>
+                            <ul role="list">
                                 <li>SaaS & internal tools</li>
                                 <li>Admin panels & dashboards</li>
                                 <li>Frontend + backend integration</li>
                                 <li>Scalable UI systems</li>
                             </ul>
-                        </div>
+                        </article>
 
                         <!-- Service 3 -->
-                        <div class="service-card reveal-item">
-                            <div class="service-icon">✨</div>
+                        <article class="service-card reveal-item">
+                            <div class="service-icon" aria-hidden="true">✨</div>
                             <h3>UI/UX Improvement & Optimization</h3>
                             <p>
                                 Improving existing websites and apps to look better, feel smoother,
                                 and perform faster.
                             </p>
-                            <ul>
+                            <ul role="list">
                                 <li>UI redesign & UX cleanup</li>
                                 <li>Mobile & accessibility fixes</li>
                                 <li>Frontend refactoring</li>
                                 <li>Performance optimization</li>
                             </ul>
-                        </div>
+                        </article>
                     </div>
                 </section>
 
 
                 <!-- Tech Stack -->
-                <section id="tech">
-                    <div class="section-header header-reveal">
-                        <div class="glass-filter"></div>
-                        <div class="glass-overlay"></div>
-                        <h2>Tech Stack</h2>
-                    </div>
+                <section id="tech" aria-labelledby="tech-heading">
+                    <header class="section-header header-reveal">
+                        <div class="glass-filter" aria-hidden="true"></div>
+                        <div class="glass-overlay" aria-hidden="true"></div>
+                        <h2 id="tech-heading">Tech Stack</h2>
+                    </header>
                     <div class="tech-grid content-wrapper">
-                        <div class="tech-card reveal-item">
+                        <article class="tech-card reveal-item">
                             <h4>Frontend Frameworks</h4>
-                            <div class="tech-items">
-                                <span class="tag">Next.js 16</span>
-                                <span class="tag">React 19</span>
-                                <span class="tag">TypeScript</span>
-                                <span class="tag">Vite</span>
-                            </div>
-                        </div>
+                            <ul class="tech-items" role="list" aria-label="Frontend frameworks">
+                                <li><span class="tag">Next.js 16</span></li>
+                                <li><span class="tag">React 19</span></li>
+                                <li><span class="tag">TypeScript</span></li>
+                                <li><span class="tag">Vite</span></li>
+                            </ul>
+                        </article>
 
-                        <div class="tech-card reveal-item">
+                        <article class="tech-card reveal-item">
                             <h4>State Management</h4>
-                            <div class="tech-items">
-                                <span class="tag">Redux Toolkit</span>
-                                <span class="tag">Zustand</span>
-                                <span class="tag">React Query</span>
-                                <span class="tag">Context API</span>
-                            </div>
-                        </div>
+                            <ul class="tech-items" role="list" aria-label="State management tools">
+                                <li><span class="tag">Redux Toolkit</span></li>
+                                <li><span class="tag">Zustand</span></li>
+                                <li><span class="tag">React Query</span></li>
+                                <li><span class="tag">Context API</span></li>
+                            </ul>
+                        </article>
 
-                        <div class="tech-card reveal-item">
+                        <article class="tech-card reveal-item">
                             <h4>Styling & Animation</h4>
-                            <div class="tech-items">
-                                <span class="tag">Tailwind CSS v4</span>
-                                <span class="tag">Framer Motion</span>
-                                <span class="tag">Shadcn/ui</span>
-                                <span class="tag">Radix UI</span>
-                            </div>
-                        </div>
+                            <ul class="tech-items" role="list" aria-label="Styling and animation tools">
+                                <li><span class="tag">Tailwind CSS v4</span></li>
+                                <li><span class="tag">Framer Motion</span></li>
+                                <li><span class="tag">Shadcn/ui</span></li>
+                                <li><span class="tag">Radix UI</span></li>
+                            </ul>
+                        </article>
 
-                        <div class="tech-card reveal-item">
+                        <article class="tech-card reveal-item">
                             <h4>Backend & Database</h4>
-                            <div class="tech-items">
-                                <span class="tag">Supabase</span>
-                                <span class="tag">Firebase</span>
-                                <span class="tag">PostgreSQL</span>
-                                <span class="tag">Prisma ORM</span>
-                                <span class="tag">REST APIs</span>
-                            </div>
-                        </div>
+                            <ul class="tech-items" role="list" aria-label="Backend and database technologies">
+                                <li><span class="tag">Supabase</span></li>
+                                <li><span class="tag">Firebase</span></li>
+                                <li><span class="tag">PostgreSQL</span></li>
+                                <li><span class="tag">Prisma ORM</span></li>
+                                <li><span class="tag">REST APIs</span></li>
+                            </ul>
+                        </article>
 
-                        <div class="tech-card reveal-item">
+                        <article class="tech-card reveal-item">
                             <h4>Payments & Auth</h4>
-                            <div class="tech-items">
-                                <span class="tag">Stripe</span>
-                                <span class="tag">NextAuth.js</span>
-                                <span class="tag">Supabase Auth</span>
-                                <span class="tag">OAuth</span>
-                            </div>
-                        </div>
+                            <ul class="tech-items" role="list" aria-label="Payment and authentication tools">
+                                <li><span class="tag">Stripe</span></li>
+                                <li><span class="tag">NextAuth.js</span></li>
+                                <li><span class="tag">Supabase Auth</span></li>
+                                <li><span class="tag">OAuth</span></li>
+                            </ul>
+                        </article>
 
-                        <div class="tech-card reveal-item">
+                        <article class="tech-card reveal-item">
                             <h4>Deployment</h4>
-                            <div class="tech-items">
-                                <span class="tag">Vercel</span>
-                                <span class="tag">Cloudflare</span>
-                                <span class="tag">GitHub Actions</span>
-                            </div>
-                        </div>
+                            <ul class="tech-items" role="list" aria-label="Deployment platforms">
+                                <li><span class="tag">Vercel</span></li>
+                                <li><span class="tag">Cloudflare</span></li>
+                                <li><span class="tag">GitHub Actions</span></li>
+                            </ul>
+                        </article>
                     </div>
                 </section>
 
                 <!-- Contact -->
-                <section id="contact">
+                <section id="contact" aria-labelledby="contact-heading">
                     <div class="reveal-item content-wrapper">
                         <div class="cta-section">
-                            <div class="cta-label">What's Next?</div>
-                            <h2>Get In Touch</h2>
+                            <p class="cta-label">What's Next?</p>
+                            <h2 id="contact-heading">Get In Touch</h2>
                             <p>I'm currently open to new opportunities and interesting projects. Whether you need a
                                 complete
                                 platform or want to optimize an existing application, let's discuss how I can help.</p>
 
                             <div class="email-container">
-                                <a href="mailto:hrsshainik@gmail.com" class="email-link">
+                                <a href="mailto:hrsshainik@gmail.com" class="email-link"
+                                    aria-label="Send an email to hrsshainik@gmail.com">
                                     <span class="email-text">hrsshainik@gmail.com</span>
-                                    <span class="email-arrow">
+                                    <span class="email-arrow" aria-hidden="true">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                             stroke="#5eb8b8" stroke-width="1.5" stroke-linecap="round"
                                             stroke-linejoin="round">
@@ -555,11 +640,12 @@
                 </section>
 
                 <!-- Footer -->
-                <footer>
-                    <p>Designed & Built by Habibur Rahman</p>
+                <footer role="contentinfo">
+                    <p>&copy; <time datetime="2026">2026</time> Designed & Built by Habibur Rahman</p>
                 </footer>
 
-                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <!-- SVG Filters -->
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" aria-hidden="true">
                     <filter id="lensFilter" x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox">
                         <feComponentTransfer in="SourceAlpha" result="alpha">
                             <feFuncA type="identity" />

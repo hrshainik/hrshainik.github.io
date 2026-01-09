@@ -1,0 +1,76 @@
+{
+  "name": "Habibur Rahman — Full-Stack Developer Portfolio",
+  "short_name": "Habibur Rahman",
+  "description": "Product-driven full-stack developer specializing in Next.js, React, and TypeScript. Building scalable web applications for international clients.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#5eb8b8",
+  "theme_color": "#5eb8b8",
+
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+
+  "categories": ["business", "productivity", "portfolio"],
+
+  "shortcuts": [
+    {
+      "name": "View Projects",
+      "short_name": "Projects",
+      "description": "Browse my portfolio projects",
+      "url": "/#projects",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Contact Me",
+      "short_name": "Contact",
+      "description": "Get in touch for opportunities",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Services",
+      "short_name": "Services",
+      "description": "View my development services",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "/images/showcase.png",
+      "sizes": "2848x1798",
+      "type": "image/png",
+      "label": "Portfolio homepage showcasing projects and services"
+    }
+  ],
+
+  "lang": "en-US",
+  "dir": "ltr"
+}
