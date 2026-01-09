@@ -1097,6 +1097,10 @@ section {
   color: currentColor;
 }
 
+.service-card:first-child {
+  grid-column: span 2;
+}
+
 .service-card:hover li {
   color: var(--text-secondary);
 }
@@ -1225,27 +1229,98 @@ section {
 
 .cta-section p {
   max-width: 600px;
-  margin: 0 auto 36px;
+  margin: 0 auto 48px;
   line-height: 1.8;
 }
 
-.cta-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 36px;
-  background: var(--accent);
-  color: var(--bg-darkest);
-  font-weight: 600;
-  font-size: 15px;
-  border-radius: 12px;
-  transition: all 0.3s var(--ease-out);
+/* Email Container - The Iconic Design */
+.email-container {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
 }
 
-.cta-button:hover {
-  background: var(--accent-bright);
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 8px 24px rgba(94, 184, 184, 0.4);
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  padding: 18px 32px;
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent);
+  transition: all 0.3s var(--ease-out);
+  border-radius: 12px;
+}
+
+.email-text {
+  position: relative;
+  z-index: 1;
+  letter-spacing: -0.02em;
+}
+
+.email-arrow {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s var(--ease-out);
+  color: var(--accent);
+}
+
+.email-underline {
+  position: absolute;
+  bottom: 12px;
+  left: 32px;
+  right: 32px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  transform: scaleX(0);
+  transition: transform 0.4s var(--ease-out);
+}
+
+/* Hover Effects */
+.email-link:hover {
+  background: rgba(94, 184, 184, 0.05);
+  transform: translateY(-2px);
+}
+
+.email-link:hover .email-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.email-link:hover .email-text {
+  color: var(--accent-bright);
+}
+
+.email-container:hover .email-underline {
+  transform: scaleX(1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .email-link {
+    font-size: 15px;
+    padding: 16px 24px;
+  }
+
+  .email-underline {
+    left: 24px;
+    right: 24px;
+  }
+
+  .cta-section {
+    padding: 48px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .email-link {
+    font-size: 13px;
+    padding: 14px 20px;
+  }
 }
 
 /* Footer */
