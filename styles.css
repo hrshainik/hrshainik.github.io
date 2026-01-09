@@ -529,9 +529,8 @@ nav li:has(a.active)::before {
   margin-left: min(42%, 450px);
   width: calc(100% - min(42%, 450px));
   min-height: 100vh;
-}
-
-.main-content > div {
+  position: relative;
+  overflow: visible;
   padding-top: 100px;
 }
 
@@ -542,7 +541,8 @@ nav li:has(a.active)::before {
 
 section {
   margin-bottom: 120px;
-  /* scroll-margin-top: 100px; */
+  position: relative;
+  transform: none !important;
 }
 
 /* ===========================================
@@ -558,7 +558,8 @@ section {
   border-bottom: 1px solid transparent;
   transition: all 0.3s var(--ease);
   color: var(--text-accent);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+
+  isolation: isolate;
 }
 
 /* Header reveal animations */
@@ -861,6 +862,9 @@ section {
   padding: 36px;
   transition: all 0.3s var(--ease);
   cursor: default;
+
+  container-type: inline-size;
+  container-name: education;
 }
 
 .education-card:hover {
@@ -1735,7 +1739,7 @@ footer p {
     min-height: auto;
   }
 
-  .main-content > div {
+  .main-content {
     padding-top: 40px;
   }
 }
@@ -1753,7 +1757,7 @@ footer p {
     gap: 30px;
   }
 
-  .main-content > div {
+  .main-content {
     padding-top: 32px;
   }
 }
@@ -1792,10 +1796,7 @@ footer p {
   .main-content {
     margin-left: min(36%, 380px);
     width: calc(100% - min(36%, 380px));
-
-    & > div {
-      padding-top: 80px;
-    }
+    padding-top: 80px;
   }
 
   .projects-grid,
@@ -1842,10 +1843,8 @@ footer p {
 
   .main-content {
     margin-left: 0;
-
-    & > div {
-      padding-top: 60px;
-    }
+    width: 100%;
+    padding-top: 60px;
   }
 
   .content-wrapper {
@@ -1905,6 +1904,18 @@ footer p {
     grid-template-columns: 1fr;
     gap: 16px;
     padding: 24px;
+  }
+}
+
+@container education (max-width: 420px) {
+  .education-header {
+    gap: 4px;
+  }
+}
+
+@container education (max-width: 340px) {
+  .education-header {
+    flex-direction: column;
   }
 }
 
