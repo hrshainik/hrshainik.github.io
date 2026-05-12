@@ -1,17 +1,18 @@
 # Robots.txt for Habibur Rahman Portfolio
-# https://hrshainik-github-io.vercel.app
+# https://hrshainik.vercel.app
 
-# Allow all search engines
+# Allow all compliant search engines and AI crawlers
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://hrshainik-github-io.vercel.app/sitemap.xml
+Sitemap: https://hrshainik.vercel.app/sitemap.xml
 
-# Crawl delay (optional, in seconds)
-# Crawl-delay: 1
+# AI-readable content guide (llms.txt — emerging standard)
+# See: https://hrshainik.vercel.app/llms.txt
 
-# Common search engine bots
+# ─── Major Search Engines ───────────────────────────────────────────────────
+
 User-agent: Googlebot
 Allow: /
 
@@ -27,7 +28,35 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# Block common bad bots (optional)
+# ─── AI & LLM Crawlers ──────────────────────────────────────────────────────
+# Explicitly allow AI web crawlers to support AI-driven SEO / LLM knowledge
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# ─── Block Known Bad Bots ───────────────────────────────────────────────────
+
 User-agent: AhrefsBot
 Disallow: /
 
@@ -38,4 +67,10 @@ User-agent: MJ12bot
 Disallow: /
 
 User-agent: DotBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: BLEXBot
 Disallow: /

@@ -1,0 +1,55 @@
+# Habibur Rahman — Full-Stack Developer Portfolio
+
+> Product-driven full-stack developer based in Dhaka, Bangladesh.
+> Specializing in Next.js, React, and TypeScript.
+> Building scalable web applications, SaaS platforms, and e-commerce solutions for international clients.
+
+## About
+
+Habibur Rahman is a full-stack developer and the Founder & CEO of BioFidelicX
+(https://biofidex.com), an educational platform focused on bioscience education.
+He transitioned from Biochemistry & Molecular Biology (BSc, Jagannath University)
+to software development, bringing analytical precision to frontend engineering and
+user experience design.
+
+He works with international clients via Upwork and direct engagements, delivering
+production-ready web applications trusted in real-world environments.
+
+## Services
+
+- **Website Design & Development** — Modern, fast, responsive websites for businesses,
+  landing pages, and portfolios. SEO-ready layouts and performance-focused frontend.
+- **Web App & Dashboard Development** — SaaS tools, admin panels, dashboards, and full-stack
+  applications using Next.js and React.
+- **UI/UX Improvement & Optimization** — UI redesigns, accessibility fixes, mobile responsiveness,
+  frontend refactoring, and performance optimization for existing products.
+
+## Tech Stack
+
+- **Frontend**: Next.js 16, React 19, TypeScript, Tailwind CSS v4, Framer Motion, Shadcn/ui, Radix UI
+- **State**: Redux Toolkit, Zustand, React Query, Context API
+- **Backend & Database**: Supabase, Firebase, PostgreSQL, Prisma ORM, REST APIs
+- **Auth & Payments**: Stripe, NextAuth.js, Supabase Auth, OAuth
+- **Deployment**: Vercel, Cloudflare, GitHub Actions
+
+## Featured Projects
+
+- [BioFidelicX](https://biofidex.com) — Bioscience education platform with quizzes, articles,
+  and courses. Built with Next.js, TypeScript, and Supabase. Founded 2019.
+- [Al-Bayt Elegance](https://www.thealbayt.com) — E-commerce platform for Islamic fashion
+  with secure payments and real-time inventory. Built with React, Firebase, and Stripe.
+- [Noor Jabal Cleaning](https://noorjabalcleaning.com/) — Professional service website for a
+  Dubai-based cleaning company. Built with Next.js.
+
+## Contact & Profiles
+
+- **Email**: hrsshainik@gmail.com
+- **Portfolio**: https://hrshainik.vercel.app
+- **GitHub**: https://github.com/hrshainik
+- **LinkedIn**: https://www.linkedin.com/in/hrshainik
+- **Upwork**: https://www.upwork.com/freelancers/~018853a57064b0cb97
+- **Twitter/X**: https://twitter.com/traveloperhabib
+
+## Location
+
+Dhaka, Bangladesh — Available for remote work worldwide.

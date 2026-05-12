@@ -6,58 +6,53 @@
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#5eb8b8",
+  "background_color": "#0a0f1a",
   "theme_color": "#5eb8b8",
+  "prefer_related_applications": false,
 
   "icons": [
     {
       "src": "/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
     }
   ],
 
-  "categories": ["business", "productivity", "portfolio"],
+  "categories": ["business", "productivity"],
 
   "shortcuts": [
     {
       "name": "View Projects",
       "short_name": "Projects",
-      "description": "Browse my portfolio projects",
+      "description": "Browse featured portfolio projects",
       "url": "/#projects",
       "icons": [
-        {
-          "src": "/favicon.svg",
-          "sizes": "any",
-          "type": "image/svg+xml"
-        }
-      ]
-    },
-    {
-      "name": "Contact Me",
-      "short_name": "Contact",
-      "description": "Get in touch for opportunities",
-      "url": "/#contact",
-      "icons": [
-        {
-          "src": "/favicon.svg",
-          "sizes": "any",
-          "type": "image/svg+xml"
-        }
+        { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
       ]
     },
     {
       "name": "Services",
       "short_name": "Services",
-      "description": "View my development services",
+      "description": "View web development services",
       "url": "/#services",
       "icons": [
-        {
-          "src": "/favicon.svg",
-          "sizes": "any",
-          "type": "image/svg+xml"
-        }
+        { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+      ]
+    },
+    {
+      "name": "Contact Me",
+      "short_name": "Contact",
+      "description": "Get in touch for project opportunities",
+      "url": "/#contact",
+      "icons": [
+        { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
       ]
     }
   ],
@@ -67,6 +62,7 @@
       "src": "/images/showcase.png",
       "sizes": "2848x1798",
       "type": "image/png",
+      "form_factor": "wide",
       "label": "Portfolio homepage showcasing projects and services"
     }
   ],

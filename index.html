@@ -20,32 +20,47 @@
     <meta name="language" content="English">
     <meta name="geo.region" content="BD-13">
     <meta name="geo.placename" content="Dhaka">
-    <meta name="language" content="English">
+    <meta name="geo.position" content="23.8103;90.4125">
+    <meta name="ICBM" content="23.8103, 90.4125">
+    <meta name="application-name" content="Habibur Rahman Portfolio">
+    <meta name="creator" content="Habibur Rahman">
+    <meta name="publisher" content="Habibur Rahman">
+    <meta name="category" content="Technology, Web Development, Portfolio">
+    <meta name="classification" content="Business">
+    <meta name="coverage" content="Worldwide">
+    <meta name="rating" content="General">
+    <meta name="revisit-after" content="7 days">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://hrshainik-github-io.vercel.app">
+    <link rel="canonical" href="https://hrshainik.vercel.app/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hrshainik-github-io.vercel.app">
+    <meta property="og:url" content="https://hrshainik.vercel.app/">
     <meta property="og:title" content="Habibur Rahman — Full-Stack Developer | Next.js, React & TypeScript Expert">
     <meta property="og:description"
         content="Product-driven full-stack developer specializing in Next.js, React, and TypeScript. Building scalable web applications for international clients.">
-    <meta property="og:image" content="https://hrshainik-github-io.vercel.app/images/showcase.png">
+    <meta property="og:image" content="https://hrshainik.vercel.app/images/showcase.png">
+    <meta property="og:image:secure_url" content="https://hrshainik.vercel.app/images/showcase.png">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="2848">
     <meta property="og:image:height" content="1798">
-    <meta property="og:image:alt" content="Habibur Rahman Portfolio Showcase">
+    <meta property="og:image:alt" content="Habibur Rahman — Full-Stack Developer Portfolio Showcase">
     <meta property="og:site_name" content="Habibur Rahman Portfolio">
     <meta property="og:locale" content="en_US">
+    <meta property="og:updated_time" content="2026-02-21T00:00:00+00:00">
+    <meta property="article:author" content="https://www.linkedin.com/in/hrshainik">
 
-    <!-- Twitter -->
+    <!-- Twitter / X -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://hrshainik-github-io.vercel.app">
+    <meta property="twitter:url" content="https://hrshainik.vercel.app/">
     <meta property="twitter:title" content="Habibur Rahman — Full-Stack Developer | Next.js, React & TypeScript Expert">
     <meta property="twitter:description"
         content="Product-driven full-stack developer specializing in Next.js, React, and TypeScript. Building scalable web applications for international clients.">
-    <meta property="twitter:image" content="https://hrshainik-github-io.vercel.app/images/showcase.png">
+    <meta property="twitter:image" content="https://hrshainik.vercel.app/images/showcase.png">
+    <meta property="twitter:image:alt" content="Habibur Rahman — Full-Stack Developer Portfolio Showcase">
     <meta property="twitter:creator" content="@traveloperhabib">
+    <meta property="twitter:site" content="@traveloperhabib">
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#5eb8b8" media="(prefers-color-scheme: dark)">
@@ -62,128 +77,608 @@
     <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <!-- Preload critical LCP resource -->
+    <link rel="preload" as="image" href="/images/showcase.png" fetchpriority="high">
 
     <!-- Optimized Font Loading -->
     <link
         href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap"
         rel="stylesheet">
 
+
+    <!-- i18n: Language Switcher & RTL Styles -->
+    <style>
+        /* ── Language Switcher ─────────────────────────────────────────── */
+        .lang-switcher {
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .lang-toggle {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-radius: 8px;
+            padding: 6px 10px;
+            color: var(--text-secondary, #94a3b8);
+            cursor: pointer;
+            font-size: 0.73rem;
+            font-family: inherit;
+            letter-spacing: 0.06em;
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+            width: 100%;
+            max-width: 150px;
+        }
+
+        .lang-toggle:hover,
+        .lang-toggle:focus-visible {
+            background: rgba(94, 184, 184, 0.1);
+            border-color: rgba(94, 184, 184, 0.35);
+            color: #5eb8b8;
+            outline: none;
+        }
+
+        .lang-toggle svg {
+            flex-shrink: 0;
+        }
+
+        .lang-current {
+            font-weight: 700;
+            color: #5eb8b8;
+            min-width: 24px;
+        }
+
+        .lang-chevron {
+            margin-left: auto;
+            transition: transform 0.2s ease;
+        }
+
+        .lang-toggle[aria-expanded="true"] .lang-chevron {
+            transform: rotate(180deg);
+        }
+
+        /* Dropdown */
+        .lang-dropdown {
+            display: none;
+            position: absolute;
+            bottom: calc(100% + 8px);
+            left: 0;
+            background: #0b1120;
+            border: 1px solid rgba(255, 255, 255, 0.11);
+            border-radius: 10px;
+            padding: 4px;
+            list-style: none;
+            margin: 0;
+            min-width: 165px;
+            z-index: 200;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(94, 184, 184, 0.08);
+        }
+
+        .lang-dropdown.open {
+            display: block;
+            animation: langFadeIn 0.14s ease forwards;
+        }
+
+        @keyframes langFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(6px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .lang-dropdown [role="option"] {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            padding: 8px 11px;
+            border-radius: 7px;
+            cursor: pointer;
+            color: #94a3b8;
+            font-size: 0.8rem;
+            transition: background 0.13s, color 0.13s;
+            list-style: none;
+        }
+
+        .lang-dropdown [role="option"]:hover {
+            background: rgba(94, 184, 184, 0.1);
+            color: #e2e8f0;
+        }
+
+        .lang-dropdown [role="option"].active {
+            background: rgba(94, 184, 184, 0.16);
+            color: #5eb8b8;
+            font-weight: 500;
+        }
+
+        .lang-flag {
+            font-size: 1.05rem;
+            line-height: 1;
+        }
+
+        /* Screen-reader only */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* ── Detection Banner ──────────────────────────────────────────── */
+        .lang-detect-banner {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: #0f172a;
+            border: 1px solid rgba(94, 184, 184, 0.3);
+            border-radius: 10px;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 0.35s ease, transform 0.35s ease;
+            white-space: nowrap;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        .lang-detect-banner.visible {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .lang-detect-banner strong {
+            color: #5eb8b8;
+        }
+
+        .lang-detect-msg {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .lang-detect-dismiss {
+            background: none;
+            border: none;
+            color: #64748b;
+            cursor: pointer;
+            padding: 2px 4px;
+            font-size: 0.85rem;
+            transition: color 0.15s;
+            line-height: 1;
+        }
+
+        .lang-detect-dismiss:hover {
+            color: #e2e8f0;
+        }
+
+        /* ── RTL overrides ─────────────────────────────────────────────── */
+        body.rtl {
+            direction: rtl;
+        }
+
+        body.rtl .sidebar {
+            right: 0;
+            left: auto;
+            border-right: none !important;
+            border-left: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        body.rtl .main-content {
+            margin-right: min(42%, 450px);
+            margin-left: 0;
+        }
+
+        body.rtl .social-links {
+            justify-content: flex-start;
+        }
+
+        body.rtl .lang-dropdown {
+            left: auto;
+            right: 0;
+        }
+
+        body.rtl nav ul {
+            text-align: right;
+        }
+
+        body.rtl .experience-item {
+            flex-direction: row-reverse;
+        }
+
+        body.rtl .experience-period {
+            text-align: left;
+        }
+
+        body.rtl .section-header h2 {
+            text-align: right;
+        }
+
+        body.rtl .lang-detect-banner {
+            font-family: 'Geist', system-ui, sans-serif;
+            direction: ltr;
+        }
+
+        @media (max-width: 1024px) {
+            body.rtl .main-content {
+                margin-right: 0;
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
+            }
+
+            .lang-dropdown {
+                left: 0;
+                right: auto;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .lang-detect-banner {
+                white-space: normal;
+                max-width: 90vw;
+            }
+        }
+    </style>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Structured Data (JSON-LD) — Person -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
+      "@id": "https://hrshainik.vercel.app/#habibur-rahman",
       "name": "Habibur Rahman",
-      "url": "https://hrshainik-github-io.vercel.app",
-      "image": "https://hrshainik-github-io.vercel.app/images/showcase.png",
+      "givenName": "Habibur",
+      "familyName": "Rahman",
+      "url": "https://hrshainik.vercel.app/",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://hrshainik.vercel.app/images/showcase.png",
+        "width": 2848,
+        "height": 1798
+      },
       "jobTitle": "Full-Stack Developer",
+      "description": "Product-driven full-stack developer based in Dhaka, Bangladesh, specializing in frontend engineering and user experience. Transitioned from Biochemistry to software development. Building production-ready web applications, SaaS platforms, and e-commerce solutions for international clients via Upwork and direct engagements.",
       "worksFor": {
         "@type": "Organization",
-        "name": "biofideX"
+        "name": "BioFidelicX",
+        "url": "https://biofidex.com"
       },
-      "description": "Product-driven full-stack developer specializing in frontend engineering and user experience",
+      "founder": {
+        "@type": "Organization",
+        "name": "BioFidelicX",
+        "url": "https://biofidex.com",
+        "description": "An educational platform focused on bioscience education"
+      },
       "alumniOf": {
         "@type": "EducationalOrganization",
-        "name": "Jagannath University"
+        "name": "Jagannath University",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dhaka",
+          "addressCountry": "Bangladesh"
+        }
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Bachelor of Science",
+        "educationalLevel": "Undergraduate",
+        "recognizedBy": {
+          "@type": "EducationalOrganization",
+          "name": "Jagannath University"
+        }
       },
       "sameAs": [
         "https://github.com/hrshainik",
         "https://www.linkedin.com/in/hrshainik",
-        "https://www.upwork.com/freelancers/~018853a57064b0cb97"
+        "https://www.upwork.com/freelancers/~018853a57064b0cb97",
+        "https://twitter.com/traveloperhabib"
       ],
       "knowsAbout": [
         "Next.js",
         "React",
         "TypeScript",
+        "JavaScript",
         "Full-Stack Development",
         "Frontend Engineering",
-        "Web Development"
+        "Web Development",
+        "SaaS Development",
+        "E-Commerce Development",
+        "UI/UX Design",
+        "Supabase",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Stripe Integration",
+        "REST APIs",
+        "Vercel Deployment",
+        "Bioscience Education Technology"
+      ],
+      "knowsLanguage": [
+        {
+          "@type": "Language",
+          "name": "English"
+        },
+        {
+          "@type": "Language",
+          "name": "Bengali"
+        }
       ],
       "email": "hrsshainik@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Dhaka",
-        "addressCountry": "Bangladesh"
+        "addressRegion": "Dhaka Division",
+        "addressCountry": "BD"
+      },
+      "nationality": {
+        "@type": "Country",
+        "name": "Bangladesh"
       }
     }
     </script>
 
+    <!-- Structured Data (JSON-LD) — WebSite with SearchAction -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "@id": "https://hrshainik.vercel.app/#website",
       "name": "Habibur Rahman Portfolio",
-      "url": "https://hrshainik-github-io.vercel.app",
-      "description": "Portfolio of Habibur Rahman, a full-stack developer specializing in Next.js, React, and TypeScript",
+      "alternateName": "hrshainik",
+      "url": "https://hrshainik.vercel.app/",
+      "description": "Portfolio of Habibur Rahman, a full-stack developer specializing in Next.js, React, and TypeScript. Available for freelance web development projects.",
       "author": {
         "@type": "Person",
+        "@id": "https://hrshainik.vercel.app/#habibur-rahman",
         "name": "Habibur Rahman"
       },
-      "inLanguage": "en-US"
+      "publisher": {
+        "@type": "Person",
+        "@id": "https://hrshainik.vercel.app/#habibur-rahman",
+        "name": "Habibur Rahman"
+      },
+      "inLanguage": "en-US",
+      "copyrightYear": "2026",
+      "dateModified": "2026-02-21"
     }
     </script>
 
-    <!-- Structured Data (JSON-LD) - ProfessionalService -->
+    <!-- Structured Data (JSON-LD) — ProfessionalService -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
-      "name": "Habibur Rahman - Web Development Services",
-      "description": "Professional full-stack web development services including website design, web applications, and UI/UX optimization",
+      "@id": "https://hrshainik.vercel.app/#services",
+      "name": "Habibur Rahman — Web Development Services",
+      "url": "https://hrshainik.vercel.app/#services",
+      "description": "Professional full-stack web development services: custom websites, web apps, SaaS platforms, e-commerce, and UI/UX optimization for businesses worldwide.",
       "provider": {
         "@type": "Person",
+        "@id": "https://hrshainik.vercel.app/#habibur-rahman",
         "name": "Habibur Rahman"
       },
-      "areaServed": "Worldwide",
+      "areaServed": {
+        "@type": "GeoShape",
+        "name": "Worldwide"
+      },
       "serviceType": [
         "Website Design & Development",
         "Web App & Dashboard Development",
+        "SaaS Platform Development",
+        "E-Commerce Development",
         "UI/UX Improvement & Optimization"
       ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Web Development Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Website Design & Development",
+              "description": "Modern, fast, and responsive websites built with clean UI and thoughtful user experience. Includes business & personal websites, landing pages, portfolios, SEO-ready layouts, and performance-focused frontend."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web App & Dashboard Development",
+              "description": "User-friendly web applications and dashboards using Next.js and React. Covers SaaS tools, admin panels, frontend + backend integration, and scalable UI systems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "UI/UX Improvement & Optimization",
+              "description": "Improving existing websites and apps to look better, feel smoother, and perform faster. Includes UI redesign, UX cleanup, mobile & accessibility fixes, and performance optimization."
+            }
+          }
+        ]
+      },
       "priceRange": "$$"
     }
     </script>
 
-    <!-- Structured Data (JSON-LD) - ItemList for Projects -->
+    <!-- Structured Data (JSON-LD) — Portfolio Projects -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "Portfolio Projects",
-      "description": "Featured projects by Habibur Rahman",
+      "name": "Habibur Rahman — Portfolio Projects",
+      "description": "Featured projects designed and developed by Habibur Rahman, a full-stack developer from Dhaka, Bangladesh.",
+      "url": "https://hrshainik.vercel.app/#projects",
+      "numberOfItems": 5,
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "item": {
-            "@type": "CreativeWork",
-            "name": "biofideX — Bioscience Education",
-            "description": "A modern bioscience learning platform",
-            "url": "https://biofidex.com"
+            "@type": "WebApplication",
+            "name": "BioFidelicX — Bioscience Education Platform",
+            "description": "A modern bioscience learning platform where students and professionals can explore quizzes, articles, and courses across life science disciplines. Designed for clarity and accessibility with interactive assessments.",
+            "url": "https://biofidex.com",
+            "applicationCategory": "EducationApplication",
+            "operatingSystem": "Web",
+            "author": {
+              "@type": "Person",
+              "name": "Habibur Rahman"
+            },
+            "programmingLanguage": ["Next.js", "TypeScript", "Supabase"]
           }
         },
         {
           "@type": "ListItem",
           "position": 2,
           "item": {
-            "@type": "CreativeWork",
-            "name": "Secret Elite",
-            "description": "A private membership platform",
-            "url": "https://secretelite.date"
+            "@type": "WebApplication",
+            "name": "Al-Bayt Elegance — Islamic Fashion E-Commerce",
+            "description": "An e-commerce platform for Islamic fashion with a clean shopping experience, secure payments via Stripe, and real-time inventory management.",
+            "url": "https://www.thealbayt.com",
+            "applicationCategory": "ShoppingApplication",
+            "operatingSystem": "Web",
+            "author": {
+              "@type": "Person",
+              "name": "Habibur Rahman"
+            },
+            "programmingLanguage": ["React", "Firebase", "Stripe"]
           }
         },
         {
           "@type": "ListItem",
           "position": 3,
           "item": {
-            "@type": "CreativeWork",
-            "name": "Social-Earn.AI",
-            "description": "AI-powered brand and creator collaboration platform",
-            "url": "https://social-earn.ai/"
+            "@type": "WebSite",
+            "name": "Noor Jabal Cleaning — Dubai Cleaning Service",
+            "description": "A professional service website for a Dubai-based cleaning company, showcasing residential and commercial services with a clear structure and user-friendly experience.",
+            "url": "https://noorjabalcleaning.com/",
+            "author": {
+              "@type": "Person",
+              "name": "Habibur Rahman"
+            }
           }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD) — FAQPage (boosts AI Overview & featured snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "name": "Frequently Asked Questions — Habibur Rahman",
+      "url": "https://hrshainik.vercel.app/",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is Habibur Rahman?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Habibur Rahman is a product-driven full-stack developer based in Dhaka, Bangladesh. He specializes in frontend engineering and user experience, building production-ready web applications using Next.js, React, and TypeScript. He is also the Founder & CEO of BioFidelicX, an educational platform focused on bioscience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What services does Habibur Rahman offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Habibur Rahman offers three core web development services: (1) Website Design & Development — modern, fast, responsive websites for businesses, landing pages, and portfolios; (2) Web App & Dashboard Development — SaaS platforms, admin dashboards, and full-stack applications; and (3) UI/UX Improvement & Optimization — redesign, performance improvements, and accessibility fixes for existing products."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technologies does Habibur Rahman use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Habibur Rahman's core technology stack includes Next.js, React 19, TypeScript, Tailwind CSS, Framer Motion, Supabase, PostgreSQL, Firebase, Stripe, NextAuth.js, Redux Toolkit, Zustand, and React Query. He deploys applications on Vercel and Cloudflare, and uses GitHub Actions for CI/CD pipelines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I hire Habibur Rahman as a freelance developer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can hire Habibur Rahman through his Upwork profile (upwork.com/freelancers/~018853a57064b0cb97) or contact him directly at hrsshainik@gmail.com. He is open to new opportunities, freelance projects, and long-term collaborations worldwide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is BioFidelicX?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BioFidelicX (biofidex.com) is an educational platform founded by Habibur Rahman in 2019, focused on bioscience education. It offers quizzes, articles, and structured courses across life science disciplines, designed to support effective, evidence-based learning for students and professionals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Habibur Rahman located and does he work with international clients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Habibur Rahman is based in Dhaka, Bangladesh, and actively works with international clients worldwide via Upwork and direct engagements. He has delivered projects for clients across different time zones, building SaaS platforms, e-commerce solutions, and web applications."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD) — BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hrshainik.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://hrshainik.vercel.app/#about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Projects",
+          "item": "https://hrshainik.vercel.app/#projects"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Services",
+          "item": "https://hrshainik.vercel.app/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Contact",
+          "item": "https://hrshainik.vercel.app/#contact"
         }
       ]
     }
@@ -208,7 +703,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Skip Navigation Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link" data-i18n="nav.skipLink">Skip to main content</a>
 
     <!-- Decorative Background Elements -->
     <div class="gradient-bg"></div>
@@ -223,28 +718,76 @@
             <div class="sidebar-inner">
                 <div class="sidebar-content">
                     <div class="intro">
-                        <div class="title-number">Hello, I'm</div>
+                        <div class="title-number" data-i18n="hero.greeting">Hello, I'm</div>
                         <h1>Habibur Rahman</h1>
-                        <h2 role="doc-subtitle">Full-Stack Developer</h2>
-                        <p>Product-driven developer with a strong focus on frontend engineering and user experience.</p>
+                        <p class="developer-title" data-i18n="hero.jobTitle">Full-Stack Developer</p>
+                        <p data-i18n="hero.tagline">Product-driven developer with a strong focus on frontend engineering
+                            and user experience.</p>
                     </div>
 
                     <nav aria-label="Main navigation">
                         <ul role="list">
-                            <li><a href="#about" class="nav-link active"
-                                    aria-label="Navigate to About section">About</a></li>
-                            <li><a href="#experience" class="nav-link"
-                                    aria-label="Navigate to Experience section">Experience</a></li>
-                            <li><a href="#education" class="nav-link"
-                                    aria-label="Navigate to Education section">Education</a></li>
-                            <li><a href="#projects" class="nav-link"
-                                    aria-label="Navigate to Projects section">Projects</a></li>
-                            <li><a href="#services" class="nav-link"
-                                    aria-label="Navigate to Services section">Services</a></li>
-                            <li><a href="#tech" class="nav-link" aria-label="Navigate to Tech Stack section">Tech
-                                    Stack</a></li>
+                            <li><a href="#about" class="nav-link active" data-i18n="nav.about">About</a></li>
+                            <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+                            <li><a href="#education" class="nav-link" data-i18n="nav.education">Education</a></li>
+                            <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+                            <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+                            <li><a href="#tech" class="nav-link" data-i18n="nav.techStack">Tech Stack</a></li>
                         </ul>
                     </nav>
+                </div>
+
+                <div class="lang-switcher" role="navigation" aria-label="Language selection">
+                    <button class="lang-toggle" id="langToggle" aria-expanded="false" aria-haspopup="listbox"
+                        aria-label="Select language">
+                        <!-- Globe icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                        <span class="lang-current" id="langCurrent">EN</span>
+                        <!-- Chevron -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="11" height="11" fill="none"
+                            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lang-chevron" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                        <span class="sr-only" id="langSrLabel">Language: EN</span>
+                    </button>
+
+                    <ul class="lang-dropdown" id="langDropdown" role="listbox" aria-label="Available languages">
+                        <li role="option" data-lang-option="en" aria-selected="true" class="active" tabindex="0">
+                            <span class="lang-flag" aria-hidden="true">🇺🇸</span>
+                            <span class="lang-option-name">English</span>
+                        </li>
+                        <li role="option" data-lang-option="bn" aria-selected="false" tabindex="0">
+                            <span class="lang-flag" aria-hidden="true">🇧🇩</span>
+                            <span class="lang-option-name">বাংলা</span>
+                        </li>
+                        <li role="option" data-lang-option="ar" aria-selected="false" tabindex="0">
+                            <span class="lang-flag" aria-hidden="true">🇸🇦</span>
+                            <span class="lang-option-name">العربية</span>
+                        </li>
+                        <li role="option" data-lang-option="es" aria-selected="false" tabindex="0">
+                            <span class="lang-flag" aria-hidden="true">🇪🇸</span>
+                            <span class="lang-option-name">Español</span>
+                        </li>
+                        <li role="option" data-lang-option="fr" aria-selected="false" tabindex="0">
+                            <span class="lang-flag" aria-hidden="true">🇫🇷</span>
+                            <span class="lang-option-name">Français</span>
+                        </li>
+                        <li role="option" data-lang-option="de" aria-selected="false" tabindex="0">
+                            <span class="lang-flag" aria-hidden="true">🇩🇪</span>
+                            <span class="lang-option-name">Deutsch</span>
+                        </li>
+                        <li role="option" data-lang-option="pt" aria-selected="false" tabindex="0">
+                            <span class="lang-flag" aria-hidden="true">🇧🇷</span>
+                            <span class="lang-option-name">Português</span>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="social-links" role="navigation" aria-label="Social media links">
@@ -291,24 +834,23 @@
                 <header class="section-header header-reveal">
                     <div class="glass-filter" aria-hidden="true"></div>
                     <div class="glass-overlay" aria-hidden="true"></div>
-                    <h2 id="about-heading">About</h2>
+                    <h2 id="about-heading" data-i18n="about.heading">About</h2>
                 </header>
                 <div class="about-content reveal-item content-wrapper">
-                    <p>I am a product-driven full-stack developer based in Dhaka, Bangladesh, with a strong focus on
-                        frontend engineering and user experience. I transitioned from Biochemistry to software
-                        development out of a genuine passion for building thoughtful, well-designed digital
+                    <p data-i18n="about.p1">I am a product-driven full-stack developer based in Dhaka, Bangladesh, with
+                        a strong focus on frontend engineering and user experience. I transitioned from Biochemistry to
+                        software development out of a genuine passion for building thoughtful, well-designed digital
                         products.</p>
 
-                    <p>I build production-ready web applications, bridging design and engineering to transform ideas
-                        into dependable, user-focused products. I work with international clients both on <a
-                            href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank"
-                            rel="noopener noreferrer">Upwork</a>
-                        and through my personal portfolio, delivering software that is trusted and used in
-                        real-world environments.</p>
+                    <p data-i18n-html="about.p2Html">I build production-ready web applications, bridging design and
+                        engineering to transform ideas into dependable, user-focused products. I work with international
+                        clients both on <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank"
+                            rel="noopener noreferrer">Upwork</a> and through my personal portfolio, delivering software
+                        that is trusted and used in real-world environments.</p>
 
-                    <p>My academic background in Biochemistry & Molecular Biology has shaped a structured and
-                        analytical approach to problem-solving, allowing me to design software systems with clarity,
-                        precision, and long-term maintainability in mind.</p>
+                    <p data-i18n="about.p3">My academic background in Biochemistry &amp; Molecular Biology has shaped a
+                        structured and analytical approach to problem-solving, allowing me to design software systems
+                        with clarity, precision, and long-term maintainability in mind.</p>
                 </div>
             </section>
 
@@ -317,20 +859,22 @@
                 <header class="section-header header-reveal">
                     <div class="glass-filter" aria-hidden="true"></div>
                     <div class="glass-overlay" aria-hidden="true"></div>
-                    <h2 id="experience-heading">Experience</h2>
+                    <h2 id="experience-heading" data-i18n="experience.heading">Experience</h2>
                 </header>
                 <div class="experience-list content-wrapper">
                     <article class="experience-item reveal-item">
                         <div class="experience-period">
-                            <time datetime="2023">2023</time> — <time datetime="2026">Present</time>
+                            <time datetime="2023">2023</time> — <time datetime="2026"
+                                data-i18n="experience.present">Present</time>
                         </div>
                         <div class="experience-content">
                             <h3><a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank"
-                                    rel="noopener noreferrer" class="experience-title">Full-Stack Developer ·
-                                    Upwork</a></h3>
-                            <p class="experience-description">Building scalable web applications for international
-                                clients. Projects range from SaaS platforms to e-commerce solutions, focusing on
-                                clean architecture, performance optimization, and exceptional user experiences.</p>
+                                    rel="noopener noreferrer" class="experience-title"
+                                    data-i18n="experience.upwork.title">Full-Stack Developer · Upwork</a></h3>
+                            <p class="experience-description" data-i18n="experience.upwork.description">Building
+                                scalable web applications for international clients. Projects range from SaaS platforms
+                                to e-commerce solutions, focusing on clean architecture, performance optimization, and
+                                exceptional user experiences.</p>
                             <ul class="experience-tags" role="list" aria-label="Technologies used">
                                 <li><span class="tag">SaaS Development</span></li>
                                 <li><span class="tag">E-Commerce</span></li>
@@ -342,17 +886,18 @@
 
                     <article class="experience-item reveal-item">
                         <div class="experience-period">
-                            <time datetime="2019">2019</time> — <time datetime="2026">Present</time>
+                            <time datetime="2019">2019</time> — <time datetime="2026"
+                                data-i18n="experience.present">Present</time>
                         </div>
                         <div class="experience-content">
                             <h3><a href="https://biofidex.com" target="_blank" rel="noopener noreferrer"
-                                    class="experience-title">Founder &
-                                    CEO · biofideX</a>
-                            </h3>
-                            <p class="experience-description">Building an educational platform focused on
-                                bioscience education. Leading product development, technical architecture, and user
-                                experience design for a comprehensive learning ecosystem.</p>
-                            <ul class="experience-tags">
+                                    class="experience-title" data-i18n="experience.biofidex.title">Founder &amp; CEO ·
+                                    biofideX</a></h3>
+                            <p class="experience-description" data-i18n="experience.biofidex.description">Building an
+                                educational platform focused on bioscience education. Leading product development,
+                                technical architecture, and user experience design for a comprehensive learning
+                                ecosystem.</p>
+                            <ul class="experience-tags" role="list" aria-label="Technologies used">
                                 <li><span class="tag">EdTech Platform</span></li>
                                 <li><span class="tag">Product Strategy</span></li>
                                 <li><span class="tag">Team Leadership</span></li>
@@ -368,20 +913,21 @@
                 <header class="section-header header-reveal">
                     <div class="glass-filter" aria-hidden="true"></div>
                     <div class="glass-overlay" aria-hidden="true"></div>
-                    <h2 id="education-heading">Education</h2>
+                    <h2 id="education-heading" data-i18n="education.heading">Education</h2>
                 </header>
                 <div class=" reveal-item content-wrapper">
                     <article class="education-card">
                         <div class="education-header">
                             <div>
-                                <h3>Jagannath University</h3>
-                                <p class="education-field">Biochemistry & Molecular Biology</p>
+                                <h3 data-i18n="education.university">Jagannath University</h3>
+                                <p class="education-field" data-i18n="education.field">Biochemistry &amp; Molecular
+                                    Biology</p>
                             </div>
-                            <span class="education-badge" aria-label="Bachelor of Science degree">BSc</span>
+                            <span class="education-badge" data-i18n="education.badge">BSc</span>
                         </div>
-                        <p class="education-description">Built a strong foundation in analytical thinking, research
-                            methodology, and scientific problem-solving that now informs my systematic approach to
-                            software engineering and product development.</p>
+                        <p class="education-description" data-i18n="education.description">Built a strong foundation in
+                            analytical thinking, research methodology, and scientific problem-solving that now informs
+                            my systematic approach to software engineering and product development.</p>
                     </article>
                 </div>
             </section>
@@ -391,20 +937,20 @@
                 <header class="section-header header-reveal">
                     <div class="glass-filter" aria-hidden="true"></div>
                     <div class="glass-overlay" aria-hidden="true"></div>
-                    <h2 id="projects-heading">Projects</h2>
+                    <h2 id="projects-heading" data-i18n="projects.heading">Projects</h2>
                 </header>
                 <div class="projects-grid content-wrapper">
                     <article class="project-card reveal-item">
                         <a href="https://biofidex.com" target="_blank" rel="noopener noreferrer"
                             aria-label="Visit biofideX Bioscience Education project (opens in new tab)">
                             <span class="project-icon" aria-hidden="true">🧬</span>
-                            <h3 class="project-title">biofideX — Bioscience Education</h3>
-                            <p class="project-description">
-                                A modern bioscience learning platform where students and professionals can
-                                explore quizzes, articles, and courses across life science disciplines.
-                                Designed for clarity and accessibility, with interactive assessments and
-                                structured content that support effective, evidence-based learning.
-                            </p>
+                            <h3 class="project-title" data-i18n="projects.biofidex.title">biofideX — Bioscience
+                                Education</h3>
+                            <p class="project-description" data-i18n="projects.biofidex.description">A modern bioscience
+                                learning platform where students and professionals can explore quizzes, articles, and
+                                courses across life science disciplines. Designed for clarity and accessibility, with
+                                interactive assessments and structured content that support effective, evidence-based
+                                learning.</p>
                             <ul class="project-tags" role="list" aria-label="Technologies used">
                                 <li><span class="tag">Next.js</span></li>
                                 <li><span class="tag">TypeScript</span></li>
@@ -415,52 +961,13 @@
                     </article>
 
                     <article class="project-card reveal-item">
-                        <a href="https://secretelite.date" target="_blank" rel="noopener noreferrer"
-                            aria-label="Visit Secret Elite project (opens in new tab)">
-                            <span class="project-icon" aria-hidden="true">💼</span>
-                            <h3 class="project-title">Secret Elite</h3>
-                            <p class="project-description">
-                                A private membership platform featuring tier-based access, subscription
-                                management, and a flexible affiliate commission system built for scalability
-                                and growth.
-                            </p>
-                            <ul class="project-tags" role="list" aria-label="Technologies used">
-                                <li><span class="tag">Next.js</span></li>
-                                <li><span class="tag">Stripe</span></li>
-                                <li><span class="tag">PostgreSQL</span></li>
-                            </ul>
-                        </a>
-                    </article>
-
-
-                    <article class="project-card reveal-item">
-                        <a href="https://social-earn.ai/" target="_blank" rel="noopener noreferrer"
-                            aria-label="Visit Social-Earn.AI project (opens in new tab)">
-                            <span class="project-icon" aria-hidden="true">🤖</span>
-                            <h3 class="project-title">Social-Earn.AI</h3>
-                            <p class="project-description">
-                                A platform that helps brands and content creators collaborate efficiently
-                                through automated workflows, performance tracking, and data-driven insights.
-                            </p>
-                            <ul class="project-tags" role="list" aria-label="Technologies used">
-                                <li><span class="tag">Next.js</span></li>
-                                <li><span class="tag">AI Integration</span></li>
-                                <li><span class="tag">Analytics</span></li>
-                            </ul>
-                        </a>
-                    </article>
-
-
-
-                    <article class="project-card reveal-item">
                         <a href="https://www.thealbayt.com" target="_blank" rel="noopener noreferrer"
                             aria-label="Visit Al-Bayt Elegance project (opens in new tab)">
                             <span class="project-icon" aria-hidden="true">🛍️</span>
-                            <h3 class="project-title">Al-Bayt Elegance</h3>
-                            <p class="project-description">
-                                An e-commerce platform for Islamic fashion, built with a clean shopping
-                                experience, secure payments, and real-time inventory management.
-                            </p>
+                            <h3 class="project-title" data-i18n="projects.albayt.title">Al-Bayt Elegance</h3>
+                            <p class="project-description" data-i18n="projects.albayt.description">An e-commerce
+                                platform for Islamic fashion, built with a clean shopping experience, secure payments,
+                                and real-time inventory management.</p>
                             <ul class="project-tags" role="list" aria-label="Technologies used">
                                 <li><span class="tag">React</span></li>
                                 <li><span class="tag">Firebase</span></li>
@@ -473,12 +980,10 @@
                         <a href="https://noorjabalcleaning.com/" target="_blank" rel="noopener noreferrer"
                             aria-label="Visit Noor Jabal Cleaning project (opens in new tab)">
                             <span class="project-icon" aria-hidden="true">🧼</span>
-                            <h3 class="project-title">Noor Jabal Cleaning</h3>
-                            <p class="project-description">
-                                A professional service website for a Dubai-based cleaning company, showcasing
-                                residential and commercial services with a clear structure and user-friendly
-                                experience.
-                            </p>
+                            <h3 class="project-title" data-i18n="projects.noorJabal.title">Noor Jabal Cleaning</h3>
+                            <p class="project-description" data-i18n="projects.noorJabal.description">A professional
+                                service website for a Dubai-based cleaning company, showcasing residential and
+                                commercial services with a clear structure and user-friendly experience.</p>
                             <ul class="project-tags" role="list" aria-label="Technologies used">
                                 <li><span class="tag">Next.js</span></li>
                                 <li><span class="tag">Service Website</span></li>
@@ -495,22 +1000,20 @@
                 <header class="section-header header-reveal">
                     <div class="glass-filter" aria-hidden="true"></div>
                     <div class="glass-overlay" aria-hidden="true"></div>
-                    <h2 id="services-heading">Services</h2>
+                    <h2 id="services-heading" data-i18n="services.heading">Services</h2>
                 </header>
 
                 <div class="services-grid content-wrapper">
                     <!-- Service 1 -->
                     <article class="service-card reveal-item">
                         <div class="service-icon" aria-hidden="true">🌐</div>
-                        <h3>Website Design & Development</h3>
-                        <p>
-                            Modern, fast, and responsive websites built with clean UI and
-                            thoughtful user experience.
-                        </p>
-                        <ul role="list">
-                            <li>Business & personal websites</li>
-                            <li>Landing pages & portfolios</li>
-                            <li>Responsive & SEO-ready layouts</li>
+                        <h3 data-i18n="services.web.title">Website Design &amp; Development</h3>
+                        <p data-i18n="services.web.description">Modern, fast, and responsive websites built with clean
+                            UI and thoughtful user experience.</p>
+                        <ul role="list" data-svc-list="web">
+                            <li>Business &amp; personal websites</li>
+                            <li>Landing pages &amp; portfolios</li>
+                            <li>Responsive &amp; SEO-ready layouts</li>
                             <li>Performance-focused frontend</li>
                         </ul>
                     </article>
@@ -518,14 +1021,12 @@
                     <!-- Service 2 -->
                     <article class="service-card reveal-item">
                         <div class="service-icon" aria-hidden="true">🧩</div>
-                        <h3>Web App & Dashboard Development</h3>
-                        <p>
-                            User-friendly web applications and dashboards that turn complex ideas
-                            into simple experiences.
-                        </p>
-                        <ul role="list">
-                            <li>SaaS & internal tools</li>
-                            <li>Admin panels & dashboards</li>
+                        <h3 data-i18n="services.app.title">Web App &amp; Dashboard Development</h3>
+                        <p data-i18n="services.app.description">User-friendly web applications and dashboards that turn
+                            complex ideas into simple experiences.</p>
+                        <ul role="list" data-svc-list="app">
+                            <li>SaaS &amp; internal tools</li>
+                            <li>Admin panels &amp; dashboards</li>
                             <li>Frontend + backend integration</li>
                             <li>Scalable UI systems</li>
                         </ul>
@@ -534,14 +1035,12 @@
                     <!-- Service 3 -->
                     <article class="service-card reveal-item">
                         <div class="service-icon" aria-hidden="true">✨</div>
-                        <h3>UI/UX Improvement & Optimization</h3>
-                        <p>
-                            Improving existing websites and apps to look better, feel smoother,
-                            and perform faster.
-                        </p>
-                        <ul role="list">
-                            <li>UI redesign & UX cleanup</li>
-                            <li>Mobile & accessibility fixes</li>
+                        <h3 data-i18n="services.uiux.title">UI/UX Improvement &amp; Optimization</h3>
+                        <p data-i18n="services.uiux.description">Improving existing websites and apps to look better,
+                            feel smoother, and perform faster.</p>
+                        <ul role="list" data-svc-list="uiux">
+                            <li>UI redesign &amp; UX cleanup</li>
+                            <li>Mobile &amp; accessibility fixes</li>
                             <li>Frontend refactoring</li>
                             <li>Performance optimization</li>
                         </ul>
@@ -555,11 +1054,11 @@
                 <header class="section-header header-reveal">
                     <div class="glass-filter" aria-hidden="true"></div>
                     <div class="glass-overlay" aria-hidden="true"></div>
-                    <h2 id="tech-heading">Tech Stack</h2>
+                    <h2 id="tech-heading" data-i18n="tech.heading">Tech Stack</h2>
                 </header>
                 <div class="tech-grid content-wrapper">
                     <article class="tech-card reveal-item">
-                        <h4>Frontend Frameworks</h4>
+                        <h4 data-i18n="tech.frontend">Frontend Frameworks</h4>
                         <ul class="tech-items" role="list" aria-label="Frontend frameworks">
                             <li><span class="tag">Next.js 16</span></li>
                             <li><span class="tag">React 19</span></li>
@@ -569,7 +1068,7 @@
                     </article>
 
                     <article class="tech-card reveal-item">
-                        <h4>State Management</h4>
+                        <h4 data-i18n="tech.state">State Management</h4>
                         <ul class="tech-items" role="list" aria-label="State management tools">
                             <li><span class="tag">Redux Toolkit</span></li>
                             <li><span class="tag">Zustand</span></li>
@@ -579,7 +1078,7 @@
                     </article>
 
                     <article class="tech-card reveal-item">
-                        <h4>Styling & Animation</h4>
+                        <h4 data-i18n="tech.styling">Styling &amp; Animation</h4>
                         <ul class="tech-items" role="list" aria-label="Styling and animation tools">
                             <li><span class="tag">Tailwind CSS v4</span></li>
                             <li><span class="tag">Framer Motion</span></li>
@@ -589,7 +1088,7 @@
                     </article>
 
                     <article class="tech-card reveal-item">
-                        <h4>Backend & Database</h4>
+                        <h4 data-i18n="tech.backend">Backend &amp; Database</h4>
                         <ul class="tech-items" role="list" aria-label="Backend and database technologies">
                             <li><span class="tag">Supabase</span></li>
                             <li><span class="tag">Firebase</span></li>
@@ -600,7 +1099,7 @@
                     </article>
 
                     <article class="tech-card reveal-item">
-                        <h4>Payments & Auth</h4>
+                        <h4 data-i18n="tech.payments">Payments &amp; Auth</h4>
                         <ul class="tech-items" role="list" aria-label="Payment and authentication tools">
                             <li><span class="tag">Stripe</span></li>
                             <li><span class="tag">NextAuth.js</span></li>
@@ -610,7 +1109,7 @@
                     </article>
 
                     <article class="tech-card reveal-item">
-                        <h4>Deployment</h4>
+                        <h4 data-i18n="tech.deployment">Deployment</h4>
                         <ul class="tech-items" role="list" aria-label="Deployment platforms">
                             <li><span class="tag">Vercel</span></li>
                             <li><span class="tag">Cloudflare</span></li>
@@ -624,14 +1123,14 @@
             <section id="contact" aria-labelledby="contact-heading">
                 <div class="reveal-item content-wrapper">
                     <div class="cta-section">
-                        <p class="cta-label">What's Next?</p>
-                        <h2 id="contact-heading">Get In Touch</h2>
-                        <p>I'm currently open to new opportunities and interesting projects. Whether you need a
-                            complete
-                            platform or want to optimize an existing application, let's discuss how I can help.</p>
+                        <p class="cta-label" data-i18n="contact.label">What's Next?</p>
+                        <h2 id="contact-heading" data-i18n="contact.heading">Get In Touch</h2>
+                        <p data-i18n="contact.description">I'm currently open to new opportunities and interesting
+                            projects. Whether you need a complete platform or want to optimize an existing application,
+                            let's discuss how I can help.</p>
 
                         <div class="email-container">
-                            <a href="mailto:hrsshainik@gmail.com" class="email-link"
+                            <a href="mailto:hrsshainik@gmail.com" class="email-link" data-i18n-aria="contact.emailAria"
                                 aria-label="Send an email to hrsshainik@gmail.com">
                                 <span class="email-text">hrsshainik@gmail.com</span>
                                 <span class="email-arrow" aria-hidden="true">
@@ -652,7 +1151,8 @@
 
             <!-- Footer -->
             <footer role="contentinfo">
-                <p>&copy; <time datetime="2026">2026</time> Designed & Built by Habibur Rahman</p>
+                <p>&copy; <time datetime="2026">2026</time> <span data-i18n="footer.text">Designed &amp; Built by
+                        Habibur Rahman</span></p>
             </footer>
 
             <!-- SVG Filters -->
@@ -797,9 +1297,9 @@
         });
 
         // Parallax orbs
-        let ticking = false;
+        let orbTicking = false;
         document.addEventListener('mousemove', (e) => {
-            if (!ticking) {
+            if (!orbTicking) {
                 requestAnimationFrame(() => {
                     const x = (e.clientX / window.innerWidth - 0.5);
                     const y = (e.clientY / window.innerHeight - 0.5);
@@ -811,12 +1311,16 @@
                         orb.style.transform = `translate(${moveX}px, ${moveY}px)`;
                     });
 
-                    ticking = false;
+                    orbTicking = false;
                 });
-                ticking = true;
+                orbTicking = true;
             }
         });
     </script>
+
+    <!-- i18n: Translations & Language Engine -->
+    <script src="translations.js"></script>
+    <script src="lang.js"></script>
 </body>
 
 </html>

@@ -55,14 +55,14 @@
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
   font-family: var(--font-sans);
   color: var(--text-secondary);
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
@@ -1835,6 +1835,8 @@ footer p {
     padding: 60px 24px 40px;
     border-right: none;
     border-bottom: 1px solid var(--border-subtle);
+    overflow-y: visible;
+    overscroll-behavior: auto;
   }
 
   nav {
