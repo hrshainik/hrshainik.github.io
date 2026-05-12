@@ -53,6 +53,11 @@ const TRANSLATIONS = {
     experience: {
       heading: "Experience",
       present: "Present",
+      qubetix: {
+        title: "Founder & CEO · Qubetix",
+        description:
+          "Leading a digital studio that designs and builds brand systems, websites, apps, AI products, and marketing programs end-to-end for ambitious teams worldwide.",
+      },
       upwork: {
         title: "Full-Stack Developer · Upwork",
         description:
@@ -190,6 +195,11 @@ const TRANSLATIONS = {
     experience: {
       heading: "অভিজ্ঞতা",
       present: "বর্তমান",
+      qubetix: {
+        title: "প্রতিষ্ঠাতা ও সিইও · Qubetix",
+        description:
+          "একটি ডিজিটাল স্টুডিও পরিচালনা করছি যা বিশ্বব্যাপী উচ্চাকাঙ্ক্ষী টিমের জন্য ব্র্যান্ড সিস্টেম, ওয়েবসাইট, অ্যাপ, এআই পণ্য এবং মার্কেটিং প্রোগ্রাম এন্ড-টু-এন্ড ডিজাইন ও তৈরি করে।",
+      },
       upwork: {
         title: "ফুল-স্ট্যাক ডেভেলপার · Upwork",
         description:
@@ -326,6 +336,11 @@ const TRANSLATIONS = {
     experience: {
       heading: "الخبرة",
       present: "حتى الآن",
+      qubetix: {
+        title: "المؤسس والرئيس التنفيذي · Qubetix",
+        description:
+          "أقود استوديو رقمي يصمم ويبني أنظمة العلامات التجارية والمواقع والتطبيقات ومنتجات الذكاء الاصطناعي وبرامج التسويق من البداية إلى النهاية للفرق الطموحة حول العالم.",
+      },
       upwork: {
         title: "مطوّر فول-ستاك · Upwork",
         description:
@@ -463,6 +478,11 @@ const TRANSLATIONS = {
     experience: {
       heading: "Experiencia",
       present: "Presente",
+      qubetix: {
+        title: "Fundador y CEO · Qubetix",
+        description:
+          "Liderando un estudio digital que diseña y construye sistemas de marca, sitios web, aplicaciones, productos de IA y programas de marketing de principio a fin para equipos ambiciosos en todo el mundo.",
+      },
       upwork: {
         title: "Desarrollador Full-Stack · Upwork",
         description:
@@ -600,6 +620,11 @@ const TRANSLATIONS = {
     experience: {
       heading: "Expérience",
       present: "Présent",
+      qubetix: {
+        title: "Fondateur et PDG · Qubetix",
+        description:
+          "Direction d'un studio numérique qui conçoit et développe de bout en bout des systèmes de marque, des sites web, des applications, des produits IA et des programmes marketing pour des équipes ambitieuses dans le monde entier.",
+      },
       upwork: {
         title: "Développeur Full-Stack · Upwork",
         description:
@@ -737,6 +762,11 @@ const TRANSLATIONS = {
     experience: {
       heading: "Erfahrung",
       present: "Heute",
+      qubetix: {
+        title: "Gründer & CEO · Qubetix",
+        description:
+          "Leitung eines Digitalstudios, das Markensysteme, Websites, Apps, KI-Produkte und Marketingprogramme End-to-End für ambitionierte Teams weltweit gestaltet und entwickelt.",
+      },
       upwork: {
         title: "Full-Stack-Entwickler · Upwork",
         description:
@@ -874,6 +904,11 @@ const TRANSLATIONS = {
     experience: {
       heading: "Experiência",
       present: "Presente",
+      qubetix: {
+        title: "Fundador e CEO · Qubetix",
+        description:
+          "Liderando um estúdio digital que projeta e constrói sistemas de marca, websites, aplicativos, produtos de IA e programas de marketing de ponta a ponta para equipes ambiciosas em todo o mundo.",
+      },
       upwork: {
         title: "Desenvolvedor Full-Stack · Upwork",
         description:
