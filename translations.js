@@ -256,7 +256,7 @@ const TRANSLATIONS = {
         title: "biofideX",
         category: "এডটেক · বায়োসায়েন্স",
         description:
-          "একটি আধুনিক বায়োসায়েন্স লার্নিং প্ল্যাটফর্ম, যেখানে শিক্ষার্থী আর পেশাজীবীরা লাইফ সায়েন্সের নানা বিষয়ে কুইজ, আর্টিকেল আর কোর্স ঘুরে দেখতে পারেন। স্পষ্টতা ও অ্যাক্সেসিবিলিটি মাথায় রেখে গড়া — ইন্টার‍্যাক্টিভ অ্যাসেসমেন্ট আর গোছানো কনটেন্টের মাধ্যমে প্রমাণভিত্তিক শেখাকে এগিয়ে নেওয়াই এর লক্ষ্য।",
+          "একটি আধুনিক বায়োসায়েন্স লার্নিং প্ল্যাটফর্ম — শিক্ষার্থী আর পেশাজীবীরা লাইফ সায়েন্সের নানা বিষয়ে কুইজ, আর্টিকেল আর কোর্স ঘুরে দেখতে পারেন। স্পষ্টতা ও অ্যাক্সেসিবিলিটি মাথায় রেখে গড়া; ইন্টার‍্যাক্টিভ অ্যাসেসমেন্ট আর গোছানো কনটেন্টের মাধ্যমে প্রমাণভিত্তিক শেখাকে এগিয়ে নেওয়া হয়।",
       },
       prottoy: {
         title: "Prottoy",
@@ -580,32 +580,36 @@ const TRANSLATIONS = {
       links: {
         appStore: "App Store",
         googlePlay: "Google Play",
-        caseStudy: "Caso de Estudio",
       },
       biofidex: {
-        title: "biofideX — Educación en Biociencias",
+        title: "biofideX",
+        category: "EdTech · Biociencias",
         description:
           "Plataforma moderna de aprendizaje en biociencias donde estudiantes y profesionales pueden explorar cuestionarios, artículos y cursos de las distintas disciplinas. Pensada para que todo se sienta claro y accesible, con evaluaciones interactivas y contenido bien estructurado que apoya un aprendizaje basado en evidencia.",
       },
       prottoy: {
-        title: "Prottoy — App de Preparación HSC y Admisiones",
+        title: "Prottoy",
+        category: "EdTech · App Móvil",
         description:
-          "App académica de quizzes hecha para estudiantes de HSC y candidatos a exámenes de admisión en Bangladesh. Funciona con sesiones cortas de 10 minutos muy enfocadas, explicaciones al instante y analíticas que dejan ver qué capítulos hay que reforzar — y es offline-first, así que el estudio nunca depende de la conexión.",
+          "App académica de quizzes hecha para estudiantes de HSC y candidatos a exámenes de admisión en Bangladesh. Sesiones cortas de 10 minutos muy enfocadas, explicaciones al instante y analíticas que dejan ver qué capítulos hay que reforzar — y todo offline-first, así que el estudio nunca depende de la conexión.",
       },
       luna: {
-        title: "Luna Corporate — Portafolio de Marcas",
+        title: "Luna Corporate",
+        category: "Corporativo · Portafolio de Marcas",
         description:
           "Sitio corporativo bilingüe para un fabricante polaco de bienes de consumo, que muestra su portafolio de cinco marcas, su red de distribución europea y la cobertura de las ferias en las que participa. Construido sobre Qwik para lograr una interactividad casi instantánea, con un mínimo de JavaScript bloqueante.",
       },
       albayt: {
         title: "Al-Bayt Elegance",
+        category: "E-Commerce · Moda",
         description:
-          "E-commerce de moda islámica con una experiencia de compra limpia y directa, pagos seguros y un control de inventario que se mantiene actualizado al instante.",
+          "Plataforma de e-commerce dedicada a la moda islámica modesta, construida alrededor de una experiencia de compra calmada y bien pensada — pagos seguros con Stripe, inventario en tiempo real entre regiones, y un escaparate que pone la prenda y al cliente en el centro de cada página.",
       },
       noorJabal: {
         title: "Noor Jabal Cleaning",
+        category: "Servicios · Negocio Local",
         description:
-          "Sitio profesional de servicios para una empresa de limpieza con sede en Dubái, que presenta sus servicios residenciales y comerciales con una estructura clara y una experiencia fácil de recorrer.",
+          "Sitio profesional de servicios para una empresa de limpieza con sede en Dubái, que presenta sus servicios residenciales y comerciales con una arquitectura de información clara, textos ajustados al mercado local y un flujo de contacto sin fricciones que transforma visitas curiosas en citas agendadas.",
       },
     },
     services: {
@@ -741,32 +745,36 @@ const TRANSLATIONS = {
       links: {
         appStore: "App Store",
         googlePlay: "Google Play",
-        caseStudy: "Étude de Cas",
       },
       biofidex: {
-        title: "biofideX — Éducation en Biosciences",
+        title: "biofideX",
+        category: "EdTech · Biosciences",
         description:
-          "Une plateforme moderne d'apprentissage en biosciences, où étudiants et professionnels peuvent parcourir des quiz, des articles et des cours dans les différentes disciplines des sciences de la vie. Pensée pour rester claire et accessible, avec des évaluations interactives et un contenu structuré qui soutient un apprentissage rigoureux et basé sur les preuves.",
+          "Plateforme moderne d'apprentissage en biosciences, où étudiants et professionnels parcourent quiz, articles et cours dans les différentes disciplines des sciences de la vie. Pensée pour rester claire et accessible, avec évaluations interactives et un contenu structuré qui ancre l'apprentissage sur les preuves.",
       },
       prottoy: {
-        title: "Prottoy — App de Préparation HSC et Concours",
+        title: "Prottoy",
+        category: "EdTech · App Mobile",
         description:
-          "Application de quiz académique pensée pour les étudiants du HSC et les candidats aux concours d'admission au Bangladesh. Elle repose sur de courtes sessions de pratique de 10 minutes, des explications immédiates et des analyses qui identifient les chapitres à retravailler — et tout est offline-first : on étudie même sans connexion.",
+          "Application de quiz académique pensée pour les étudiants du HSC et les candidats aux concours d'admission au Bangladesh. Sessions courtes de 10 minutes, explications immédiates et analyses qui identifient les chapitres à retravailler — et tout est offline-first : on étudie même sans connexion.",
       },
       luna: {
-        title: "Luna Corporate — Portfolio de Marques",
+        title: "Luna Corporate",
+        category: "Corporate · Portfolio de Marques",
         description:
           "Site corporate bilingue pour un fabricant polonais de produits de grande consommation, qui présente son portfolio de cinq marques, son réseau de distribution européen et sa présence sur les salons. Construit avec Qwik pour offrir une interactivité quasi instantanée, avec un JavaScript bloquant réduit au minimum.",
       },
       albayt: {
         title: "Al-Bayt Elegance",
+        category: "E-Commerce · Mode",
         description:
-          "Plateforme e-commerce dédiée à la mode islamique, avec une expérience d'achat claire et directe, des paiements sécurisés et une gestion des stocks qui se met à jour en temps réel.",
+          "Plateforme e-commerce dédiée à la mode islamique pudique, pensée autour d'une expérience d'achat calme et soignée — paiements sécurisés via Stripe, inventaire en temps réel entre régions, et une vitrine qui met le vêtement et le client au cœur de chaque page.",
       },
       noorJabal: {
         title: "Noor Jabal Cleaning",
+        category: "Services · Entreprise Locale",
         description:
-          "Site de services pour une entreprise de nettoyage installée à Dubaï, qui met en avant ses prestations résidentielles et commerciales avec une structure claire et une navigation pensée pour que le client trouve rapidement ce qu'il cherche.",
+          "Site de services pour une entreprise de nettoyage à Dubaï, qui met en avant ses prestations résidentielles et commerciales avec une architecture claire, des textes calibrés pour le marché local, et un parcours de prise de contact sans friction qui transforme les visiteurs curieux en rendez-vous confirmés.",
       },
     },
     services: {
@@ -902,32 +910,36 @@ const TRANSLATIONS = {
       links: {
         appStore: "App Store",
         googlePlay: "Google Play",
-        caseStudy: "Fallstudie",
       },
       biofidex: {
-        title: "biofideX — Biowissenschaftliche Bildung",
+        title: "biofideX",
+        category: "EdTech · Biowissenschaften",
         description:
           "Moderne Lernplattform für die Lebenswissenschaften: Studierende und Fachleute können Quizze, Artikel und Kurse aus den unterschiedlichen Disziplinen durchgehen. Bewusst klar und barrierefrei gestaltet, mit interaktiven Assessments und gut strukturierten Inhalten, die evidenzbasiertes Lernen wirklich unterstützen.",
       },
       prottoy: {
-        title: "Prottoy — HSC- & Zulassungs-Prüfungs-App",
+        title: "Prottoy",
+        category: "EdTech · Mobile App",
         description:
           "Eine fokussierte Lern-App für HSC-Schüler und Zulassungsprüfungs-Kandidaten in Bangladesch. Sie setzt auf kurze 10-Minuten-Sessions, sofortige Erklärungen und Analytics, die zeigen, welche Kapitel noch sitzen müssen — und sie funktioniert offline-first, damit Lernen nie an der Verbindung scheitert.",
       },
       luna: {
-        title: "Luna Corporate — Markenportfolio",
+        title: "Luna Corporate",
+        category: "Corporate · Markenportfolio",
         description:
           "Zweisprachiger Markenauftritt eines polnischen Konsumgüter-Herstellers, der das Portfolio aus fünf Marken, das europäische Vertriebsnetz und die Messeauftritte präsentiert. Auf Qwik gebaut, für nahezu blockierungsfreies JavaScript und ein Gefühl von sofortiger Interaktivität.",
       },
       albayt: {
         title: "Al-Bayt Elegance",
+        category: "E-Commerce · Mode",
         description:
-          "E-Commerce-Plattform für islamische Mode, mit einem ruhigen, klaren Einkaufserlebnis, sicheren Zahlungen und einer Bestandsverwaltung, die sich in Echtzeit aktualisiert.",
+          "E-Commerce-Plattform für islamische, dezente Mode, gebaut um ein ruhiges, durchdachtes Einkaufserlebnis — sichere Zahlungen über Stripe, Echtzeit-Bestandsführung über mehrere Regionen, und ein Storefront, der Kleidungsstück und Kundin auf jeder einzelnen Seite ins Zentrum stellt.",
       },
       noorJabal: {
         title: "Noor Jabal Cleaning",
+        category: "Dienstleistungen · Lokales Unternehmen",
         description:
-          "Service-Website für ein Reinigungsunternehmen aus Dubai, das seine Angebote für Privat- und Gewerbekunden in klarer Struktur und mit einer Navigation präsentiert, in der sich Kunden schnell zurechtfinden.",
+          "Professionelle Service-Website für ein Reinigungsunternehmen aus Dubai, das seine Angebote für Privat- und Gewerbekunden mit klarer Informationsarchitektur, auf den lokalen Markt zugeschnittenen Texten und einem reibungslosen Anfrage-Flow präsentiert — der aus neugierigen Besuchern feste Termine macht.",
       },
     },
     services: {
@@ -1063,32 +1075,36 @@ const TRANSLATIONS = {
       links: {
         appStore: "App Store",
         googlePlay: "Google Play",
-        caseStudy: "Estudo de Caso",
       },
       biofidex: {
-        title: "biofideX — Educação em Biociências",
+        title: "biofideX",
+        category: "EdTech · Biociências",
         description:
-          "Plataforma moderna de aprendizagem em biociências, onde estudantes e profissionais podem explorar quizzes, artigos e cursos das diferentes disciplinas das ciências da vida. Pensada para ser clara e acessível, com avaliações interativas e conteúdo bem estruturado que apoia um aprendizado de verdade, baseado em evidência.",
+          "Plataforma moderna de aprendizagem em biociências, onde estudantes e profissionais exploram quizzes, artigos e cursos das diferentes disciplinas das ciências da vida. Pensada para ser clara e acessível, com avaliações interativas e conteúdo estruturado que apoia um aprendizado real, baseado em evidência.",
       },
       prottoy: {
-        title: "Prottoy — App de Preparação HSC e Admissão",
+        title: "Prottoy",
+        category: "EdTech · App Mobile",
         description:
-          "App de quizzes acadêmicos feito para estudantes do HSC e candidatos a exames de admissão em Bangladesh. Funciona com sessões curtas e direcionadas de 10 minutos, com explicações na hora e analytics que mostram quais capítulos ainda precisam de atenção — e tudo é offline-first, então o estudo nunca depende da internet.",
+          "App de quizzes acadêmicos feito para estudantes do HSC e candidatos a exames de admissão em Bangladesh. Sessões curtas e direcionadas de 10 minutos, com explicações na hora e analytics que mostram quais capítulos ainda precisam de atenção — e tudo offline-first, então o estudo nunca depende da internet.",
       },
       luna: {
-        title: "Luna Corporate — Portfólio de Marcas",
+        title: "Luna Corporate",
+        category: "Corporativo · Portfólio de Marcas",
         description:
           "Site corporativo bilíngue para um fabricante polonês de bens de consumo, apresentando seu portfólio de cinco marcas, a rede de distribuição na Europa e a presença em feiras. Construído em Qwik para entregar uma interatividade quase instantânea, com um mínimo de JavaScript bloqueante.",
       },
       albayt: {
         title: "Al-Bayt Elegance",
+        category: "E-Commerce · Moda",
         description:
-          "E-commerce de moda islâmica, com uma experiência de compra clara e direta, pagamentos seguros e um controle de estoque que se atualiza em tempo real.",
+          "Plataforma de e-commerce para moda islâmica modesta, construída em torno de uma experiência de compra calma e bem pensada — pagamentos seguros via Stripe, inventário em tempo real entre regiões, e uma vitrine que coloca a peça e o cliente bem no centro de cada página.",
       },
       noorJabal: {
         title: "Noor Jabal Cleaning",
+        category: "Serviços · Negócio Local",
         description:
-          "Site profissional de serviços para uma empresa de limpeza com sede em Dubai, mostrando suas opções residenciais e comerciais em uma estrutura clara e com uma navegação pensada para o cliente encontrar o que precisa rapidamente.",
+          "Site profissional de serviços para uma empresa de limpeza com sede em Dubai, mostrando suas opções residenciais e comerciais com uma arquitetura de informação clara, textos ajustados ao mercado local e um fluxo de contato sem fricção que transforma visitantes curiosos em compromissos agendados.",
       },
     },
     services: {
