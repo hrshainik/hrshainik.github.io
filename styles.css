@@ -65,6 +65,12 @@ body {
   overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    var(--bg-dark) 0%,
+    var(--bg-darker) 50%,
+    var(--bg-darkest) 100%
+  );
 }
 
 a {
