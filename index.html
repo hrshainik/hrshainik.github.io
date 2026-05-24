@@ -94,7 +94,15 @@
         /* ── Language Switcher ─────────────────────────────────────────── */
         .lang-switcher {
             position: relative;
+            margin-top: 1rem;
             margin-bottom: 0.5rem;
+            animation: fadeSlideUp 0.6s ease-out 1.5s backwards;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .lang-switcher {
+                animation: none;
+            }
         }
 
         .lang-toggle {
@@ -482,11 +490,12 @@
         "name": "Worldwide"
       },
       "serviceType": [
-        "Website Design & Development",
-        "Web App & Dashboard Development",
+        "AI-Native Product Development",
+        "LLM Integration & RAG Systems",
         "SaaS Platform Development",
-        "E-Commerce Development",
-        "UI/UX Improvement & Optimization"
+        "Web Application Development",
+        "High-Performance Marketing Sites",
+        "Core Web Vitals & Frontend Performance"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -496,24 +505,24 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Website Design & Development",
-              "description": "Modern, fast, and responsive websites built with clean UI and thoughtful user experience. Includes business & personal websites, landing pages, portfolios, SEO-ready layouts, and performance-focused frontend."
+              "name": "AI-Native Product Development",
+              "description": "Bringing language models, agents, and AI-powered workflows into production-grade web apps. Covers LLM integration, prompt engineering, RAG systems, semantic search, AI agents, chat interfaces, and streaming UIs with real-time inference."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Web App & Dashboard Development",
-              "description": "User-friendly web applications and dashboards using Next.js and React. Covers SaaS tools, admin panels, frontend + backend integration, and scalable UI systems."
+              "name": "SaaS Platforms & Web Apps",
+              "description": "Multi-tenant SaaS products, internal tools, and dashboards engineered for scale. Includes multi-tenant architecture, auth, billing & subscriptions, real-time dashboards, analytics, and type-safe end-to-end stacks."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "UI/UX Improvement & Optimization",
-              "description": "Improving existing websites and apps to look better, feel smoother, and perform faster. Includes UI redesign, UX cleanup, mobile & accessibility fixes, and performance optimization."
+              "name": "High-Performance Web Experiences",
+              "description": "Marketing sites, landing pages, and brand-driven web experiences built for speed, conversion, and motion. Includes conversion-focused landing pages, motion design, micro-interactions, Core Web Vitals, technical SEO, and inclusive accessibility."
             }
           }
         ]
@@ -537,8 +546,10 @@
           "position": 1,
           "item": {
             "@type": "WebApplication",
-            "name": "BioFidelicX — Bioscience Education Platform",
-            "description": "A modern bioscience learning platform where students and professionals can explore quizzes, articles, and courses across life science disciplines. Designed for clarity and accessibility with interactive assessments.",
+            "name": "biofideX",
+            "alternateName": "biofideX — Bioscience Learning Platform",
+            "applicationSubCategory": "EdTech · Bioscience",
+            "description": "A modern bioscience learning platform where students and professionals explore quizzes, articles, and courses across life science disciplines. Designed to feel clear and accessible, with interactive assessments and structured content that support evidence-based learning.",
             "url": "https://biofidex.com",
             "applicationCategory": "EducationApplication",
             "operatingSystem": "Web",
@@ -553,9 +564,50 @@
           "@type": "ListItem",
           "position": 2,
           "item": {
+            "@type": "MobileApplication",
+            "name": "Prottoy",
+            "alternateName": "Prottoy — HSC & Admission Prep App",
+            "applicationSubCategory": "EdTech · Mobile App",
+            "description": "A focused academic quiz app for HSC students and admission-test candidates in Bangladesh. Short 10-minute sessions with instant explanations and analytics that surface weak chapters — offline-first, so studying never depends on connectivity.",
+            "url": "https://www.prottoy.app/",
+            "applicationCategory": "EducationApplication",
+            "operatingSystem": ["iOS", "Android", "Web"],
+            "downloadUrl": [
+              "https://apps.apple.com/us/app/prottoy/id6764506034",
+              "https://play.google.com/store/apps/details?id=com.qbankbd.app"
+            ],
+            "author": {
+              "@type": "Person",
+              "name": "Habibur Rahman"
+            },
+            "programmingLanguage": ["Flutter", "Supabase", "Next.js"]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "WebSite",
+            "name": "Luna Corporate",
+            "alternateName": "Luna Corporate — Brand Portfolio",
+            "description": "A bilingual corporate site for a Polish consumer-goods manufacturer, presenting a five-brand portfolio, European distribution network, and trade-show coverage. Engineered on Qwik for near-zero blocking JavaScript and instant interactivity.",
+            "url": "https://lunacorporate.com/en/",
+            "inLanguage": ["en", "pl"],
+            "author": {
+              "@type": "Person",
+              "name": "Habibur Rahman"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
             "@type": "WebApplication",
-            "name": "Al-Bayt Elegance — Islamic Fashion E-Commerce",
-            "description": "An e-commerce platform for Islamic fashion with a clean shopping experience, secure payments via Stripe, and real-time inventory management.",
+            "name": "Al-Bayt Elegance",
+            "alternateName": "Al-Bayt Elegance — Islamic Modest Fashion E-Commerce",
+            "applicationSubCategory": "E-Commerce · Fashion",
+            "description": "An e-commerce platform for Islamic modest fashion, built around a calm, considered shopping experience — secure Stripe payments, real-time inventory across regions, and a storefront that puts the garment and the customer at the centre of every page.",
             "url": "https://www.thealbayt.com",
             "applicationCategory": "ShoppingApplication",
             "operatingSystem": "Web",
@@ -568,11 +620,12 @@
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 5,
           "item": {
             "@type": "WebSite",
-            "name": "Noor Jabal Cleaning — Dubai Cleaning Service",
-            "description": "A professional service website for a Dubai-based cleaning company, showcasing residential and commercial services with a clear structure and user-friendly experience.",
+            "name": "Noor Jabal Cleaning",
+            "alternateName": "Noor Jabal Cleaning — Dubai Cleaning Service",
+            "description": "A professional service website for a Dubai-based cleaning company, showcasing residential and commercial offerings with a clear information architecture, locally-tuned copy, and a frictionless inquiry flow that turns curious visitors into booked appointments.",
             "url": "https://noorjabalcleaning.com/",
             "author": {
               "@type": "Person",
@@ -605,7 +658,7 @@
           "name": "What services does Habibur Rahman offer?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Habibur Rahman offers three core web development services: (1) Website Design & Development — modern, fast, responsive websites for businesses, landing pages, and portfolios; (2) Web App & Dashboard Development — SaaS platforms, admin dashboards, and full-stack applications; and (3) UI/UX Improvement & Optimization — redesign, performance improvements, and accessibility fixes for existing products."
+            "text": "Habibur Rahman offers three core services tailored to 2026 web standards: (1) AI-Native Product Development — LLM integration, RAG systems, semantic search, AI agents, chat interfaces, and streaming UIs designed to feel native to the product; (2) SaaS Platforms & Web Apps — multi-tenant SaaS architecture, auth, billing & subscriptions, real-time dashboards, and type-safe end-to-end stacks; and (3) High-Performance Web Experiences — conversion-focused landing pages, motion design, Core Web Vitals, technical SEO, and inclusive accessibility."
           }
         },
         {
@@ -844,13 +897,20 @@
 
                     <p data-i18n-html="about.p2Html">I build production-ready web applications, bridging design and
                         engineering to transform ideas into dependable, user-focused products. I work with international
-                        clients both on <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank"
-                            rel="noopener noreferrer">Upwork</a> and through my personal portfolio, delivering software
-                        that is trusted and used in real-world environments.</p>
+                        clients through <a href="https://qubetix.co" target="_blank" rel="noopener noreferrer">Qubetix</a>
+                        — my digital studio — and on <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97"
+                            target="_blank" rel="noopener noreferrer">Upwork</a>, delivering software that is trusted and
+                        used in real-world environments.</p>
 
                     <p data-i18n="about.p3">My academic background in Biochemistry &amp; Molecular Biology has shaped a
                         structured and analytical approach to problem-solving, allowing me to design software systems
                         with clarity, precision, and long-term maintainability in mind.</p>
+
+                    <p data-i18n-html="about.p4Html">What truly excites me is the chance to merge my background in
+                        biochemistry with software craft. Through <a href="https://biofidex.com" target="_blank"
+                            rel="noopener noreferrer">biofideX</a>, I'm building an educational platform that turns
+                        life-science concepts into thoughtful, interactive learning experiences — a project that lives
+                        at the exact intersection of the two disciplines I care about most.</p>
                 </div>
             </section>
 
@@ -960,18 +1020,17 @@
                     <div class="glass-overlay" aria-hidden="true"></div>
                     <h2 id="projects-heading" data-i18n="projects.heading">Projects</h2>
                 </header>
-                <div class="projects-grid content-wrapper">
+                <div class="projects-grid content-wrapper" id="projectsGrid">
                     <article class="project-card reveal-item">
                         <a href="https://biofidex.com" target="_blank" rel="noopener noreferrer"
                             aria-label="Visit biofideX Bioscience Education project (opens in new tab)">
                             <span class="project-icon" aria-hidden="true">🧬</span>
-                            <h3 class="project-title" data-i18n="projects.biofidex.title">biofideX — Bioscience
-                                Education</h3>
+                            <h3 class="project-title" data-i18n="projects.biofidex.title">biofideX</h3>
+                            <p class="project-category" data-i18n="projects.biofidex.category">EdTech · Bioscience</p>
                             <p class="project-description" data-i18n="projects.biofidex.description">A modern bioscience
-                                learning platform where students and professionals can explore quizzes, articles, and
-                                courses across life science disciplines. Designed for clarity and accessibility, with
-                                interactive assessments and structured content that support effective, evidence-based
-                                learning.</p>
+                                learning platform where students and professionals explore quizzes, articles, and
+                                courses across life science disciplines. Designed to feel clear and accessible, with
+                                interactive assessments and structured content that support evidence-based learning.</p>
                             <ul class="project-tags" role="list" aria-label="Technologies used">
                                 <li><span class="tag">Next.js</span></li>
                                 <li><span class="tag">TypeScript</span></li>
@@ -982,13 +1041,80 @@
                     </article>
 
                     <article class="project-card reveal-item">
+                        <a href="https://www.prottoy.app/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit Prottoy academic quiz app (opens in new tab)">
+                            <span class="project-icon" aria-hidden="true">🎯</span>
+                            <h3 class="project-title" data-i18n="projects.prottoy.title">Prottoy</h3>
+                            <p class="project-category" data-i18n="projects.prottoy.category">EdTech · Mobile App</p>
+                            <p class="project-description" data-i18n="projects.prottoy.description">A focused academic
+                                quiz app for HSC students and admission-test candidates in Bangladesh. Short 10-minute
+                                sessions with instant explanations and analytics that surface weak chapters —
+                                offline-first, so studying never depends on connectivity.</p>
+                            <ul class="project-tags" role="list" aria-label="Technologies used">
+                                <li><span class="tag">Flutter</span></li>
+                                <li><span class="tag">Supabase</span></li>
+                                <li><span class="tag">Next.js</span></li>
+                                <li><span class="tag">Mobile App</span></li>
+                            </ul>
+                        </a>
+                        <div class="project-links" role="list" aria-label="Prottoy on app stores">
+                            <a class="project-link" role="listitem"
+                                href="https://apps.apple.com/us/app/prottoy/id6764506034" target="_blank"
+                                rel="noopener noreferrer" aria-label="Download Prottoy on the App Store (opens in new tab)">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M17.05 12.04c-.02-2.65 2.16-3.92 2.26-3.99-1.23-1.81-3.16-2.06-3.84-2.09-1.64-.17-3.2.96-4.03.96-.84 0-2.12-.94-3.49-.92-1.8.03-3.45 1.04-4.37 2.65-1.86 3.23-.47 8.02 1.34 10.65.89 1.29 1.95 2.74 3.34 2.69 1.34-.05 1.84-.87 3.46-.87 1.61 0 2.07.87 3.49.84 1.44-.02 2.36-1.32 3.24-2.61 1.02-1.5 1.44-2.95 1.46-3.03-.03-.01-2.81-1.08-2.83-4.28z" />
+                                    <path
+                                        d="M14.62 4.16c.74-.89 1.24-2.13 1.1-3.36-1.07.04-2.36.71-3.13 1.6-.69.79-1.29 2.06-1.13 3.27 1.19.09 2.41-.61 3.16-1.51z" />
+                                </svg>
+                                <span data-i18n="projects.links.appStore">App Store</span>
+                            </a>
+                            <a class="project-link" role="listitem"
+                                href="https://play.google.com/store/apps/details?id=com.qbankbd.app" target="_blank"
+                                rel="noopener noreferrer" aria-label="Get Prottoy on Google Play (opens in new tab)">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M3.6 1.7c-.32.32-.5.82-.5 1.46v17.68c0 .64.18 1.14.5 1.46l.07.06L13.5 12.4v-.8L3.67 1.64l-.07.06z" />
+                                    <path d="M16.8 15.7l-3.3-3.3v-.8l3.3-3.3.07.04 3.9 2.22c1.12.64 1.12 1.68 0 2.32l-3.9 2.22-.07.04z"
+                                        opacity=".75" />
+                                    <path d="M16.87 15.66L13.5 12 3.6 21.9c.37.4.98.45 1.66.06l11.61-6.3" opacity=".55" />
+                                    <path d="M16.87 8.34L5.26 2.04c-.68-.39-1.29-.34-1.66.06L13.5 12l3.37-3.66z" opacity=".9" />
+                                </svg>
+                                <span data-i18n="projects.links.googlePlay">Google Play</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal-item">
+                        <a href="https://lunacorporate.com/en/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit Luna Corporate website (opens in new tab)">
+                            <span class="project-icon" aria-hidden="true">🌙</span>
+                            <h3 class="project-title" data-i18n="projects.luna.title">Luna Corporate</h3>
+                            <p class="project-category" data-i18n="projects.luna.category">Corporate · Brand Portfolio
+                            </p>
+                            <p class="project-description" data-i18n="projects.luna.description">A bilingual corporate
+                                site for a Polish consumer-goods manufacturer, presenting a five-brand portfolio,
+                                European distribution network, and trade-show coverage. Engineered on Qwik for near-zero
+                                blocking JavaScript and instant interactivity.</p>
+                            <ul class="project-tags" role="list" aria-label="Technologies used">
+                                <li><span class="tag">Qwik</span></li>
+                                <li><span class="tag">Tailwind CSS</span></li>
+                                <li><span class="tag">Cloudflare</span></li>
+                                <li><span class="tag">Bilingual Site</span></li>
+                            </ul>
+                        </a>
+                    </article>
+
+                    <article class="project-card reveal-item is-collapsed" data-collapsed-card>
                         <a href="https://www.thealbayt.com" target="_blank" rel="noopener noreferrer"
                             aria-label="Visit Al-Bayt Elegance project (opens in new tab)">
                             <span class="project-icon" aria-hidden="true">🛍️</span>
                             <h3 class="project-title" data-i18n="projects.albayt.title">Al-Bayt Elegance</h3>
+                            <p class="project-category" data-i18n="projects.albayt.category">E-Commerce · Fashion</p>
                             <p class="project-description" data-i18n="projects.albayt.description">An e-commerce
-                                platform for Islamic fashion, built with a clean shopping experience, secure payments,
-                                and real-time inventory management.</p>
+                                platform for Islamic modest fashion, built around a calm, considered shopping experience
+                                — secure Stripe payments, real-time inventory across regions, and a storefront that
+                                puts the garment and the customer at the centre of every page.</p>
                             <ul class="project-tags" role="list" aria-label="Technologies used">
                                 <li><span class="tag">React</span></li>
                                 <li><span class="tag">Firebase</span></li>
@@ -997,14 +1123,17 @@
                         </a>
                     </article>
 
-                    <article class="project-card reveal-item">
+                    <article class="project-card reveal-item is-collapsed" data-collapsed-card>
                         <a href="https://noorjabalcleaning.com/" target="_blank" rel="noopener noreferrer"
                             aria-label="Visit Noor Jabal Cleaning project (opens in new tab)">
                             <span class="project-icon" aria-hidden="true">🧼</span>
                             <h3 class="project-title" data-i18n="projects.noorJabal.title">Noor Jabal Cleaning</h3>
+                            <p class="project-category" data-i18n="projects.noorJabal.category">Service · Local Business
+                            </p>
                             <p class="project-description" data-i18n="projects.noorJabal.description">A professional
                                 service website for a Dubai-based cleaning company, showcasing residential and
-                                commercial services with a clear structure and user-friendly experience.</p>
+                                commercial offerings with a clear information architecture, locally-tuned copy, and a
+                                frictionless inquiry flow that turns curious visitors into booked appointments.</p>
                             <ul class="project-tags" role="list" aria-label="Technologies used">
                                 <li><span class="tag">Next.js</span></li>
                                 <li><span class="tag">Service Website</span></li>
@@ -1013,6 +1142,19 @@
                         </a>
                     </article>
 
+                </div>
+                <div class="projects-toggle-wrap content-wrapper">
+                    <button type="button" class="projects-toggle reveal-item" id="projectsToggle" aria-expanded="false"
+                        aria-controls="projectsGrid">
+                        <span class="projects-toggle-label" data-toggle-show data-i18n="projects.showAll">Show all
+                            projects</span>
+                        <span class="projects-toggle-label" data-toggle-hide data-i18n="projects.showFewer">Show fewer
+                            projects</span>
+                        <svg class="projects-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </button>
                 </div>
             </section>
 
@@ -1025,45 +1167,48 @@
                 </header>
 
                 <div class="services-grid content-wrapper">
-                    <!-- Service 1 -->
+                    <!-- Service 1 — AI-Native Product Development -->
                     <article class="service-card reveal-item">
-                        <div class="service-icon" aria-hidden="true">🌐</div>
-                        <h3 data-i18n="services.web.title">Website Design &amp; Development</h3>
-                        <p data-i18n="services.web.description">Modern, fast, and responsive websites built with clean
-                            UI and thoughtful user experience.</p>
-                        <ul role="list" data-svc-list="web">
-                            <li>Business &amp; personal websites</li>
-                            <li>Landing pages &amp; portfolios</li>
-                            <li>Responsive &amp; SEO-ready layouts</li>
-                            <li>Performance-focused frontend</li>
+                        <div class="service-icon" aria-hidden="true">🧠</div>
+                        <h3 data-i18n="services.ai.title">AI-Native Product Development</h3>
+                        <p data-i18n="services.ai.description">Bringing language models, agents, and AI-powered
+                            workflows into production-grade web apps — designed to feel native to the product, not
+                            bolted on.</p>
+                        <ul role="list" data-svc-list="ai">
+                            <li>LLM integration &amp; prompt engineering</li>
+                            <li>RAG systems &amp; semantic search</li>
+                            <li>AI agents &amp; chat interfaces</li>
+                            <li>Streaming UIs &amp; real-time inference</li>
                         </ul>
                     </article>
 
-                    <!-- Service 2 -->
+                    <!-- Service 2 — SaaS Platforms & Web Apps -->
                     <article class="service-card reveal-item">
                         <div class="service-icon" aria-hidden="true">🧩</div>
-                        <h3 data-i18n="services.app.title">Web App &amp; Dashboard Development</h3>
-                        <p data-i18n="services.app.description">User-friendly web applications and dashboards that turn
-                            complex ideas into simple experiences.</p>
-                        <ul role="list" data-svc-list="app">
-                            <li>SaaS &amp; internal tools</li>
-                            <li>Admin panels &amp; dashboards</li>
-                            <li>Frontend + backend integration</li>
-                            <li>Scalable UI systems</li>
+                        <h3 data-i18n="services.saas.title">SaaS Platforms &amp; Web Apps</h3>
+                        <p data-i18n="services.saas.description">Multi-tenant SaaS products, internal tools, and
+                            dashboards engineered for scale — with type-safe APIs, real-time data, and frictionless
+                            billing baked in.</p>
+                        <ul role="list" data-svc-list="saas">
+                            <li>Multi-tenant SaaS architecture</li>
+                            <li>Auth, billing &amp; subscriptions</li>
+                            <li>Real-time dashboards &amp; analytics</li>
+                            <li>Type-safe end-to-end stacks</li>
                         </ul>
                     </article>
 
-                    <!-- Service 3 -->
+                    <!-- Service 3 — High-Performance Web Experiences -->
                     <article class="service-card reveal-item">
-                        <div class="service-icon" aria-hidden="true">✨</div>
-                        <h3 data-i18n="services.uiux.title">UI/UX Improvement &amp; Optimization</h3>
-                        <p data-i18n="services.uiux.description">Improving existing websites and apps to look better,
-                            feel smoother, and perform faster.</p>
-                        <ul role="list" data-svc-list="uiux">
-                            <li>UI redesign &amp; UX cleanup</li>
-                            <li>Mobile &amp; accessibility fixes</li>
-                            <li>Frontend refactoring</li>
-                            <li>Performance optimization</li>
+                        <div class="service-icon" aria-hidden="true">🚀</div>
+                        <h3 data-i18n="services.experience.title">High-Performance Web Experiences</h3>
+                        <p data-i18n="services.experience.description">Marketing sites, landing pages, and brand-driven
+                            web experiences built for speed, conversion, and motion — passing Core Web Vitals with room
+                            to spare.</p>
+                        <ul role="list" data-svc-list="experience">
+                            <li>Conversion-focused landing pages</li>
+                            <li>Motion design &amp; micro-interactions</li>
+                            <li>Core Web Vitals &amp; technical SEO</li>
+                            <li>Accessibility &amp; inclusive UX</li>
                         </ul>
                     </article>
                 </div>
@@ -1267,7 +1412,7 @@
             rootMargin: '0px 0px -50px 0px'
         });
 
-        document.querySelectorAll('.reveal-item').forEach(item => {
+        document.querySelectorAll('.reveal-item:not([data-collapsed-card])').forEach(item => {
             revealObserver.observe(item);
         });
 
@@ -1316,6 +1461,43 @@
                 }
             });
         });
+
+        // Projects "show more" toggle
+        (function () {
+            const toggle = document.getElementById('projectsToggle');
+            const grid = document.getElementById('projectsGrid');
+            if (!toggle || !grid) return;
+
+            const hiddenCards = Array.from(grid.querySelectorAll('[data-collapsed-card]'));
+            if (!hiddenCards.length) {
+                toggle.style.display = 'none';
+                return;
+            }
+
+            const expand = () => {
+                toggle.setAttribute('aria-expanded', 'true');
+                hiddenCards.forEach((card, i) => {
+                    card.classList.remove('is-collapsed');
+                    requestAnimationFrame(() => {
+                        setTimeout(() => card.classList.add('revealed'), 60 + i * 90);
+                    });
+                });
+            };
+
+            const collapse = () => {
+                toggle.setAttribute('aria-expanded', 'false');
+                hiddenCards.forEach((card) => {
+                    card.classList.remove('revealed');
+                    card.classList.add('is-collapsed');
+                });
+                grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            };
+
+            toggle.addEventListener('click', () => {
+                const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                expanded ? collapse() : expand();
+            });
+        })();
 
         // Parallax orbs
         let orbTicking = false;

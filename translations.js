@@ -47,8 +47,10 @@ const TRANSLATIONS = {
       heading: "About",
       p1: "I am a product-driven full-stack developer based in Dhaka, Bangladesh, with a strong focus on frontend engineering and user experience. I transitioned from Biochemistry to software development out of a genuine passion for building thoughtful, well-designed digital products.",
       p2Html:
-        'I build production-ready web applications, bridging design and engineering to transform ideas into dependable, user-focused products. I work with international clients both on <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a> and through my personal portfolio, delivering software that is trusted and used in real-world environments.',
+        'I build production-ready web applications, bridging design and engineering to transform ideas into dependable, user-focused products. I work with international clients through <a href="https://qubetix.co" target="_blank" rel="noopener noreferrer">Qubetix</a> — my digital studio — and on <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a>, delivering software that is trusted and used in real-world environments.',
       p3: "My academic background in Biochemistry & Molecular Biology has shaped a structured and analytical approach to problem-solving, allowing me to design software systems with clarity, precision, and long-term maintainability in mind.",
+      p4Html:
+        'What truly excites me is the chance to merge my background in biochemistry with software craft. Through <a href="https://biofidex.com" target="_blank" rel="noopener noreferrer">biofideX</a>, I\'m building an educational platform that turns life-science concepts into thoughtful, interactive learning experiences — a project that lives at the exact intersection of the two disciplines I care about most.',
     },
     experience: {
       heading: "Experience",
@@ -56,17 +58,17 @@ const TRANSLATIONS = {
       qubetix: {
         title: "Founder & CEO · Qubetix",
         description:
-          "Leading a digital studio that designs and builds brand systems, websites, apps, AI products, and marketing programs end-to-end for ambitious teams worldwide.",
+          "Leading a digital studio that partners with ambitious teams worldwide, designing and shipping brand systems, marketing sites, web platforms, and AI-native products end-to-end — from first concept through to launch and beyond.",
       },
       upwork: {
         title: "Full-Stack Developer · Upwork",
         description:
-          "Building scalable web applications for international clients. Projects range from SaaS platforms to e-commerce solutions, focusing on clean architecture, performance optimization, and exceptional user experiences.",
+          "Building scalable web applications for international clients across SaaS, e-commerce, and internal tooling — with a focus on clean architecture, performance optimization, and interfaces that feel effortless to use.",
       },
       biofidex: {
         title: "Founder & CEO · biofideX",
         description:
-          "Building an educational platform focused on bioscience education. Leading product development, technical architecture, and user experience design for a comprehensive learning ecosystem.",
+          "Founded and lead the technical direction of an educational platform for the life sciences, owning product strategy, architecture, and UX design across a complete learning ecosystem for students and professionals.",
       },
     },
     education: {
@@ -79,55 +81,76 @@ const TRANSLATIONS = {
     },
     projects: {
       heading: "Projects",
+      showAll: "Show all projects",
+      showFewer: "Show fewer projects",
+      links: {
+        appStore: "App Store",
+        googlePlay: "Google Play",
+      },
       biofidex: {
-        title: "biofideX — Bioscience Education",
+        title: "biofideX",
+        category: "EdTech · Bioscience",
         description:
-          "A modern bioscience learning platform where students and professionals can explore quizzes, articles, and courses across life science disciplines. Designed for clarity and accessibility, with interactive assessments and structured content that support effective, evidence-based learning.",
+          "A modern bioscience learning platform where students and professionals explore quizzes, articles, and courses across life science disciplines. Designed to feel clear and accessible, with interactive assessments and structured content that support evidence-based learning.",
+      },
+      prottoy: {
+        title: "Prottoy",
+        category: "EdTech · Mobile App",
+        description:
+          "A focused academic quiz app for HSC students and admission-test candidates in Bangladesh. Short 10-minute sessions with instant explanations and analytics that surface weak chapters — offline-first, so studying never depends on connectivity.",
+      },
+      luna: {
+        title: "Luna Corporate",
+        category: "Corporate · Brand Portfolio",
+        description:
+          "A bilingual corporate site for a Polish consumer-goods manufacturer, presenting a five-brand portfolio, European distribution network, and trade-show coverage. Engineered on Qwik for near-zero blocking JavaScript and instant interactivity.",
       },
       albayt: {
         title: "Al-Bayt Elegance",
+        category: "E-Commerce · Fashion",
         description:
-          "An e-commerce platform for Islamic fashion, built with a clean shopping experience, secure payments, and real-time inventory management.",
+          "An e-commerce platform for Islamic modest fashion, built around a calm, considered shopping experience — secure Stripe payments, real-time inventory across regions, and a storefront that puts the garment and the customer at the centre of every page.",
       },
       noorJabal: {
         title: "Noor Jabal Cleaning",
+        category: "Service · Local Business",
         description:
-          "A professional service website for a Dubai-based cleaning company, showcasing residential and commercial services with a clear structure and user-friendly experience.",
+          "A professional service website for a Dubai-based cleaning company, showcasing residential and commercial offerings with a clear information architecture, locally-tuned copy, and a frictionless inquiry flow that turns curious visitors into booked appointments.",
       },
     },
     services: {
       heading: "Services",
-      web: {
-        title: "Website Design & Development",
+      ai: {
+        title: "AI-Native Product Development",
         description:
-          "Modern, fast, and responsive websites built with clean UI and thoughtful user experience.",
+          "Bringing language models, agents, and AI-powered workflows into production-grade web apps — designed to feel native to the product, not bolted on.",
         items: [
-          "Business & personal websites",
-          "Landing pages & portfolios",
-          "Responsive & SEO-ready layouts",
-          "Performance-focused frontend",
+          "LLM integration & prompt engineering",
+          "RAG systems & semantic search",
+          "AI agents & chat interfaces",
+          "Streaming UIs & real-time inference",
         ],
       },
-      app: {
-        title: "Web App & Dashboard Development",
+      saas: {
+        title: "SaaS Platforms & Web Apps",
         description:
-          "User-friendly web applications and dashboards that turn complex ideas into simple experiences.",
+          "Multi-tenant SaaS products, internal tools, and dashboards engineered for scale — with type-safe APIs, real-time data, and frictionless billing baked in.",
         items: [
-          "SaaS & internal tools",
-          "Admin panels & dashboards",
-          "Frontend + backend integration",
-          "Scalable UI systems",
+          "Multi-tenant SaaS architecture",
+          "Auth, billing & subscriptions",
+          "Real-time dashboards & analytics",
+          "Type-safe end-to-end stacks",
         ],
       },
-      uiux: {
-        title: "UI/UX Improvement & Optimization",
+      experience: {
+        title: "High-Performance Web Experiences",
         description:
-          "Improving existing websites and apps to look better, feel smoother, and perform faster.",
+          "Marketing sites, landing pages, and brand-driven web experiences built for speed, conversion, and motion — passing Core Web Vitals with room to spare.",
         items: [
-          "UI redesign & UX cleanup",
-          "Mobile & accessibility fixes",
-          "Frontend refactoring",
-          "Performance optimization",
+          "Conversion-focused landing pages",
+          "Motion design & micro-interactions",
+          "Core Web Vitals & technical SEO",
+          "Accessibility & inclusive UX",
         ],
       },
     },
@@ -183,14 +206,16 @@ const TRANSLATIONS = {
       greeting: "হ্যালো, আমি",
       jobTitle: "ফুল-স্ট্যাক ডেভেলপার",
       tagline:
-        "ফ্রন্টএন্ড ইঞ্জিনিয়ারিং ও ব্যবহারকারী অভিজ্ঞতায় বিশেষ দক্ষতাসম্পন্ন পণ্য-চালিত ডেভেলপার।",
+        "প্রোডাক্ট-কেন্দ্রিক একজন ডেভেলপার — মূল মনোযোগ ফ্রন্টএন্ড ইঞ্জিনিয়ারিং আর দারুণ ইউজার এক্সপেরিয়েন্স ঘিরে।",
     },
     about: {
       heading: "পরিচিতি",
-      p1: "আমি ঢাকা, বাংলাদেশে অবস্থানরত একজন পণ্য-চালিত ফুল-স্ট্যাক ডেভেলপার, যিনি ফ্রন্টএন্ড ইঞ্জিনিয়ারিং ও ব্যবহারকারী অভিজ্ঞতায় বিশেষভাবে দক্ষ। চিন্তাশীল ও সুপরিকল্পিত ডিজিটাল পণ্য নির্মাণের প্রতি গভীর আগ্রহ থেকেই আমি বায়োকেমিস্ট্রি থেকে সফটওয়্যার ডেভেলপমেন্টে পদার্পণ করেছি।",
+      p1: "ঢাকা থেকে কাজ করি — একজন প্রোডাক্ট-কেন্দ্রিক ফুল-স্ট্যাক ডেভেলপার, যার মূল আগ্রহ ফ্রন্টএন্ড ইঞ্জিনিয়ারিং আর ইউজার এক্সপেরিয়েন্স ঘিরে। বায়োকেমিস্ট্রি ছেড়ে সফটওয়্যারে এসেছি — কারণ ভালোভাবে চিন্তা করে, যত্ন নিয়ে ডিজাইন করা ডিজিটাল প্রোডাক্ট গড়ার আগ্রহটা ভেতর থেকেই এসেছিল।",
       p2Html:
-        'আমি প্রোডাকশন-রেডি ওয়েব অ্যাপ্লিকেশন তৈরি করি, ডিজাইন ও ইঞ্জিনিয়ারিংকে একত্রিত করে ধারণাকে নির্ভরযোগ্য, ব্যবহারকারী-কেন্দ্রিক পণ্যে রূপান্তরিত করি। আমি <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a>-এ এবং সরাসরি আমার ব্যক্তিগত পোর্টফোলিওর মাধ্যমে আন্তর্জাতিক ক্লায়েন্টদের সাথে কাজ করি, এমন সফটওয়্যার ডেলিভার করি যা বাস্তব পরিবেশে বিশ্বস্তভাবে ব্যবহৃত হচ্ছে।',
-      p3: "বায়োকেমিস্ট্রি ও মলিকুলার বায়োলজিতে আমার শিক্ষাগত পটভূমি সমস্যা সমাধানে একটি কাঠামোগত ও বিশ্লেষণমূলক দৃষ্টিভঙ্গি গড়ে দিয়েছে, যা আমাকে স্পষ্টতা, নির্ভুলতা ও দীর্ঘমেয়াদী রক্ষণযোগ্যতার কথা বিবেচনা করে সফটওয়্যার সিস্টেম ডিজাইন করতে সাহায্য করে।",
+        'প্রোডাকশনে চলার মতো ওয়েব অ্যাপ্লিকেশন বানাই — ডিজাইন আর ইঞ্জিনিয়ারিংকে এক জায়গায় এনে আইডিয়াকে এমন প্রোডাক্টে রূপ দিই, যা মানুষ ভরসা করে ব্যবহার করতে পারেন। আন্তর্জাতিক ক্লায়েন্টদের সঙ্গে কাজ করি আমার ডিজিটাল স্টুডিও <a href="https://qubetix.co" target="_blank" rel="noopener noreferrer">Qubetix</a>-এর মাধ্যমে এবং <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a>-এ — এমন সফটওয়্যার ডেলিভার করি যা বাস্তব পরিবেশে দিনের পর দিন কাজে লাগছে।',
+      p3: "বায়োকেমিস্ট্রি ও মলিকুলার বায়োলজির একাডেমিক ব্যাকগ্রাউন্ড আমাকে সমস্যাকে গুছিয়ে, বিশ্লেষণাত্মকভাবে ভাবতে শিখিয়েছে। সেই অভ্যাসটাই আজ আমাকে এমন সফটওয়্যার সিস্টেম ডিজাইন করতে সাহায্য করে — যেগুলো স্পষ্ট, নির্ভুল আর দীর্ঘমেয়াদে মেনটেইন করা সহজ।",
+      p4Html:
+        'যেটা আমাকে সবচেয়ে বেশি টানে, সেটা হলো এই সম্ভাবনা — বায়োকেমিস্ট্রির পটভূমি আর সফটওয়্যার গড়ার কারিগরিকে এক জায়গায় মিশিয়ে দেওয়া। <a href="https://biofidex.com" target="_blank" rel="noopener noreferrer">biofideX</a>-এ ঠিক সেটাই করছি — এমন একটা শিক্ষামূলক প্ল্যাটফর্ম গড়ছি যেখানে জীববিজ্ঞানের ধারণাগুলো যত্নসহকারে, ইন্টার‍্যাক্টিভভাবে শেখা যায়। আমার সবচেয়ে প্রিয় দুটো দুনিয়া — বায়ো আর কোড — ঠিক এখানে এসে মিলেছে।',
     },
     experience: {
       heading: "অভিজ্ঞতা",
@@ -198,17 +223,17 @@ const TRANSLATIONS = {
       qubetix: {
         title: "প্রতিষ্ঠাতা ও সিইও · Qubetix",
         description:
-          "একটি ডিজিটাল স্টুডিও পরিচালনা করছি যা বিশ্বব্যাপী উচ্চাকাঙ্ক্ষী টিমের জন্য ব্র্যান্ড সিস্টেম, ওয়েবসাইট, অ্যাপ, এআই পণ্য এবং মার্কেটিং প্রোগ্রাম এন্ড-টু-এন্ড ডিজাইন ও তৈরি করে।",
+          "একটি ডিজিটাল স্টুডিও পরিচালনা করছি, যেখানে বিশ্বজুড়ে উচ্চাকাঙ্ক্ষী টিমের সঙ্গে কাজ করে আমরা ব্র্যান্ড সিস্টেম, মার্কেটিং সাইট, ওয়েব প্ল্যাটফর্ম আর AI-নেটিভ প্রোডাক্ট — প্রথম আইডিয়া থেকে শুরু করে লঞ্চ পর্যন্ত — পুরোটাই তৈরি করি।",
       },
       upwork: {
         title: "ফুল-স্ট্যাক ডেভেলপার · Upwork",
         description:
-          "আন্তর্জাতিক ক্লায়েন্টদের জন্য স্কেলেবল ওয়েব অ্যাপ্লিকেশন তৈরি করছি। প্রকল্পগুলো SaaS প্ল্যাটফর্ম থেকে ই-কমার্স সমাধান পর্যন্ত বিস্তৃত, পরিষ্কার আর্কিটেকচার, পারফরম্যান্স অপ্টিমাইজেশন এবং অসাধারণ ব্যবহারকারী অভিজ্ঞতায় মনোযোগ দিয়ে।",
+          "আন্তর্জাতিক ক্লায়েন্টদের জন্য স্কেলেবল ওয়েব অ্যাপ্লিকেশন বানাচ্ছি — SaaS, ই-কমার্স থেকে শুরু করে ইন্টারনাল টুলিং পর্যন্ত। ফোকাসটা থাকে পরিষ্কার আর্কিটেকচার, পারফরম্যান্স আর এমন ইন্টারফেস তৈরির দিকে — যেগুলো ব্যবহারে আরাম পাওয়া যায়।",
       },
       biofidex: {
         title: "প্রতিষ্ঠাতা ও সিইও · biofideX",
         description:
-          "বায়োসায়েন্স শিক্ষায় একটি শিক্ষামূলক প্ল্যাটফর্ম নির্মাণ করছি। একটি বিস্তৃত শিক্ষা ইকোসিস্টেমের জন্য পণ্য উন্নয়ন, প্রযুক্তিগত আর্কিটেকচার এবং ব্যবহারকারী অভিজ্ঞতা ডিজাইনে নেতৃত্ব দিচ্ছি।",
+          "জীববিজ্ঞান-শিক্ষার একটি প্ল্যাটফর্ম প্রতিষ্ঠা করে এর টেকনিক্যাল দিকটা নেতৃত্ব দিচ্ছি — প্রোডাক্ট স্ট্র্যাটেজি, আর্কিটেকচার থেকে UX ডিজাইন পর্যন্ত — শিক্ষার্থী আর পেশাজীবীদের জন্য একটি পূর্ণাঙ্গ লার্নিং ইকোসিস্টেম গড়ে তুলতে।",
       },
     },
     education: {
@@ -216,60 +241,81 @@ const TRANSLATIONS = {
       university: "জগন্নাথ বিশ্ববিদ্যালয়",
       field: "বায়োকেমিস্ট্রি ও মলিকুলার বায়োলজি",
       description:
-        "বিশ্লেষণমূলক চিন্তাভাবনা, গবেষণা পদ্ধতি এবং বৈজ্ঞানিক সমস্যা সমাধানে একটি শক্তিশালী ভিত্তি গড়ে তুলেছি, যা এখন সফটওয়্যার ইঞ্জিনিয়ারিং ও পণ্য উন্নয়নে আমার পদ্ধতিগত পদ্ধতিকে প্রভাবিত করে।",
+        "বিশ্লেষণাত্মক চিন্তা, গবেষণার পদ্ধতি আর বৈজ্ঞানিকভাবে সমস্যা সমাধানের একটা শক্ত ভিত্তি গড়ে উঠেছিল — যা আজও আমাকে সফটওয়্যার ইঞ্জিনিয়ারিং আর প্রোডাক্ট ডেভেলপমেন্টে গোছানোভাবে কাজ করতে সাহায্য করে।",
       badge: "বিএসসি",
     },
     projects: {
       heading: "প্রকল্প",
+      showAll: "সব প্রকল্প দেখুন",
+      showFewer: "কম প্রকল্প দেখুন",
+      links: {
+        appStore: "App Store",
+        googlePlay: "Google Play",
+      },
       biofidex: {
-        title: "biofideX — বায়োসায়েন্স শিক্ষা",
+        title: "biofideX",
+        category: "এডটেক · বায়োসায়েন্স",
         description:
-          "একটি আধুনিক বায়োসায়েন্স লার্নিং প্ল্যাটফর্ম যেখানে শিক্ষার্থী ও পেশাদাররা জীবন বিজ্ঞান বিষয়ক কুইজ, প্রবন্ধ ও কোর্স অন্বেষণ করতে পারেন। স্পষ্টতা ও অ্যাক্সেসিবিলিটির জন্য ডিজাইন করা, ইন্টারেক্টিভ মূল্যায়ন ও কাঠামোবদ্ধ বিষয়বস্তু সহ যা কার্যকর, প্রমাণ-ভিত্তিক শিক্ষাকে সমর্থন করে।",
+          "একটি আধুনিক বায়োসায়েন্স লার্নিং প্ল্যাটফর্ম, যেখানে শিক্ষার্থী আর পেশাজীবীরা লাইফ সায়েন্সের নানা বিষয়ে কুইজ, আর্টিকেল আর কোর্স ঘুরে দেখতে পারেন। স্পষ্টতা ও অ্যাক্সেসিবিলিটি মাথায় রেখে গড়া — ইন্টার‍্যাক্টিভ অ্যাসেসমেন্ট আর গোছানো কনটেন্টের মাধ্যমে প্রমাণভিত্তিক শেখাকে এগিয়ে নেওয়াই এর লক্ষ্য।",
+      },
+      prottoy: {
+        title: "Prottoy",
+        category: "এডটেক · মোবাইল অ্যাপ",
+        description:
+          "বাংলাদেশের HSC ও ভর্তি পরীক্ষার্থীদের জন্য একটা মনোযোগী একাডেমিক কুইজ অ্যাপ। ১০ মিনিটের ছোট, পরিকল্পিত প্র্যাকটিস সেশন, সঙ্গে সঙ্গে ব্যাখ্যা, আর যেসব অধ্যায় দুর্বল সেগুলো বের করে আনা অ্যানালিটিক্স — পুরোটাই অফলাইন-প্রথম, ইন্টারনেট না থাকলেও পড়াশোনা থামে না।",
+      },
+      luna: {
+        title: "Luna Corporate",
+        category: "কর্পোরেট · ব্র্যান্ড পোর্টফোলিও",
+        description:
+          "একটি পোলিশ কনজিউমার-গুডস কোম্পানির জন্য দ্বিভাষিক কর্পোরেট সাইট — পাঁচটি ব্র্যান্ডের পোর্টফোলিও, ইউরোপজুড়ে বিতরণ নেটওয়ার্ক আর ট্রেড-শো কভারেজ একসঙ্গে দেখানো। প্রায় ব্লকিং-ফ্রি জাভাস্ক্রিপ্ট ও তাৎক্ষণিক ইন্টার‍্যাক্টিভিটির জন্য Qwik দিয়ে গড়া।",
       },
       albayt: {
         title: "Al-Bayt Elegance",
+        category: "ই-কমার্স · ফ্যাশন",
         description:
-          "ইসলামিক ফ্যাশনের জন্য একটি ই-কমার্স প্ল্যাটফর্ম, পরিষ্কার কেনাকাটার অভিজ্ঞতা, নিরাপদ পেমেন্ট এবং রিয়েল-টাইম ইনভেন্টরি ম্যানেজমেন্ট সহ নির্মিত।",
+          "ইসলামিক মডেস্ট ফ্যাশনের জন্য একটি ই-কমার্স প্ল্যাটফর্ম — শান্ত, যত্ন নিয়ে গড়া শপিং অভিজ্ঞতা, নিরাপদ Stripe পেমেন্ট, একাধিক রিজনে রিয়েল-টাইম ইনভেন্টরি, আর এমন একটা স্টোরফ্রন্ট যেখানে প্রতিটা পেজে পোশাক আর ক্রেতা — দুটোই ঠিক কেন্দ্রবিন্দুতে থাকে।",
       },
       noorJabal: {
         title: "Noor Jabal Cleaning",
+        category: "সার্ভিস · লোকাল ব্যবসা",
         description:
-          "দুবাই-ভিত্তিক একটি ক্লিনিং কোম্পানির জন্য একটি পেশাদার সার্ভিস ওয়েবসাইট, আবাসিক ও বাণিজ্যিক সেবা পরিষ্কার কাঠামো ও ব্যবহারকারী-বান্ধব অভিজ্ঞতায় প্রদর্শন করে।",
+          "দুবাইভিত্তিক একটি ক্লিনিং কোম্পানির পেশাদার সার্ভিস ওয়েবসাইট — আবাসিক ও বাণিজ্যিক সেবাগুলো স্পষ্ট তথ্য-গঠনে সাজানো, স্থানীয়ভাবে ঠিকঠাক করা কপি, আর এমন একটি ঝামেলাহীন ইনকোয়ারি ফ্লো — যা কৌতূহলী ভিজিটরকে নির্ধারিত অ্যাপয়েন্টমেন্টে রূপান্তর করে।",
       },
     },
     services: {
       heading: "সেবা",
-      web: {
-        title: "ওয়েবসাইট ডিজাইন ও ডেভেলপমেন্ট",
+      ai: {
+        title: "AI-নেটিভ প্রোডাক্ট ডেভেলপমেন্ট",
         description:
-          "পরিষ্কার UI ও চিন্তাশীল ব্যবহারকারী অভিজ্ঞতা সহ আধুনিক, দ্রুত ও রেসপন্সিভ ওয়েবসাইট।",
+          "ভাষার মডেল, এজেন্ট আর AI-চালিত ওয়ার্কফ্লোকে প্রোডাকশন-গ্রেড ওয়েব অ্যাপে যুক্ত করি — এমনভাবে, যেন এগুলো বাইরে থেকে বসানো না, প্রোডাক্টের ভেতরেরই অংশ।",
         items: [
-          "ব্যবসায়িক ও ব্যক্তিগত ওয়েবসাইট",
-          "ল্যান্ডিং পেজ ও পোর্টফোলিও",
-          "রেসপন্সিভ ও SEO-রেডি লেআউট",
-          "পারফরম্যান্স-কেন্দ্রিক ফ্রন্টএন্ড",
+          "LLM ইন্টিগ্রেশন ও প্রম্পট ইঞ্জিনিয়ারিং",
+          "RAG সিস্টেম ও সিম্যান্টিক সার্চ",
+          "AI এজেন্ট ও চ্যাট ইন্টারফেস",
+          "স্ট্রিমিং UI ও রিয়েল-টাইম ইনফারেন্স",
         ],
       },
-      app: {
-        title: "ওয়েব অ্যাপ ও ড্যাশবোর্ড ডেভেলপমেন্ট",
+      saas: {
+        title: "SaaS প্ল্যাটফর্ম ও ওয়েব অ্যাপ",
         description:
-          "ব্যবহারকারী-বান্ধব ওয়েব অ্যাপ্লিকেশন ও ড্যাশবোর্ড যা জটিল ধারণাকে সহজ অভিজ্ঞতায় রূপান্তরিত করে।",
+          "মাল্টি-টেন্যান্ট SaaS প্রোডাক্ট, ইন্টারনাল টুল আর ড্যাশবোর্ড — স্কেলের কথা মাথায় রেখে তৈরি, যেখানে টাইপ-সেফ API, রিয়েল-টাইম ডেটা আর ঝামেলাহীন বিলিং প্রথম থেকেই থাকে।",
         items: [
-          "SaaS ও অভ্যন্তরীণ টুলস",
-          "অ্যাডমিন প্যানেল ও ড্যাশবোর্ড",
-          "ফ্রন্টএন্ড + ব্যাকএন্ড ইন্টিগ্রেশন",
-          "স্কেলেবল UI সিস্টেম",
+          "মাল্টি-টেন্যান্ট SaaS আর্কিটেকচার",
+          "Auth, বিলিং ও সাবস্ক্রিপশন",
+          "রিয়েল-টাইম ড্যাশবোর্ড ও অ্যানালিটিক্স",
+          "টাইপ-সেফ এন্ড-টু-এন্ড স্ট্যাক",
         ],
       },
-      uiux: {
-        title: "UI/UX উন্নতি ও অপ্টিমাইজেশন",
+      experience: {
+        title: "হাই-পারফরম্যান্স ওয়েব এক্সপেরিয়েন্স",
         description:
-          "বিদ্যমান ওয়েবসাইট ও অ্যাপগুলোকে আরও সুন্দর, মসৃণ ও দ্রুত করে তোলা।",
+          "মার্কেটিং সাইট, ল্যান্ডিং পেজ আর ব্র্যান্ড-চালিত ওয়েব অভিজ্ঞতা — দ্রুতগতি, কনভার্শন আর মোশনকে মাথায় রেখে গড়া; Core Web Vitals নিশ্চিন্তে পেরিয়ে যায়।",
         items: [
-          "UI রিডিজাইন ও UX পরিষ্কার",
-          "মোবাইল ও অ্যাক্সেসিবিলিটি সংশোধন",
-          "ফ্রন্টএন্ড রিফ্যাক্টরিং",
-          "পারফরম্যান্স অপ্টিমাইজেশন",
+          "কনভার্শন-ফোকাসড ল্যান্ডিং পেজ",
+          "মোশন ডিজাইন ও মাইক্রো-ইন্টার‍্যাকশন",
+          "Core Web Vitals ও টেকনিক্যাল SEO",
+          "অ্যাক্সেসিবিলিটি ও ইনক্লুসিভ UX",
         ],
       },
     },
@@ -286,10 +332,10 @@ const TRANSLATIONS = {
       heading: "যোগাযোগ করুন",
       label: "পরবর্তী কী?",
       description:
-        "আমি বর্তমানে নতুন সুযোগ ও আকর্ষণীয় প্রকল্পের জন্য উন্মুক্ত আছি। আপনার যদি একটি সম্পূর্ণ প্ল্যাটফর্মের প্রয়োজন হয় বা কোনো বিদ্যমান অ্যাপ্লিকেশন অপ্টিমাইজ করতে চান, আসুন আলোচনা করি কীভাবে আমি সাহায্য করতে পারি।",
+        "নতুন সুযোগ আর মজার প্রকল্পের জন্য এই মুহূর্তে উন্মুক্ত। শূন্য থেকে একটা প্ল্যাটফর্ম দাঁড় করানোর কাজ হোক বা চলমান কোনো অ্যাপকে আরও ভালো করার — আসুন কথা বলি, কীভাবে কাজে লাগতে পারি।",
       emailAria: "hrsshainik@gmail.com-এ ইমেইল পাঠান",
     },
-    footer: { text: "ডিজাইন ও নির্মাণ করেছেন হাবিবুর রহমান" },
+    footer: { text: "ডিজাইন ও তৈরি — হাবিবুর রহমান" },
     langSwitcher: { buttonAria: "ভাষা নির্বাচন করুন", label: "ভাষা" },
   },
 
@@ -324,14 +370,16 @@ const TRANSLATIONS = {
       greeting: "مرحباً، أنا",
       jobTitle: "مطوّر فول-ستاك",
       tagline:
-        "مطوّر يركز على المنتج مع تخصص قوي في هندسة الواجهة الأمامية وتجربة المستخدم.",
+        "مطوّر يبدأ دائماً من المنتج، مع شغف خاص بهندسة الواجهة الأمامية وتجربة المستخدم.",
     },
     about: {
       heading: "نبذة عني",
-      p1: "أنا مطوّر فول-ستاك مدفوع بالمنتج مقيم في دكا، بنغلاديش، مع تركيز قوي على هندسة الواجهة الأمامية وتجربة المستخدم. انتقلت من الكيمياء الحيوية إلى تطوير البرمجيات نتيجة شغفي الحقيقي ببناء منتجات رقمية مدروسة ومصمّمة بعناية.",
+      p1: "مطوّر فول-ستاك انطلاقي دائماً من المنتج، أعمل من دكا في بنغلاديش، ويتركّز اهتمامي على هندسة الواجهة الأمامية وتجربة المستخدم. انتقلت من الكيمياء الحيوية إلى البرمجة دافعي الأول حبّ بناء منتجات رقمية مدروسة، يشعر من يستخدمها بأنها صُمّمت بعناية فعلاً.",
       p2Html:
-        'أبني تطبيقات ويب جاهزة للإنتاج، أجمع بين التصميم والهندسة لتحويل الأفكار إلى منتجات موثوقة تتمحور حول المستخدم. أعمل مع عملاء دوليين عبر <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a> ومن خلال محفظتي الشخصية، مُسلِّماً برمجيات موثوقة تُستخدم في بيئات حقيقية.',
-      p3: "أرست خلفيتي الأكاديمية في الكيمياء الحيوية وعلم الأحياء الجزيئي نهجاً منظماً وتحليلياً لحل المشكلات، مما يمكّنني من تصميم أنظمة برمجية بوضوح ودقة مع مراعاة قابلية الصيانة على المدى الطويل.",
+        'أبني تطبيقات ويب جاهزة للإنتاج، أجمع فيها بين التصميم والهندسة لأحوّل الأفكار إلى منتجات يثق بها مستخدموها يومياً. أعمل مع عملاء حول العالم عبر <a href="https://qubetix.co" target="_blank" rel="noopener noreferrer">Qubetix</a> — استوديوي الرقمي — وعلى <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a>، وأسلّم برمجيات تعمل في بيئات حقيقية، لا في عروض تقديمية.',
+      p3: "تركت دراستي للكيمياء الحيوية وعلم الأحياء الجزيئي أثراً واضحاً في طريقة تفكيري: منظَّمة وتحليلية في مواجهة المشكلات. هذه العادة هي ما أعتمد عليه اليوم في تصميم أنظمة برمجية واضحة ودقيقة، يسهل صيانتها وتطويرها على المدى الطويل.",
+      p4Html:
+        'ما يحمّسني فعلاً هو الجمع بين خلفيتي في الكيمياء الحيوية وحرفة البرمجة. وهذا تماماً ما أفعله مع <a href="https://biofidex.com" target="_blank" rel="noopener noreferrer">biofideX</a>: أبني منصة تعليمية تحوّل مفاهيم علوم الحياة إلى تجارب تعلّم تفاعلية ومدروسة. مشروع يجلس عند الحدّ الفاصل بين عالمَين أحبّهما: علم الأحياء وبرمجة الويب.',
     },
     experience: {
       heading: "الخبرة",
@@ -339,17 +387,17 @@ const TRANSLATIONS = {
       qubetix: {
         title: "المؤسس والرئيس التنفيذي · Qubetix",
         description:
-          "أقود استوديو رقمي يصمم ويبني أنظمة العلامات التجارية والمواقع والتطبيقات ومنتجات الذكاء الاصطناعي وبرامج التسويق من البداية إلى النهاية للفرق الطموحة حول العالم.",
+          "أقود استوديو رقمي يعمل مع فرق طموحة حول العالم، نصمّم ونبني لها أنظمة هوية، ومواقع تسويقية، ومنصات ويب، ومنتجات ذكاء اصطناعي أصيلة — من أول فكرة وحتى لحظة الإطلاق وما بعدها.",
       },
       upwork: {
         title: "مطوّر فول-ستاك · Upwork",
         description:
-          "بناء تطبيقات ويب قابلة للتوسّع للعملاء الدوليين. تتراوح المشاريع من منصات SaaS إلى حلول التجارة الإلكترونية، مع التركيز على البنية النظيفة وتحسين الأداء وتجارب المستخدم الاستثنائية.",
+          "أبني تطبيقات ويب قابلة للتوسّع لعملاء دوليين، تتراوح بين منصات SaaS والتجارة الإلكترونية والأدوات الداخلية، مع تركيز على بنية واضحة، وأداء عالٍ، وواجهات تشعر بأنها مريحة وبديهية الاستخدام.",
       },
       biofidex: {
         title: "المؤسس والرئيس التنفيذي · biofideX",
         description:
-          "بناء منصة تعليمية متخصصة في تعليم علوم الأحياء. قيادة تطوير المنتج والبنية التقنية وتصميم تجربة المستخدم لمنظومة تعليمية شاملة.",
+          "أسّستُ منصة تعليمية متخصّصة في علوم الحياة، وأقود اتجاهها التقني من استراتيجية المنتج إلى البنية التحتية وتصميم تجربة المستخدم، لبناء منظومة تعلّم متكاملة للطلاب والمحترفين.",
       },
     },
     education: {
@@ -357,60 +405,81 @@ const TRANSLATIONS = {
       university: "جامعة جاغانات",
       field: "الكيمياء الحيوية وعلم الأحياء الجزيئي",
       description:
-        "أرسيت أساساً متيناً في التفكير التحليلي ومنهجية البحث وحل المشكلات العلمية، مما يُشكّل الآن نهجي المنهجي في هندسة البرمجيات وتطوير المنتجات.",
+        "بنيت أساساً متيناً في التفكير التحليلي ومنهجية البحث وحلّ المشكلات بصورة علمية. هذا الأساس ما زال يُغذّي طريقتي المنهجية في هندسة البرمجيات وتطوير المنتجات حتى اليوم.",
       badge: "بكالوريوس",
     },
     projects: {
       heading: "المشاريع",
+      showAll: "عرض جميع المشاريع",
+      showFewer: "عرض مشاريع أقل",
+      links: {
+        appStore: "App Store",
+        googlePlay: "Google Play",
+      },
       biofidex: {
-        title: "biofideX — التعليم البيولوجي",
+        title: "biofideX",
+        category: "تعليم رقمي · علوم الحياة",
         description:
-          "منصة تعلّم حديثة لعلوم الأحياء يمكن للطلاب والمحترفين من خلالها استكشاف الاختبارات والمقالات والدورات عبر تخصصات علوم الحياة. مصمّمة للوضوح وسهولة الوصول، مع تقييمات تفاعلية ومحتوى منظم.",
+          "منصة تعلّم حديثة لعلوم الحياة، يستكشف فيها الطلاب والمحترفون اختبارات ومقالات ودورات تغطّي مختلف تخصصات هذا المجال. صُمّمت بعناية لتكون واضحة وسهلة الوصول، وتقدّم تقييمات تفاعلية ومحتوى منظَّماً يدعم تعلّماً حقيقياً قائماً على الأدلة.",
+      },
+      prottoy: {
+        title: "Prottoy",
+        category: "تعليم رقمي · تطبيق جوّال",
+        description:
+          "تطبيق اختبارات أكاديمية مركَّز لطلاب الـ HSC والمتقدّمين لاختبارات القبول في بنغلاديش. جلسات تدريب قصيرة من 10 دقائق، مع شروحات فورية وتحليلات تكشف الفصول الضعيفة — يعمل دون اتصال أولاً، فلا تتوقّف الدراسة عند انقطاع الإنترنت.",
+      },
+      luna: {
+        title: "Luna Corporate",
+        category: "موقع شركات · محفظة علامات",
+        description:
+          "موقع شركة ثنائي اللغة لشركة بولندية مصنِّعة للمنتجات الاستهلاكية، يعرض محفظتها من خمس علامات تجارية، وشبكة توزيعها في أوروبا، وتغطية حضورها في المعارض. بُني على Qwik ليقدّم تفاعلاً فورياً وحجباً شبه معدوم لـ JavaScript.",
       },
       albayt: {
         title: "Al-Bayt Elegance",
+        category: "تجارة إلكترونية · أزياء",
         description:
-          "منصة تجارة إلكترونية للأزياء الإسلامية، مبنية بتجربة تسوق نظيفة ومدفوعات آمنة وإدارة مخزون في الوقت الفعلي.",
+          "منصة تجارة إلكترونية للأزياء الإسلامية المحتشمة، صُمّمت حول تجربة تسوّق هادئة ومدروسة — مدفوعات Stripe آمنة، وإدارة مخزون لحظية عبر عدّة مناطق، وواجهة متجر تضع القطعة والعميل في قلب كلّ صفحة فيها.",
       },
       noorJabal: {
         title: "Noor Jabal Cleaning",
+        category: "خدمات · شركة محلية",
         description:
-          "موقع خدمات احترافي لشركة تنظيف مقرها دبي، يعرض خدمات السكن والتجارة بهيكل واضح وتجربة سهلة الاستخدام.",
+          "موقع خدمات احترافي لشركة تنظيف مقرّها دبي، يعرض خدماتها السكنية والتجارية ببنية معلومات واضحة، ونصوص مكيَّفة للسوق المحلي، وتدفّق استفسار سلس يحوّل الزائر الفضولي إلى موعد محجوز بأقل عدد ممكن من الخطوات.",
       },
     },
     services: {
       heading: "الخدمات",
-      web: {
-        title: "تصميم وتطوير المواقع",
+      ai: {
+        title: "تطوير منتجات أصيلة بالذكاء الاصطناعي",
         description:
-          "مواقع حديثة وسريعة ومتجاوبة مبنية بواجهة مستخدم نظيفة وتجربة مستخدم مدروسة.",
+          "أُدمج النماذج اللغوية والوكلاء وسير العمل المعتمد على الذكاء الاصطناعي داخل تطبيقات ويب جاهزة للإنتاج — بحيث تبدو جزءاً أصيلاً من المنتج، لا إضافة لاحقة عليه.",
         items: [
-          "مواقع الأعمال والشخصية",
-          "صفحات الهبوط والمحافظ",
-          "تصميمات متجاوبة وجاهزة لتحسين محركات البحث",
-          "واجهة أمامية تركز على الأداء",
+          "دمج نماذج LLM وهندسة التوجيهات",
+          "أنظمة RAG والبحث الدلالي",
+          "وكلاء الذكاء الاصطناعي وواجهات المحادثة",
+          "واجهات بثّ مباشر واستدلال فوري",
         ],
       },
-      app: {
-        title: "تطوير تطبيقات الويب ولوحات التحكم",
+      saas: {
+        title: "منصات SaaS وتطبيقات الويب",
         description:
-          "تطبيقات ويب ولوحات تحكم سهلة الاستخدام تحوّل الأفكار المعقدة إلى تجارب بسيطة.",
+          "منتجات SaaS متعددة المستأجرين، وأدوات داخلية، ولوحات تحكم مُصمَّمة للتوسّع — مع واجهات API آمنة الأنواع، وبيانات لحظية، ونظام فوترة سلس مدمج منذ البداية.",
         items: [
-          "أدوات SaaS والأدوات الداخلية",
-          "لوحات الإدارة ولوحات التحكم",
-          "تكامل الواجهة الأمامية والخلفية",
-          "أنظمة واجهة مستخدم قابلة للتوسع",
+          "بنية SaaS متعددة المستأجرين",
+          "المصادقة والفوترة والاشتراكات",
+          "لوحات تحكم وتحليلات لحظية",
+          "حزم تقنية آمنة الأنواع من الواجهة إلى الخادم",
         ],
       },
-      uiux: {
-        title: "تحسين وتطوير واجهة وتجربة المستخدم",
+      experience: {
+        title: "تجارب ويب عالية الأداء",
         description:
-          "تحسين المواقع والتطبيقات القائمة لتبدو أفضل وتعمل بسلاسة أكبر وأداء أسرع.",
+          "مواقع تسويقية، وصفحات هبوط، وتجارب ويب قائمة على الهوية — مُصمَّمة للسرعة والتحويل والحركة، تتجاوز معايير Core Web Vitals بمساحة كبيرة.",
         items: [
-          "إعادة تصميم الواجهة وتنظيف تجربة المستخدم",
-          "إصلاحات الهاتف المحمول وإمكانية الوصول",
-          "إعادة هيكلة الواجهة الأمامية",
-          "تحسين الأداء",
+          "صفحات هبوط تركّز على التحويل",
+          "تصميم الحركة والتفاعلات الدقيقة",
+          "Core Web Vitals وتحسين السيو التقني",
+          "إمكانية الوصول وتجربة شاملة للجميع",
         ],
       },
     },
@@ -427,10 +496,10 @@ const TRANSLATIONS = {
       heading: "تواصل معي",
       label: "ما التالي؟",
       description:
-        "أنا منفتح حالياً على الفرص الجديدة والمشاريع المثيرة للاهتمام. سواء كنت بحاجة إلى منصة كاملة أو تريد تحسين تطبيق قائم، لنناقش كيف يمكنني المساعدة.",
+        "أرحّب حالياً بالفرص الجديدة والمشاريع المثيرة للاهتمام. سواء كنت تريد بناء منصة كاملة من الصفر أو تطوير تطبيق قائم بالفعل، لنتحدث ولنرَ كيف يمكنني المساعدة.",
       emailAria: "إرسال بريد إلكتروني إلى hrsshainik@gmail.com",
     },
-    footer: { text: "تصميم وبناء بواسطة حبيب الرحمن" },
+    footer: { text: "تصميم وتنفيذ — حبيب الرحمن" },
     langSwitcher: { buttonAria: "اختر اللغة", label: "اللغة" },
   },
 
@@ -466,14 +535,16 @@ const TRANSLATIONS = {
       greeting: "Hola, soy",
       jobTitle: "Desarrollador Full-Stack",
       tagline:
-        "Desarrollador orientado al producto con fuerte enfoque en ingeniería frontend y experiencia de usuario.",
+        "Desarrollador que piensa primero en el producto, con foco real en el frontend y la experiencia de usuario.",
     },
     about: {
       heading: "Sobre mí",
-      p1: "Soy un desarrollador full-stack orientado al producto, basado en Dhaka, Bangladesh, con un fuerte enfoque en ingeniería frontend y experiencia de usuario. Hice la transición de Bioquímica al desarrollo de software por una genuina pasión por construir productos digitales bien pensados y bien diseñados.",
+      p1: "Soy desarrollador full-stack, con base en Dhaka, Bangladesh. Trabajo siempre desde el producto, y me apasiona en particular el frontend y todo lo que tiene que ver con la experiencia de usuario. Llegué al desarrollo de software desde la bioquímica, empujado por las ganas de construir productos digitales pensados con cuidado y diseñados con intención.",
       p2Html:
-        'Construyo aplicaciones web listas para producción, uniendo diseño e ingeniería para transformar ideas en productos confiables centrados en el usuario. Trabajo con clientes internacionales tanto en <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a> como a través de mi portafolio personal, entregando software de confianza utilizado en entornos reales.',
-      p3: "Mi formación académica en Bioquímica y Biología Molecular me ha dado un enfoque estructurado y analítico para resolver problemas, permitiéndome diseñar sistemas de software con claridad, precisión y con la mantenibilidad a largo plazo en mente.",
+        'Construyo aplicaciones web listas para producción, en las que diseño e ingeniería van de la mano para convertir ideas en productos confiables y centrados en quien los usa. Trabajo con clientes de distintos países a través de <a href="https://qubetix.co" target="_blank" rel="noopener noreferrer">Qubetix</a> — mi estudio digital — y en <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a>, entregando software que se usa día a día en entornos reales.',
+      p3: "Mi formación en Bioquímica y Biología Molecular me dejó una forma de pensar muy estructurada y analítica frente a los problemas. Esa misma manera de razonar es la que aplico hoy al diseñar sistemas de software: claros, precisos y pensados para mantenerse sanos en el largo plazo.",
+      p4Html:
+        'Lo que más me motiva es justamente la posibilidad de unir mi base en bioquímica con el oficio del software. Eso es exactamente lo que hago en <a href="https://biofidex.com" target="_blank" rel="noopener noreferrer">biofideX</a>: una plataforma educativa que convierte los conceptos de las ciencias de la vida en experiencias de aprendizaje interactivas y bien cuidadas. Un proyecto que vive justo en el cruce de las dos disciplinas que más me importan.',
     },
     experience: {
       heading: "Experiencia",
@@ -481,17 +552,17 @@ const TRANSLATIONS = {
       qubetix: {
         title: "Fundador y CEO · Qubetix",
         description:
-          "Liderando un estudio digital que diseña y construye sistemas de marca, sitios web, aplicaciones, productos de IA y programas de marketing de principio a fin para equipos ambiciosos en todo el mundo.",
+          "Lidero un estudio digital que acompaña a equipos ambiciosos en todo el mundo, diseñando y construyendo sistemas de marca, sitios de marketing, plataformas web y productos AI-native de principio a fin — desde la primera idea hasta el lanzamiento y lo que viene después.",
       },
       upwork: {
         title: "Desarrollador Full-Stack · Upwork",
         description:
-          "Construyendo aplicaciones web escalables para clientes internacionales. Los proyectos van desde plataformas SaaS hasta soluciones e-commerce, enfocándose en arquitectura limpia, optimización de rendimiento y experiencias de usuario excepcionales.",
+          "Construyo aplicaciones web escalables para clientes internacionales: SaaS, e-commerce y herramientas internas, siempre con foco en arquitectura limpia, buen rendimiento e interfaces que se sientan naturales de usar.",
       },
       biofidex: {
         title: "Fundador y CEO · biofideX",
         description:
-          "Construyendo una plataforma educativa enfocada en educación en biociencias. Liderando el desarrollo del producto, la arquitectura técnica y el diseño de experiencia de usuario para un ecosistema de aprendizaje integral.",
+          "Fundé y lidero la dirección técnica de una plataforma educativa para las ciencias de la vida, haciéndome cargo de la estrategia de producto, la arquitectura y el diseño de UX, para llegar a un ecosistema de aprendizaje completo para estudiantes y profesionales.",
       },
     },
     education: {
@@ -499,60 +570,77 @@ const TRANSLATIONS = {
       university: "Universidad Jagannath",
       field: "Bioquímica y Biología Molecular",
       description:
-        "Construí una sólida base en pensamiento analítico, metodología de investigación y resolución de problemas científicos que ahora informa mi enfoque sistemático al desarrollo de software y productos.",
+        "Construí una base sólida en pensamiento analítico, método de investigación y resolución de problemas con mirada científica — la misma que hoy guía mi forma de encarar la ingeniería de software y el desarrollo de producto.",
       badge: "Licenciatura",
     },
     projects: {
       heading: "Proyectos",
+      showAll: "Mostrar todos los proyectos",
+      showFewer: "Mostrar menos proyectos",
+      links: {
+        appStore: "App Store",
+        googlePlay: "Google Play",
+        caseStudy: "Caso de Estudio",
+      },
       biofidex: {
         title: "biofideX — Educación en Biociencias",
         description:
-          "Una plataforma moderna de aprendizaje en biociencias donde estudiantes y profesionales pueden explorar cuestionarios, artículos y cursos en disciplinas de ciencias de la vida. Diseñada para claridad y accesibilidad, con evaluaciones interactivas y contenido estructurado.",
+          "Plataforma moderna de aprendizaje en biociencias donde estudiantes y profesionales pueden explorar cuestionarios, artículos y cursos de las distintas disciplinas. Pensada para que todo se sienta claro y accesible, con evaluaciones interactivas y contenido bien estructurado que apoya un aprendizaje basado en evidencia.",
+      },
+      prottoy: {
+        title: "Prottoy — App de Preparación HSC y Admisiones",
+        description:
+          "App académica de quizzes hecha para estudiantes de HSC y candidatos a exámenes de admisión en Bangladesh. Funciona con sesiones cortas de 10 minutos muy enfocadas, explicaciones al instante y analíticas que dejan ver qué capítulos hay que reforzar — y es offline-first, así que el estudio nunca depende de la conexión.",
+      },
+      luna: {
+        title: "Luna Corporate — Portafolio de Marcas",
+        description:
+          "Sitio corporativo bilingüe para un fabricante polaco de bienes de consumo, que muestra su portafolio de cinco marcas, su red de distribución europea y la cobertura de las ferias en las que participa. Construido sobre Qwik para lograr una interactividad casi instantánea, con un mínimo de JavaScript bloqueante.",
       },
       albayt: {
         title: "Al-Bayt Elegance",
         description:
-          "Una plataforma de e-commerce para moda islámica, construida con una experiencia de compra clara, pagos seguros y gestión de inventario en tiempo real.",
+          "E-commerce de moda islámica con una experiencia de compra limpia y directa, pagos seguros y un control de inventario que se mantiene actualizado al instante.",
       },
       noorJabal: {
         title: "Noor Jabal Cleaning",
         description:
-          "Un sitio web de servicios profesionales para una empresa de limpieza con sede en Dubái, mostrando servicios residenciales y comerciales con estructura clara y experiencia amigable.",
+          "Sitio profesional de servicios para una empresa de limpieza con sede en Dubái, que presenta sus servicios residenciales y comerciales con una estructura clara y una experiencia fácil de recorrer.",
       },
     },
     services: {
       heading: "Servicios",
-      web: {
-        title: "Diseño y Desarrollo Web",
+      ai: {
+        title: "Desarrollo de Productos AI-Native",
         description:
-          "Sitios web modernos, rápidos y responsivos construidos con UI limpia y experiencia de usuario bien pensada.",
+          "Integro modelos de lenguaje, agentes y flujos basados en IA dentro de aplicaciones web listas para producción — pensados como parte natural del producto, no como una capa pegada encima.",
         items: [
-          "Sitios web de negocios y personales",
-          "Landing pages y portafolios",
-          "Diseños responsivos y listos para SEO",
-          "Frontend enfocado en rendimiento",
+          "Integración de LLM e ingeniería de prompts",
+          "Sistemas RAG y búsqueda semántica",
+          "Agentes de IA e interfaces conversacionales",
+          "UIs en streaming e inferencia en tiempo real",
         ],
       },
-      app: {
-        title: "Desarrollo de Apps y Dashboards",
+      saas: {
+        title: "Plataformas SaaS y Apps Web",
         description:
-          "Aplicaciones web y dashboards amigables que transforman ideas complejas en experiencias simples.",
+          "Productos SaaS multi-tenant, herramientas internas y dashboards diseñados para escalar — con APIs type-safe, datos en tiempo real y un sistema de facturación fluido desde el primer día.",
         items: [
-          "SaaS y herramientas internas",
-          "Paneles de administración y dashboards",
-          "Integración frontend + backend",
-          "Sistemas UI escalables",
+          "Arquitectura SaaS multi-tenant",
+          "Auth, facturación y suscripciones",
+          "Dashboards y analíticas en tiempo real",
+          "Stacks type-safe de punta a punta",
         ],
       },
-      uiux: {
-        title: "Mejora y Optimización UI/UX",
+      experience: {
+        title: "Experiencias Web de Alto Rendimiento",
         description:
-          "Mejorar sitios y apps existentes para que luzcan mejor, funcionen más suavemente y rindan más rápido.",
+          "Sitios de marketing, landings y experiencias web con identidad fuerte — pensadas para velocidad, conversión y movimiento, y diseñadas para pasar los Core Web Vitals con margen.",
         items: [
-          "Rediseño UI y limpieza UX",
-          "Correcciones móviles y de accesibilidad",
-          "Refactorización frontend",
-          "Optimización de rendimiento",
+          "Landing pages enfocadas en conversión",
+          "Motion design y micro-interacciones",
+          "Core Web Vitals y SEO técnico",
+          "Accesibilidad y UX inclusiva",
         ],
       },
     },
@@ -569,7 +657,7 @@ const TRANSLATIONS = {
       heading: "Contáctame",
       label: "¿Qué sigue?",
       description:
-        "Actualmente estoy abierto a nuevas oportunidades y proyectos interesantes. Ya sea que necesites una plataforma completa o quieras optimizar una aplicación existente, hablemos sobre cómo puedo ayudarte.",
+        "En este momento estoy abierto a nuevas oportunidades y proyectos que valga la pena hacer bien. Da igual si necesitas levantar una plataforma desde cero o pulir una app que ya está en marcha — escríbeme y vemos cómo te puedo ayudar.",
       emailAria: "Enviar un correo a hrsshainik@gmail.com",
     },
     footer: { text: "Diseñado y construido por Habibur Rahman" },
@@ -608,14 +696,16 @@ const TRANSLATIONS = {
       greeting: "Bonjour, je suis",
       jobTitle: "Développeur Full-Stack",
       tagline:
-        "Développeur orienté produit avec une forte expertise en ingénierie frontend et expérience utilisateur.",
+        "Développeur orienté produit, qui pense vraiment frontend et expérience utilisateur avant tout.",
     },
     about: {
       heading: "À propos",
-      p1: "Je suis un développeur full-stack orienté produit basé à Dhaka, Bangladesh, avec un fort accent sur l'ingénierie frontend et l'expérience utilisateur. J'ai effectué une transition de la Biochimie vers le développement logiciel par une véritable passion pour la création de produits numériques réfléchis et bien conçus.",
+      p1: "Je suis développeur full-stack, basé à Dhaka, au Bangladesh. Je pars toujours du produit, avec une vraie attention pour le frontend et tout ce qui touche à l'expérience utilisateur. Je suis passé de la biochimie au logiciel parce que j'ai pris goût à concevoir des produits numériques pensés en profondeur, et dessinés avec soin.",
       p2Html:
-        'Je construis des applications web prêtes pour la production, alliant design et ingénierie pour transformer des idées en produits fiables centrés sur l\'utilisateur. Je travaille avec des clients internationaux sur <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a> et via mon portfolio personnel, livrant des logiciels de confiance utilisés dans des environnements réels.',
-      p3: "Mon parcours académique en Biochimie et Biologie Moléculaire a façonné une approche structurée et analytique de la résolution de problèmes, me permettant de concevoir des systèmes logiciels avec clarté, précision et maintenabilité à long terme.",
+        'Je conçois des applications web prêtes pour la production, en faisant dialoguer design et ingénierie pour transformer des idées en produits solides, vraiment au service de leurs utilisateurs. Je travaille avec des clients à l\'international via <a href="https://qubetix.co" target="_blank" rel="noopener noreferrer">Qubetix</a> — mon studio numérique — et sur <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a>, en livrant des logiciels utilisés au quotidien, dans des environnements réels.',
+      p3: "Ma formation en biochimie et biologie moléculaire m'a laissé une manière de penser très structurée et analytique face aux problèmes. C'est exactement cette habitude que je remets au service de mon travail aujourd'hui : concevoir des systèmes logiciels clairs, précis, et faits pour vieillir sans douleur.",
+      p4Html:
+        'Ce qui m\'enthousiasme le plus, c\'est justement de pouvoir relier ma formation en biochimie au métier du logiciel. C\'est précisément ce que je fais avec <a href="https://biofidex.com" target="_blank" rel="noopener noreferrer">biofideX</a> : une plateforme éducative qui transforme les concepts des sciences de la vie en expériences d\'apprentissage interactives, soignées. Un projet qui vit exactement à la frontière des deux disciplines auxquelles je tiens le plus.',
     },
     experience: {
       heading: "Expérience",
@@ -623,17 +713,17 @@ const TRANSLATIONS = {
       qubetix: {
         title: "Fondateur et PDG · Qubetix",
         description:
-          "Direction d'un studio numérique qui conçoit et développe de bout en bout des systèmes de marque, des sites web, des applications, des produits IA et des programmes marketing pour des équipes ambitieuses dans le monde entier.",
+          "Je dirige un studio numérique qui accompagne des équipes ambitieuses dans le monde entier — nous concevons et livrons systèmes de marque, sites marketing, plateformes web et produits IA, de la toute première idée jusqu'au lancement et au-delà.",
       },
       upwork: {
         title: "Développeur Full-Stack · Upwork",
         description:
-          "Construction d'applications web scalables pour des clients internationaux. Les projets vont des plateformes SaaS aux solutions e-commerce, avec un accent sur l'architecture propre, l'optimisation des performances et des expériences utilisateur exceptionnelles.",
+          "Je conçois des applications web scalables pour des clients internationaux — SaaS, e-commerce, outils internes — avec une vraie exigence sur l'architecture, la performance, et des interfaces qui se laissent utiliser sans effort.",
       },
       biofidex: {
         title: "Fondateur et PDG · biofideX",
         description:
-          "Construction d'une plateforme éducative axée sur l'éducation en biosciences. Pilotage du développement produit, de l'architecture technique et de la conception de l'expérience utilisateur pour un écosystème d'apprentissage complet.",
+          "J'ai fondé et je pilote la direction technique d'une plateforme éducative dédiée aux sciences du vivant — stratégie produit, architecture, UX — pour construire un écosystème d'apprentissage complet, pensé pour les étudiants comme pour les professionnels.",
       },
     },
     education: {
@@ -641,60 +731,77 @@ const TRANSLATIONS = {
       university: "Université Jagannath",
       field: "Biochimie et Biologie Moléculaire",
       description:
-        "J'ai construit une solide base en pensée analytique, méthodologie de recherche et résolution de problèmes scientifiques qui informe désormais mon approche systématique de l'ingénierie logicielle et du développement produit.",
+        "Cette formation m'a donné des bases solides en pensée analytique, en méthode de recherche et en résolution de problèmes par la démarche scientifique — bases qui nourrissent encore aujourd'hui ma façon de faire de l'ingénierie logicielle et du produit.",
       badge: "Licence",
     },
     projects: {
       heading: "Projets",
+      showAll: "Afficher tous les projets",
+      showFewer: "Afficher moins de projets",
+      links: {
+        appStore: "App Store",
+        googlePlay: "Google Play",
+        caseStudy: "Étude de Cas",
+      },
       biofidex: {
         title: "biofideX — Éducation en Biosciences",
         description:
-          "Une plateforme d'apprentissage moderne en biosciences où étudiants et professionnels peuvent explorer des quiz, des articles et des cours dans les disciplines des sciences de la vie. Conçue pour la clarté et l'accessibilité, avec des évaluations interactives et un contenu structuré.",
+          "Une plateforme moderne d'apprentissage en biosciences, où étudiants et professionnels peuvent parcourir des quiz, des articles et des cours dans les différentes disciplines des sciences de la vie. Pensée pour rester claire et accessible, avec des évaluations interactives et un contenu structuré qui soutient un apprentissage rigoureux et basé sur les preuves.",
+      },
+      prottoy: {
+        title: "Prottoy — App de Préparation HSC et Concours",
+        description:
+          "Application de quiz académique pensée pour les étudiants du HSC et les candidats aux concours d'admission au Bangladesh. Elle repose sur de courtes sessions de pratique de 10 minutes, des explications immédiates et des analyses qui identifient les chapitres à retravailler — et tout est offline-first : on étudie même sans connexion.",
+      },
+      luna: {
+        title: "Luna Corporate — Portfolio de Marques",
+        description:
+          "Site corporate bilingue pour un fabricant polonais de produits de grande consommation, qui présente son portfolio de cinq marques, son réseau de distribution européen et sa présence sur les salons. Construit avec Qwik pour offrir une interactivité quasi instantanée, avec un JavaScript bloquant réduit au minimum.",
       },
       albayt: {
         title: "Al-Bayt Elegance",
         description:
-          "Une plateforme e-commerce pour la mode islamique, construite avec une expérience d'achat claire, des paiements sécurisés et une gestion des stocks en temps réel.",
+          "Plateforme e-commerce dédiée à la mode islamique, avec une expérience d'achat claire et directe, des paiements sécurisés et une gestion des stocks qui se met à jour en temps réel.",
       },
       noorJabal: {
         title: "Noor Jabal Cleaning",
         description:
-          "Un site web de services professionnels pour une entreprise de nettoyage basée à Dubaï, présentant des services résidentiels et commerciaux avec une structure claire et une expérience conviviale.",
+          "Site de services pour une entreprise de nettoyage installée à Dubaï, qui met en avant ses prestations résidentielles et commerciales avec une structure claire et une navigation pensée pour que le client trouve rapidement ce qu'il cherche.",
       },
     },
     services: {
       heading: "Services",
-      web: {
-        title: "Conception et Développement Web",
+      ai: {
+        title: "Développement de Produits AI-Native",
         description:
-          "Sites web modernes, rapides et responsifs construits avec une UI propre et une expérience utilisateur réfléchie.",
+          "J'intègre modèles de langage, agents et flux pilotés par l'IA au cœur d'applications web prêtes pour la production — pour qu'ils se vivent comme partie intégrante du produit, et non comme une couche ajoutée à la dernière minute.",
         items: [
-          "Sites web d'entreprise et personnels",
-          "Pages d'atterrissage et portfolios",
-          "Mises en page responsives et prêtes pour le SEO",
-          "Frontend orienté performance",
+          "Intégration LLM et prompt engineering",
+          "Systèmes RAG et recherche sémantique",
+          "Agents IA et interfaces conversationnelles",
+          "UIs en streaming et inférence en temps réel",
         ],
       },
-      app: {
-        title: "Développement d'Apps et Tableaux de Bord",
+      saas: {
+        title: "Plateformes SaaS et Web Apps",
         description:
-          "Applications web et tableaux de bord conviviaux qui transforment des idées complexes en expériences simples.",
+          "Produits SaaS multi-tenant, outils internes et tableaux de bord conçus pour passer à l'échelle — avec APIs type-safe, données en temps réel et facturation fluide intégrées dès le départ.",
         items: [
-          "SaaS et outils internes",
-          "Panneaux d'administration et tableaux de bord",
-          "Intégration frontend + backend",
-          "Systèmes UI scalables",
+          "Architecture SaaS multi-tenant",
+          "Authentification, facturation et abonnements",
+          "Dashboards et analytics en temps réel",
+          "Stacks type-safe de bout en bout",
         ],
       },
-      uiux: {
-        title: "Amélioration et Optimisation UI/UX",
+      experience: {
+        title: "Expériences Web Haute Performance",
         description:
-          "Améliorer les sites et applications existants pour qu'ils paraissent mieux, fonctionnent plus fluidement et soient plus rapides.",
+          "Sites marketing, landing pages et expériences web portées par la marque — pensées pour la vitesse, la conversion et le mouvement, et calibrées pour passer les Core Web Vitals avec de la marge.",
         items: [
-          "Refonte UI et nettoyage UX",
-          "Corrections mobile et accessibilité",
-          "Refactorisation frontend",
-          "Optimisation des performances",
+          "Landing pages orientées conversion",
+          "Motion design et micro-interactions",
+          "Core Web Vitals et SEO technique",
+          "Accessibilité et UX inclusive",
         ],
       },
     },
@@ -711,7 +818,7 @@ const TRANSLATIONS = {
       heading: "Me contacter",
       label: "Et maintenant ?",
       description:
-        "Je suis actuellement ouvert à de nouvelles opportunités et projets intéressants. Que vous ayez besoin d'une plateforme complète ou souhaitiez optimiser une application existante, discutons de comment je peux vous aider.",
+        "Je suis ouvert en ce moment à de nouvelles opportunités et à des projets qui valent la peine d'être bien faits. Que ce soit pour construire une plateforme de zéro ou pour faire passer une application existante au niveau suivant — écrivez-moi, on en parle.",
       emailAria: "Envoyer un e-mail à hrsshainik@gmail.com",
     },
     footer: { text: "Conçu et développé par Habibur Rahman" },
@@ -750,14 +857,16 @@ const TRANSLATIONS = {
       greeting: "Hallo, ich bin",
       jobTitle: "Full-Stack-Entwickler",
       tagline:
-        "Produktorientierter Entwickler mit starkem Fokus auf Frontend-Engineering und User Experience.",
+        "Entwickler, der vom Produkt aus denkt — mit klarem Fokus auf Frontend-Engineering und User Experience.",
     },
     about: {
       heading: "Über mich",
-      p1: "Ich bin ein produktorientierter Full-Stack-Entwickler mit Sitz in Dhaka, Bangladesch, mit starkem Fokus auf Frontend-Engineering und User Experience. Ich habe aus echter Leidenschaft für die Entwicklung durchdachter, gut gestalteter digitaler Produkte von der Biochemie zur Softwareentwicklung gewechselt.",
+      p1: "Ich bin Full-Stack-Entwickler, lebe in Dhaka, Bangladesch, und denke immer vom Produkt aus — mit besonderem Augenmerk auf Frontend-Engineering und User Experience. Von der Biochemie zur Softwareentwicklung bin ich aus echter Lust gewechselt: digitale Produkte zu bauen, die mit Bedacht entworfen und sauber gestaltet sind.",
       p2Html:
-        'Ich entwickle produktionsreife Webanwendungen und verbinde Design mit Engineering, um Ideen in zuverlässige, nutzerzentrierte Produkte zu verwandeln. Ich arbeite mit internationalen Kunden sowohl über <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a> als auch direkt über mein persönliches Portfolio und liefere Software, die in realen Umgebungen eingesetzt wird.',
-      p3: "Mein akademischer Hintergrund in Biochemie und Molekularbiologie hat einen strukturierten und analytischen Ansatz zur Problemlösung geprägt, der es mir ermöglicht, Softwaresysteme mit Klarheit, Präzision und langfristiger Wartbarkeit zu entwerfen.",
+        'Ich entwickle produktionsreife Webanwendungen und bringe Design und Engineering so zusammen, dass aus Ideen verlässliche, klar auf den Nutzer ausgerichtete Produkte werden. Ich arbeite mit internationalen Kunden über <a href="https://qubetix.co" target="_blank" rel="noopener noreferrer">Qubetix</a> — mein Digital Studio — und auf <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a> und liefere Software, die im echten Alltag funktioniert, nicht nur in der Demo.',
+      p3: "Mein Studium der Biochemie und Molekularbiologie hat mir eine sehr strukturierte, analytische Art beigebracht, Probleme anzugehen. Genau diese Denkweise nehme ich heute mit in den Code: Systeme entwerfen, die klar sind, präzise und auch in fünf Jahren noch wartbar.",
+      p4Html:
+        'Was mich wirklich antreibt, ist die Möglichkeit, meinen Hintergrund in der Biochemie mit dem Handwerk der Softwareentwicklung zu verbinden. Genau das mache ich mit <a href="https://biofidex.com" target="_blank" rel="noopener noreferrer">biofideX</a>: eine Bildungsplattform, die Konzepte aus den Lebenswissenschaften in durchdachte, interaktive Lernerfahrungen übersetzt. Ein Projekt, das genau dort lebt, wo sich die beiden Disziplinen treffen, die mir am meisten bedeuten.',
     },
     experience: {
       heading: "Erfahrung",
@@ -765,17 +874,17 @@ const TRANSLATIONS = {
       qubetix: {
         title: "Gründer & CEO · Qubetix",
         description:
-          "Leitung eines Digitalstudios, das Markensysteme, Websites, Apps, KI-Produkte und Marketingprogramme End-to-End für ambitionierte Teams weltweit gestaltet und entwickelt.",
+          "Ich leite ein Digital Studio, das mit ambitionierten Teams weltweit zusammenarbeitet und Markensysteme, Marketingseiten, Web-Plattformen und AI-Native-Produkte komplett aus einer Hand entwirft und umsetzt — von der ersten Idee bis zum Launch und darüber hinaus.",
       },
       upwork: {
         title: "Full-Stack-Entwickler · Upwork",
         description:
-          "Entwicklung skalierbarer Webanwendungen für internationale Kunden. Die Projekte reichen von SaaS-Plattformen bis hin zu E-Commerce-Lösungen, mit Fokus auf saubere Architektur, Performance-Optimierung und außergewöhnliche Nutzererlebnisse.",
+          "Ich entwickle skalierbare Webanwendungen für internationale Kunden — von SaaS über E-Commerce bis hin zu internen Tools — mit Fokus auf saubere Architektur, echte Performance und Interfaces, die sich von selbst bedienen lassen.",
       },
       biofidex: {
         title: "Gründer & CEO · biofideX",
         description:
-          "Aufbau einer Bildungsplattform mit Schwerpunkt auf Biowissenschaften. Leitung der Produktentwicklung, technischen Architektur und User-Experience-Gestaltung für ein umfassendes Lernökosystem.",
+          "Ich habe biofideX gegründet und führe die technische Richtung der Plattform — von Produktstrategie über Architektur bis zum UX-Design — mit dem Ziel, ein vollständiges Lernökosystem für Studierende und Fachleute der Biowissenschaften aufzubauen.",
       },
     },
     education: {
@@ -783,60 +892,77 @@ const TRANSLATIONS = {
       university: "Jagannath-Universität",
       field: "Biochemie & Molekularbiologie",
       description:
-        "Ich habe ein solides Fundament in analytischem Denken, Forschungsmethodik und wissenschaftlicher Problemlösung aufgebaut, das jetzt meinen systematischen Ansatz in der Softwareentwicklung und Produktentwicklung prägt.",
+        "Dort habe ich ein solides Fundament in analytischem Denken, Forschungsmethodik und wissenschaftlicher Problemlösung aufgebaut — die gleiche Denkweise prägt bis heute, wie ich an Software-Engineering und Produktentwicklung herangehe.",
       badge: "B.Sc.",
     },
     projects: {
       heading: "Projekte",
+      showAll: "Alle Projekte anzeigen",
+      showFewer: "Weniger Projekte anzeigen",
+      links: {
+        appStore: "App Store",
+        googlePlay: "Google Play",
+        caseStudy: "Fallstudie",
+      },
       biofidex: {
         title: "biofideX — Biowissenschaftliche Bildung",
         description:
-          "Eine moderne Biowissenschafts-Lernplattform, auf der Studierende und Fachleute Quizze, Artikel und Kurse aus den Lebenswissenschaften erkunden können. Für Übersichtlichkeit und Barrierefreiheit konzipiert, mit interaktiven Assessments und strukturierten Inhalten.",
+          "Moderne Lernplattform für die Lebenswissenschaften: Studierende und Fachleute können Quizze, Artikel und Kurse aus den unterschiedlichen Disziplinen durchgehen. Bewusst klar und barrierefrei gestaltet, mit interaktiven Assessments und gut strukturierten Inhalten, die evidenzbasiertes Lernen wirklich unterstützen.",
+      },
+      prottoy: {
+        title: "Prottoy — HSC- & Zulassungs-Prüfungs-App",
+        description:
+          "Eine fokussierte Lern-App für HSC-Schüler und Zulassungsprüfungs-Kandidaten in Bangladesch. Sie setzt auf kurze 10-Minuten-Sessions, sofortige Erklärungen und Analytics, die zeigen, welche Kapitel noch sitzen müssen — und sie funktioniert offline-first, damit Lernen nie an der Verbindung scheitert.",
+      },
+      luna: {
+        title: "Luna Corporate — Markenportfolio",
+        description:
+          "Zweisprachiger Markenauftritt eines polnischen Konsumgüter-Herstellers, der das Portfolio aus fünf Marken, das europäische Vertriebsnetz und die Messeauftritte präsentiert. Auf Qwik gebaut, für nahezu blockierungsfreies JavaScript und ein Gefühl von sofortiger Interaktivität.",
       },
       albayt: {
         title: "Al-Bayt Elegance",
         description:
-          "Eine E-Commerce-Plattform für islamische Mode, entwickelt mit einem klaren Einkaufserlebnis, sicheren Zahlungen und Echtzeit-Bestandsverwaltung.",
+          "E-Commerce-Plattform für islamische Mode, mit einem ruhigen, klaren Einkaufserlebnis, sicheren Zahlungen und einer Bestandsverwaltung, die sich in Echtzeit aktualisiert.",
       },
       noorJabal: {
         title: "Noor Jabal Cleaning",
         description:
-          "Eine professionelle Service-Website für ein in Dubai ansässiges Reinigungsunternehmen, das Wohn- und Gewerbeservices mit klarer Struktur und benutzerfreundlicher Erfahrung präsentiert.",
+          "Service-Website für ein Reinigungsunternehmen aus Dubai, das seine Angebote für Privat- und Gewerbekunden in klarer Struktur und mit einer Navigation präsentiert, in der sich Kunden schnell zurechtfinden.",
       },
     },
     services: {
       heading: "Leistungen",
-      web: {
-        title: "Website-Design & Entwicklung",
+      ai: {
+        title: "AI-Native Produktentwicklung",
         description:
-          "Moderne, schnelle und responsive Websites mit sauberer Benutzeroberfläche und durchdachter User Experience.",
+          "Ich bringe Sprachmodelle, Agenten und KI-gestützte Workflows in produktionsreife Web-Apps — so eingebaut, dass sie sich als selbstverständlicher Teil des Produkts anfühlen, nicht wie ein nachträglich aufgeklebtes Feature.",
         items: [
-          "Geschäftliche & persönliche Websites",
-          "Landingpages & Portfolios",
-          "Responsive & SEO-optimierte Layouts",
-          "Performance-fokussiertes Frontend",
+          "LLM-Integration & Prompt-Engineering",
+          "RAG-Systeme & semantische Suche",
+          "KI-Agenten & Chat-Interfaces",
+          "Streaming-UIs & Echtzeit-Inferenz",
         ],
       },
-      app: {
-        title: "Web-App & Dashboard-Entwicklung",
+      saas: {
+        title: "SaaS-Plattformen & Web-Apps",
         description:
-          "Benutzerfreundliche Webanwendungen und Dashboards, die komplexe Ideen in einfache Erlebnisse verwandeln.",
+          "Multi-Tenant-SaaS-Produkte, interne Tools und Dashboards, die auf Wachstum ausgelegt sind — mit typsicheren APIs, Echtzeit-Daten und einem Billing, das von Anfang an reibungslos läuft.",
         items: [
-          "SaaS & interne Tools",
-          "Admin-Panels & Dashboards",
-          "Frontend + Backend-Integration",
-          "Skalierbare UI-Systeme",
+          "Multi-Tenant-SaaS-Architektur",
+          "Auth, Billing & Abonnements",
+          "Echtzeit-Dashboards & Analytics",
+          "Typsichere End-to-End-Stacks",
         ],
       },
-      uiux: {
-        title: "UI/UX-Verbesserung & Optimierung",
+      experience: {
+        title: "Hochperformante Web-Erlebnisse",
         description:
-          "Bestehende Websites und Apps verbessern, damit sie besser aussehen, flüssiger laufen und schneller werden.",
+          "Marketing-Sites, Landingpages und markengeprägte Web-Erlebnisse — gebaut auf Tempo, Conversion und Bewegung, und ausgelegt darauf, die Core Web Vitals mit Luft nach oben zu bestehen.",
         items: [
-          "UI-Redesign & UX-Bereinigung",
-          "Mobile- & Barrierefreiheits-Korrekturen",
-          "Frontend-Refactoring",
-          "Performance-Optimierung",
+          "Conversion-fokussierte Landingpages",
+          "Motion Design & Mikrointeraktionen",
+          "Core Web Vitals & technisches SEO",
+          "Barrierefreiheit & inklusive UX",
         ],
       },
     },
@@ -853,7 +979,7 @@ const TRANSLATIONS = {
       heading: "Kontakt aufnehmen",
       label: "Was kommt als Nächstes?",
       description:
-        "Ich bin derzeit offen für neue Möglichkeiten und interessante Projekte. Ob Sie eine komplette Plattform benötigen oder eine bestehende Anwendung optimieren möchten – lassen Sie uns besprechen, wie ich helfen kann.",
+        "Ich bin gerade offen für neue Möglichkeiten und Projekte, die sich lohnen, sorgfältig gemacht zu werden. Egal ob eine komplette Plattform von Null aufgebaut oder eine bestehende Anwendung auf das nächste Level gehoben werden soll — schreib mir, und wir schauen gemeinsam, wie ich helfen kann.",
       emailAria: "E-Mail an hrsshainik@gmail.com senden",
     },
     footer: { text: "Gestaltet & entwickelt von Habibur Rahman" },
@@ -892,14 +1018,16 @@ const TRANSLATIONS = {
       greeting: "Olá, eu sou",
       jobTitle: "Desenvolvedor Full-Stack",
       tagline:
-        "Desenvolvedor orientado a produto com forte foco em engenharia frontend e experiência do usuário.",
+        "Desenvolvedor que pensa o produto em primeiro lugar — com olhar afiado para frontend e experiência do usuário.",
     },
     about: {
       heading: "Sobre mim",
-      p1: "Sou um desenvolvedor full-stack orientado a produto, baseado em Dhaka, Bangladesh, com forte foco em engenharia frontend e experiência do usuário. Fiz a transição da Bioquímica para o desenvolvimento de software por uma genuína paixão por construir produtos digitais bem pensados e bem projetados.",
+      p1: "Sou desenvolvedor full-stack, baseado em Dhaka, Bangladesh. Penso sempre a partir do produto, e tenho um carinho especial pelo frontend e por tudo que envolve a experiência do usuário. Vim da bioquímica para o software empurrado por uma vontade genuína: construir produtos digitais pensados com cuidado e desenhados com intenção.",
       p2Html:
-        'Construo aplicações web prontas para produção, unindo design e engenharia para transformar ideias em produtos confiáveis centrados no usuário. Trabalho com clientes internacionais tanto no <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a> quanto pelo meu portfólio pessoal, entregando software de confiança usado em ambientes reais.',
-      p3: "Minha formação acadêmica em Bioquímica e Biologia Molecular moldou uma abordagem estruturada e analítica para a resolução de problemas, permitindo-me projetar sistemas de software com clareza, precisão e com a manutenibilidade a longo prazo em mente.",
+        'Construo aplicações web prontas para produção, colocando design e engenharia para conversar e transformar ideias em produtos confiáveis, realmente desenhados em volta de quem os usa. Trabalho com clientes internacionais através da <a href="https://qubetix.co" target="_blank" rel="noopener noreferrer">Qubetix</a> — meu estúdio digital — e no <a href="https://www.upwork.com/freelancers/~018853a57064b0cb97" target="_blank" rel="noopener noreferrer">Upwork</a>, entregando software que é usado de verdade, no dia a dia, em ambientes reais.',
+      p3: "Minha formação em bioquímica e biologia molecular me deixou um jeito muito estruturado e analítico de encarar problemas. É exatamente essa cabeça que eu trago hoje para o código: projetar sistemas de software claros, precisos e que envelheçam bem ao longo do tempo.",
+      p4Html:
+        'O que mais me move é justamente a chance de unir minha formação em bioquímica com o ofício do software. É isso que faço no <a href="https://biofidex.com" target="_blank" rel="noopener noreferrer">biofideX</a>: estou construindo uma plataforma educacional que transforma conceitos das ciências da vida em experiências de aprendizagem interativas e bem pensadas. Um projeto que vive exatamente no encontro das duas áreas que mais me importam.',
     },
     experience: {
       heading: "Experiência",
@@ -907,17 +1035,17 @@ const TRANSLATIONS = {
       qubetix: {
         title: "Fundador e CEO · Qubetix",
         description:
-          "Liderando um estúdio digital que projeta e constrói sistemas de marca, websites, aplicativos, produtos de IA e programas de marketing de ponta a ponta para equipes ambiciosas em todo o mundo.",
+          "Lidero um estúdio digital que trabalha lado a lado com times ambiciosos pelo mundo — desenhamos e construímos sistemas de marca, sites de marketing, plataformas web e produtos AI-native do começo ao fim, da primeira ideia até o lançamento e o que vem depois.",
       },
       upwork: {
         title: "Desenvolvedor Full-Stack · Upwork",
         description:
-          "Construindo aplicações web escaláveis para clientes internacionais. Os projetos vão desde plataformas SaaS até soluções de e-commerce, com foco em arquitetura limpa, otimização de desempenho e experiências de usuário excepcionais.",
+          "Construo aplicações web escaláveis para clientes internacionais — SaaS, e-commerce, ferramentas internas — sempre com foco em arquitetura limpa, performance de verdade e interfaces que se deixam usar sem fricção.",
       },
       biofidex: {
         title: "Fundador e CEO · biofideX",
         description:
-          "Construindo uma plataforma educacional focada em educação em biociências. Liderando o desenvolvimento do produto, arquitetura técnica e design de experiência do usuário para um ecossistema de aprendizagem abrangente.",
+          "Fundei e lidero a direção técnica de uma plataforma educacional voltada para as ciências da vida, cuidando de estratégia de produto, arquitetura e design de UX para entregar um ecossistema de aprendizagem completo para estudantes e profissionais.",
       },
     },
     education: {
@@ -925,60 +1053,77 @@ const TRANSLATIONS = {
       university: "Universidade Jagannath",
       field: "Bioquímica e Biologia Molecular",
       description:
-        "Construí uma sólida base em pensamento analítico, metodologia de pesquisa e resolução de problemas científicos que agora informa minha abordagem sistemática à engenharia de software e desenvolvimento de produtos.",
+        "Foi onde construí uma base sólida em pensamento analítico, método de pesquisa e resolução de problemas com olhar científico — a mesma base que hoje orienta meu jeito de fazer engenharia de software e desenvolvimento de produto.",
       badge: "Bacharelado",
     },
     projects: {
       heading: "Projetos",
+      showAll: "Mostrar todos os projetos",
+      showFewer: "Mostrar menos projetos",
+      links: {
+        appStore: "App Store",
+        googlePlay: "Google Play",
+        caseStudy: "Estudo de Caso",
+      },
       biofidex: {
         title: "biofideX — Educação em Biociências",
         description:
-          "Uma plataforma moderna de aprendizagem em biociências onde estudantes e profissionais podem explorar questionários, artigos e cursos nas disciplinas de ciências da vida. Projetada para clareza e acessibilidade, com avaliações interativas e conteúdo estruturado.",
+          "Plataforma moderna de aprendizagem em biociências, onde estudantes e profissionais podem explorar quizzes, artigos e cursos das diferentes disciplinas das ciências da vida. Pensada para ser clara e acessível, com avaliações interativas e conteúdo bem estruturado que apoia um aprendizado de verdade, baseado em evidência.",
+      },
+      prottoy: {
+        title: "Prottoy — App de Preparação HSC e Admissão",
+        description:
+          "App de quizzes acadêmicos feito para estudantes do HSC e candidatos a exames de admissão em Bangladesh. Funciona com sessões curtas e direcionadas de 10 minutos, com explicações na hora e analytics que mostram quais capítulos ainda precisam de atenção — e tudo é offline-first, então o estudo nunca depende da internet.",
+      },
+      luna: {
+        title: "Luna Corporate — Portfólio de Marcas",
+        description:
+          "Site corporativo bilíngue para um fabricante polonês de bens de consumo, apresentando seu portfólio de cinco marcas, a rede de distribuição na Europa e a presença em feiras. Construído em Qwik para entregar uma interatividade quase instantânea, com um mínimo de JavaScript bloqueante.",
       },
       albayt: {
         title: "Al-Bayt Elegance",
         description:
-          "Uma plataforma de e-commerce para moda islâmica, construída com uma experiência de compra clara, pagamentos seguros e gestão de estoque em tempo real.",
+          "E-commerce de moda islâmica, com uma experiência de compra clara e direta, pagamentos seguros e um controle de estoque que se atualiza em tempo real.",
       },
       noorJabal: {
         title: "Noor Jabal Cleaning",
         description:
-          "Um site de serviços profissionais para uma empresa de limpeza sediada em Dubai, apresentando serviços residenciais e comerciais com estrutura clara e experiência amigável.",
+          "Site profissional de serviços para uma empresa de limpeza com sede em Dubai, mostrando suas opções residenciais e comerciais em uma estrutura clara e com uma navegação pensada para o cliente encontrar o que precisa rapidamente.",
       },
     },
     services: {
       heading: "Serviços",
-      web: {
-        title: "Design e Desenvolvimento Web",
+      ai: {
+        title: "Desenvolvimento de Produtos AI-Native",
         description:
-          "Sites modernos, rápidos e responsivos construídos com UI limpa e experiência de usuário bem pensada.",
+          "Integro modelos de linguagem, agentes e fluxos baseados em IA dentro de aplicações web prontas para produção — pensados como parte natural do produto, não como uma camada colada por cima.",
         items: [
-          "Sites empresariais e pessoais",
-          "Landing pages e portfólios",
-          "Layouts responsivos e prontos para SEO",
-          "Frontend focado em desempenho",
+          "Integração de LLMs e prompt engineering",
+          "Sistemas RAG e busca semântica",
+          "Agentes de IA e interfaces conversacionais",
+          "UIs em streaming e inferência em tempo real",
         ],
       },
-      app: {
-        title: "Desenvolvimento de Apps e Dashboards",
+      saas: {
+        title: "Plataformas SaaS e Web Apps",
         description:
-          "Aplicações web e dashboards amigáveis que transformam ideias complexas em experiências simples.",
+          "Produtos SaaS multi-tenant, ferramentas internas e dashboards desenhados para escalar — com APIs type-safe, dados em tempo real e um sistema de cobrança que já nasce funcionando bem.",
         items: [
-          "SaaS e ferramentas internas",
-          "Painéis de administração e dashboards",
-          "Integração frontend + backend",
-          "Sistemas de UI escaláveis",
+          "Arquitetura SaaS multi-tenant",
+          "Auth, cobrança e assinaturas",
+          "Dashboards e analytics em tempo real",
+          "Stacks type-safe de ponta a ponta",
         ],
       },
-      uiux: {
-        title: "Melhoria e Otimização de UI/UX",
+      experience: {
+        title: "Experiências Web de Alto Desempenho",
         description:
-          "Melhorar sites e aplicações existentes para que fiquem melhores, funcionem com mais fluidez e sejam mais rápidos.",
+          "Sites de marketing, landing pages e experiências web com identidade forte — pensadas para velocidade, conversão e movimento, e calibradas para passar nos Core Web Vitals com folga.",
         items: [
-          "Redesign de UI e limpeza de UX",
-          "Correções de mobile e acessibilidade",
-          "Refatoração de frontend",
-          "Otimização de desempenho",
+          "Landing pages focadas em conversão",
+          "Motion design e micro-interações",
+          "Core Web Vitals e SEO técnico",
+          "Acessibilidade e UX inclusiva",
         ],
       },
     },
@@ -995,7 +1140,7 @@ const TRANSLATIONS = {
       heading: "Entre em contato",
       label: "O que vem a seguir?",
       description:
-        "Estou atualmente aberto a novas oportunidades e projetos interessantes. Seja para uma plataforma completa ou para otimizar uma aplicação existente, vamos discutir como posso ajudar.",
+        "Estou aberto neste momento a novas oportunidades e a projetos que valha a pena fazer com cuidado. Seja para tirar uma plataforma do zero ou para levar uma aplicação que já existe a outro nível — me manda uma mensagem e vamos ver como posso ajudar.",
       emailAria: "Enviar um e-mail para hrsshainik@gmail.com",
     },
     footer: { text: "Projetado e desenvolvido por Habibur Rahman" },

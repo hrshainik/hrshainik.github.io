@@ -194,7 +194,7 @@
     });
 
     /* service list items — rebuild from translation array */
-    ["web", "app", "uiux"].forEach((svc) => {
+    ["ai", "saas", "experience"].forEach((svc) => {
       const items = get(t, `services.${svc}.items`);
       if (!Array.isArray(items)) return;
       const ul = document.querySelector(`[data-svc-list="${svc}"]`);

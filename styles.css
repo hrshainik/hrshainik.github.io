@@ -1035,6 +1035,35 @@ section {
   transform: translateX(0);
 }
 
+/* Category subtitle — sits between title and description */
+.project-category {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: -4px;
+  margin-bottom: 18px;
+  opacity: 0.82;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s var(--ease), opacity 0.3s var(--ease),
+    letter-spacing 0.5s var(--ease-out);
+}
+
+.project-card:hover .project-category {
+  color: var(--accent-bright);
+  opacity: 1;
+  letter-spacing: 0.18em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-category {
+    transition: none;
+  }
+}
+
 .project-description {
   line-height: 1.7;
   margin-bottom: 20px;
@@ -1052,6 +1081,163 @@ section {
 
   & > li {
     list-style: none;
+  }
+}
+
+/* Secondary links row (App Store, Play Store, Case Study) */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border-subtle);
+  position: relative;
+  z-index: 2;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  text-decoration: none;
+  transition: color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.project-link svg {
+  width: 13px;
+  height: 13px;
+  transition: transform 0.3s var(--ease-spring), color 0.25s var(--ease);
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  color: var(--accent-bright);
+  outline: none;
+}
+
+.project-link:hover svg,
+.project-link:focus-visible svg {
+  transform: translate(1px, -1px) scale(1.08);
+}
+
+.project-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Collapsed / expandable card state */
+.project-card.is-collapsed {
+  display: none;
+}
+
+/* Show more / show less toggle */
+.projects-toggle-wrap {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 26px;
+  border-radius: 999px;
+  background: var(--glass-subtle);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s var(--ease), background 0.3s var(--ease),
+    border-color 0.3s var(--ease), transform 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-toggle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 120%,
+    var(--accent-glow),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.4s var(--ease);
+  pointer-events: none;
+}
+
+.projects-toggle:hover,
+.projects-toggle:focus-visible {
+  color: var(--accent-bright);
+  border-color: var(--border-accent);
+  background: var(--glass-medium);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow), 0 6px 20px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.projects-toggle:hover::before,
+.projects-toggle:focus-visible::before {
+  opacity: 1;
+}
+
+.projects-toggle:active {
+  transform: translateY(0);
+  transition: transform 0.1s var(--ease);
+}
+
+.projects-toggle-label {
+  position: relative;
+  z-index: 1;
+}
+
+.projects-toggle [data-toggle-hide] {
+  display: none;
+}
+
+.projects-toggle[aria-expanded="true"] [data-toggle-show] {
+  display: none;
+}
+
+.projects-toggle[aria-expanded="true"] [data-toggle-hide] {
+  display: inline;
+}
+
+.projects-toggle-icon {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.4s var(--ease-spring);
+  position: relative;
+  z-index: 1;
+}
+
+.projects-toggle[aria-expanded="true"] .projects-toggle-icon {
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projects-toggle,
+  .projects-toggle::before,
+  .projects-toggle-icon,
+  .project-link,
+  .project-link svg {
+    transition: none;
   }
 }
 
