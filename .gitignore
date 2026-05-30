@@ -1,0 +1,32 @@
+# Dependencies (installed by Vercel at deploy time — never committed)
+node_modules/
+
+# Vercel local dev artefacts
+.vercel/
+.next/
+
+# Build outputs
+dist/
+out/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Claude / agent scratch
+.claude/

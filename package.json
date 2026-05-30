@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "habibur-rahman-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Habibur Rahman — full-stack developer based in Dhaka, Bangladesh.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@vercel/og": "^0.6.4",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "typescript": "^5.6.3"
+  }
+}
