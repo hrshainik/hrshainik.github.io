@@ -40,15 +40,15 @@
     <meta property="og:title" content="Habibur Rahman — Full-Stack Developer | Next.js, React & TypeScript Expert">
     <meta property="og:description"
         content="Product-driven full-stack developer specializing in Next.js, React, and TypeScript. Building scalable web applications for international clients.">
-    <meta property="og:image" content="https://hrshainik.vercel.app/images/showcase.png">
-    <meta property="og:image:secure_url" content="https://hrshainik.vercel.app/images/showcase.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="2848">
-    <meta property="og:image:height" content="1798">
+    <meta property="og:image" content="https://hrshainik.vercel.app/images/showcase.webp">
+    <meta property="og:image:secure_url" content="https://hrshainik.vercel.app/images/showcase.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="758">
     <meta property="og:image:alt" content="Habibur Rahman — Full-Stack Developer Portfolio Showcase">
     <meta property="og:site_name" content="Habibur Rahman Portfolio">
     <meta property="og:locale" content="en_US">
-    <meta property="og:updated_time" content="2026-02-21T00:00:00+00:00">
+    <meta property="og:updated_time" content="2026-05-30T00:00:00+00:00">
     <meta property="article:author" content="https://www.linkedin.com/in/hrshainik">
 
     <!-- Twitter / X -->
@@ -57,35 +57,46 @@
     <meta property="twitter:title" content="Habibur Rahman — Full-Stack Developer | Next.js, React & TypeScript Expert">
     <meta property="twitter:description"
         content="Product-driven full-stack developer specializing in Next.js, React, and TypeScript. Building scalable web applications for international clients.">
-    <meta property="twitter:image" content="https://hrshainik.vercel.app/images/showcase.png">
+    <meta property="twitter:image" content="https://hrshainik.vercel.app/images/showcase.webp">
     <meta property="twitter:image:alt" content="Habibur Rahman — Full-Stack Developer Portfolio Showcase">
     <meta property="twitter:creator" content="@traveloperhabib">
     <meta property="twitter:site" content="@traveloperhabib">
 
-    <!-- Theme Color -->
+    <!-- Theme Color & Color Scheme -->
     <meta name="theme-color" content="#5eb8b8" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#5eb8b8" media="(prefers-color-scheme: light)">
+    <meta name="color-scheme" content="dark">
     <meta name="msapplication-TileColor" content="#5eb8b8">
 
-    <!-- Favicon -->
+    <!-- iOS / mobile polish -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Habibur Rahman">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+
+    <!-- Favicon & app icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <link rel="mask-icon" href="/favicon.svg" color="#5eb8b8">
     <link rel="manifest" href="/site.webmanifest">
 
     <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
-    <!-- Preconnect for Performance -->
+    <!-- Preconnect for Performance (fonts.gstatic.com is the one we actually fetch FROM) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
-    <!-- Preload critical LCP resource -->
-    <link rel="preload" as="image" href="/images/showcase.png" fetchpriority="high">
-
-    <!-- Optimized Font Loading -->
+    <!--
+        Optimized Font Loading
+        Only requesting the weights actually used in CSS (500 / 600 / 700)
+        Saves ~12 font-file requests vs. the wght@100..900 wildcard.
+    -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@500;600&family=Geist:wght@500;600;700&display=swap"
         rel="stylesheet">
 
 
@@ -360,23 +371,42 @@
       "url": "https://hrshainik.vercel.app/",
       "image": {
         "@type": "ImageObject",
-        "url": "https://hrshainik.vercel.app/images/showcase.png",
-        "width": 2848,
-        "height": 1798
+        "url": "https://hrshainik.vercel.app/images/showcase.webp",
+        "contentUrl": "https://hrshainik.vercel.app/images/showcase.webp",
+        "encodingFormat": "image/webp",
+        "width": 1200,
+        "height": 758
       },
       "jobTitle": "Full-Stack Developer",
-      "description": "Product-driven full-stack developer based in Dhaka, Bangladesh, specializing in frontend engineering and user experience. Transitioned from Biochemistry to software development. Building production-ready web applications, SaaS platforms, and e-commerce solutions for international clients via Upwork and direct engagements.",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "BioFidelicX",
-        "url": "https://biofidex.com"
-      },
-      "founder": {
-        "@type": "Organization",
-        "name": "BioFidelicX",
-        "url": "https://biofidex.com",
-        "description": "An educational platform focused on bioscience education"
-      },
+      "description": "Product-driven full-stack developer based in Dhaka, Bangladesh, specializing in frontend engineering and user experience. Founder & CEO of Qubetix — a digital studio building brand systems, web platforms, and AI-native products end-to-end. Founder of biofideX, a bioscience education platform. Available for international clients via Upwork and direct engagements.",
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Qubetix",
+          "url": "https://qubetix.co",
+          "description": "Digital studio designing and shipping brand systems, marketing sites, web platforms, and AI-native products end-to-end for ambitious teams worldwide."
+        },
+        {
+          "@type": "Organization",
+          "name": "biofideX",
+          "url": "https://biofidex.com",
+          "description": "Educational platform focused on bioscience learning."
+        }
+      ],
+      "founder": [
+        {
+          "@type": "Organization",
+          "name": "Qubetix",
+          "url": "https://qubetix.co",
+          "description": "Digital studio designing and shipping brand systems, marketing sites, web platforms, and AI-native products end-to-end."
+        },
+        {
+          "@type": "Organization",
+          "name": "biofideX",
+          "url": "https://biofidex.com",
+          "description": "An educational platform focused on bioscience learning."
+        }
+      ],
       "alumniOf": {
         "@type": "EducationalOrganization",
         "name": "Jagannath University",
@@ -412,6 +442,13 @@
         "SaaS Development",
         "E-Commerce Development",
         "UI/UX Design",
+        "AI-Native Product Development",
+        "Large Language Model Integration",
+        "Retrieval-Augmented Generation",
+        "AI Agents and Chat Interfaces",
+        "Multi-tenant SaaS Architecture",
+        "Core Web Vitals Optimization",
+        "Motion Design",
         "Supabase",
         "PostgreSQL",
         "Tailwind CSS",
@@ -650,7 +687,7 @@
           "name": "Who is Habibur Rahman?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Habibur Rahman is a product-driven full-stack developer based in Dhaka, Bangladesh. He specializes in frontend engineering and user experience, building production-ready web applications using Next.js, React, and TypeScript. He is also the Founder & CEO of BioFidelicX, an educational platform focused on bioscience."
+            "text": "Habibur Rahman is a product-driven full-stack developer based in Dhaka, Bangladesh. He specializes in frontend engineering and user experience, building production-ready web applications with Next.js, React, and TypeScript. He is Founder & CEO of Qubetix — a digital studio shipping brand systems, web platforms, and AI-native products — and Founder of biofideX, an educational platform focused on bioscience learning."
           }
         },
         {
@@ -679,10 +716,18 @@
         },
         {
           "@type": "Question",
-          "name": "What is BioFidelicX?",
+          "name": "What is biofideX?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "BioFidelicX (biofidex.com) is an educational platform founded by Habibur Rahman in 2019, focused on bioscience education. It offers quizzes, articles, and structured courses across life science disciplines, designed to support effective, evidence-based learning for students and professionals."
+            "text": "biofideX (biofidex.com) is an educational platform founded by Habibur Rahman, focused on bioscience learning. It offers quizzes, articles, and structured courses across life-science disciplines, designed to support effective, evidence-based learning for students and professionals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Qubetix?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Qubetix (qubetix.co) is the digital studio founded and led by Habibur Rahman. It partners with ambitious teams worldwide to design and build brand systems, marketing sites, web platforms, and AI-native products end-to-end — from first concept through to launch and beyond."
           }
         },
         {
@@ -752,22 +797,26 @@
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N74S8DC8" height="0" width="0"
+            title="Google Tag Manager"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Skip Navigation Link for Accessibility -->
     <a href="#main-content" class="skip-link" data-i18n="nav.skipLink">Skip to main content</a>
 
-    <!-- Decorative Background Elements -->
-    <div class="gradient-bg"></div>
-    <div class="glass-orb orb-1"></div>
-    <div class="glass-orb orb-2"></div>
-    <div class="glass-orb orb-3"></div>
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <!-- Decorative Background Elements (presentational, hidden from AT) -->
+    <div class="gradient-bg" aria-hidden="true"></div>
+    <div class="glass-orb orb-1" aria-hidden="true"></div>
+    <div class="glass-orb orb-2" aria-hidden="true"></div>
+    <div class="glass-orb orb-3" aria-hidden="true"></div>
 
     <div class="container">
 
         <!-- Sidebar -->
-        <aside class="sidebar" role="complementary" aria-label="Profile and navigation">
+        <aside class="sidebar" aria-label="Profile and navigation">
             <div class="sidebar-inner">
                 <div class="sidebar-content">
                     <div class="intro">
@@ -881,7 +930,7 @@
         </aside>
 
         <!-- Main Content -->
-        <main class="main-content" id="main-content" role="main">
+        <main class="main-content" id="main-content" tabindex="-1">
             <!-- About -->
             <section id="about" aria-labelledby="about-heading">
                 <header class="section-header header-reveal">
@@ -1519,6 +1568,59 @@
                 orbTicking = true;
             }
         });
+
+        // Scroll progress indicator
+        (function () {
+            const bar = document.querySelector('.scroll-progress span');
+            if (!bar) return;
+            let scrollRaf = 0;
+            const update = () => {
+                scrollRaf = 0;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = docHeight > 0 ? Math.min(1, Math.max(0, window.scrollY / docHeight)) : 0;
+                bar.style.setProperty('--progress', progress.toFixed(4));
+            };
+            window.addEventListener('scroll', () => {
+                if (scrollRaf) return;
+                scrollRaf = requestAnimationFrame(update);
+            }, { passive: true });
+            window.addEventListener('resize', update, { passive: true });
+            update();
+        })();
+
+        // Cursor-tracked spotlight on cards (Linear/Vercel-style polish)
+        (function () {
+            const cards = document.querySelectorAll('.project-card, .service-card, .education-card');
+            if (!cards.length) return;
+
+            // Respect reduced-motion: skip the per-card pointer listeners entirely.
+            const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+            if (reduceMotion.matches) return;
+
+            // Touch / coarse pointer: skip — hover-driven effect doesn't fire there anyway,
+            // and the listeners cost battery for no payoff.
+            const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+            if (!finePointer.matches) return;
+
+            cards.forEach(card => {
+                let raf = 0;
+                card.addEventListener('pointermove', (e) => {
+                    if (raf) return;
+                    raf = requestAnimationFrame(() => {
+                        raf = 0;
+                        const r = card.getBoundingClientRect();
+                        const x = ((e.clientX - r.left) / r.width) * 100;
+                        const y = ((e.clientY - r.top) / r.height) * 100;
+                        card.style.setProperty('--mx', x.toFixed(2) + '%');
+                        card.style.setProperty('--my', y.toFixed(2) + '%');
+                    });
+                });
+                card.addEventListener('pointerleave', () => {
+                    card.style.removeProperty('--mx');
+                    card.style.removeProperty('--my');
+                });
+            });
+        })();
     </script>
 
     <!-- i18n: Translations & Language Engine -->

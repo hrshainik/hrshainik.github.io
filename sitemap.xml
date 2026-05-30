@@ -15,13 +15,13 @@
     <!-- Homepage (canonical) -->
     <url>
         <loc>https://hrshainik.vercel.app/</loc>
-        <lastmod>2026-02-21</lastmod>
+        <lastmod>2026-05-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
 
-        <!-- Primary OG image submitted for Google Image Search indexing -->
+        <!-- Primary OG image submitted for Google Image Search indexing (WebP, 1200×758, ~44 KB) -->
         <image:image>
-            <image:loc>https://hrshainik.vercel.app/images/showcase.png</image:loc>
+            <image:loc>https://hrshainik.vercel.app/images/showcase.webp</image:loc>
             <image:caption>Habibur Rahman — Full-Stack Developer Portfolio Showcase</image:caption>
             <image:title>Habibur Rahman Portfolio</image:title>
         </image:image>

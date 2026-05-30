@@ -19,7 +19,7 @@
         },
         {
           "key": "Permissions-Policy",
-          "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+          "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=(), browsing-topics=(), join-ad-interest-group=(), run-ad-auction=(), private-state-token-redemption=(), private-state-token-issuance=()"
         },
         {
           "key": "Content-Security-Policy",
@@ -52,6 +52,36 @@
           "key": "Cache-Control",
           "value": "public, max-age=86400, stale-while-revalidate=604800"
         }
+      ]
+    },
+    {
+      "source": "/(lang|translations).js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        },
+        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        },
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/browserconfig.xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        },
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" }
       ]
     },
     {

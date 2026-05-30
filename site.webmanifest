@@ -1,12 +1,14 @@
 {
   "name": "Habibur Rahman — Full-Stack Developer Portfolio",
   "short_name": "Habibur Rahman",
-  "description": "Product-driven full-stack developer specializing in Next.js, React, and TypeScript. Building scalable web applications for international clients.",
+  "description": "Product-driven full-stack developer specializing in AI-native products, SaaS platforms, and high-performance web experiences with Next.js, React, and TypeScript. Founder of Qubetix and biofideX.",
   "start_url": "/",
+  "id": "/",
   "scope": "/",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
   "orientation": "portrait-primary",
-  "background_color": "#0a0f1a",
+  "background_color": "#0a1818",
   "theme_color": "#5eb8b8",
   "prefer_related_applications": false,
 
@@ -59,9 +61,9 @@
 
   "screenshots": [
     {
-      "src": "/images/showcase.png",
-      "sizes": "2848x1798",
-      "type": "image/png",
+      "src": "/images/showcase.webp",
+      "sizes": "1200x758",
+      "type": "image/webp",
       "form_factor": "wide",
       "label": "Portfolio homepage showcasing projects and services"
     }
